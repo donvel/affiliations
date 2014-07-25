@@ -128,7 +128,7 @@ def read_file(filename, hint_file, error_file, one_number):
                 t_lbng += [tokens[0]]
                 lbng += [tokens[1]]
 
-        print best, score
+        print 'max score: %f, score after training %f' % (best, score)
         show_errors(best_labeling, hint_file, error_file)
 
 
@@ -136,8 +136,8 @@ def get_args():
     parser = argparse.ArgumentParser(description="Count score and generate error file")
     
     parser.add_argument('--input_file', dest='input_file', default='crfdata/acrf_output_Testing.txt')
-    parser.add_argument('--hint_file', dest='hint_file', default='crfdata/dafault-hint.txt')
-    parser.add_argument('--error_file', dest='error_file', default='crfdata/dafault-err.txt')
+    parser.add_argument('--hint_file', dest='hint_file', default='crfdata/default-hint.txt')
+    parser.add_argument('--error_file', dest='error_file', default='crfdata/default-err.txt')
     parser.add_argument('--one_number', type=bool, dest='one_number', default=True)
     
     return parser.parse_args()

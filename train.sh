@@ -5,7 +5,7 @@ affs=data/affs-improved.xml
 model=crfdata/tmpls_chain.txt
 err=crfdata/default-err.xml
 err_html=crfdata/default-err.html
-test_number=5000
+test_number=1000
 
 python scripts/export.py --train $train --test $tst --input \
     $affs --train_number $1 --test_number $test_number --neighbor $2 --rare $3 "$4"
