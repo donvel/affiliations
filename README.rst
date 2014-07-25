@@ -30,3 +30,13 @@ Data preparation
 
     scripts/make_readable.py
     firefox data/affs-improved.html &
+
+
+CRF training and evaluation
+---------------------------
+
+#. Choose the features you want to export and create the crf input files for
+   training and testing. The only positional argument of the exporting script
+   is a string representing a Python list. So you may invoke it like::
+
+    scripts/export.py --train_number 1000 --test_number 5000 --neighbor 2 --rare 12 '["Word", "UpperCase", "AllUpperCase", "Number", "Punct", "Freq", "Rare", "Country"]'
