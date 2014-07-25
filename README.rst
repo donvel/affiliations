@@ -40,3 +40,14 @@ CRF training and evaluation
    is a string representing a Python list. So you may invoke it like::
 
     scripts/export.py --train_number 1000 --test_number 5000 --neighbor 2 --rare 12 '["Word", "UpperCase", "AllUpperCase", "Number", "Punct", "Freq", "Rare", "Country"]'
+
+
+#. To perform the actual training, you need to install and modify MALLET GRMM.
+   Download grmm-0.1.3.tar.gz from http://mallet.cs.umass.edu/grmm/download.php
+   and extract it to `grmm`. Then move the files in `grmm_custom` to corresponding
+   directories in `grmm`::
+
+    cd grmm_custom
+    cp --parents src/edu/umass/cs/mallet/grmm/learning/ACRFTrainer.java ../grmm
+    cd ../grmm
+    make
