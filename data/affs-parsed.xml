@@ -1,4 +1,4 @@
-<args>
+<affs>
 <aff num="2740170" id="aff1"><institution>Department of Cellular Pathology, Medway Maritime Hospital</institution><addr-line>Gillingham, ME7 5NY</addr-line><country>UK</country></aff>
 <aff num="2740299" id="aff1"><label>1</label><institution>Department of Orthopedics and Traumatology, Goztepe Research and Training Hospital</institution><addr-line>Istanbul</addr-line><country>Turkey</country></aff>
 <aff num="2740299" id="aff2"><label>2</label><institution>Department of Orthopedics and Traumatology, Medical Faculty of Istanbul University</institution><addr-line>Istanbul</addr-line><country>Turkey</country></aff>
@@ -1198,7 +1198,6 @@
 <aff num="2948297" id="aff2"><label>2</label><institution>Department of Medical Genetics, Rikshospitalet University Hospital</institution><addr-line>Sognsvannsveien 20, 0027 Oslo</addr-line><country>Norway</country></aff>
 <aff num="2740268" id="aff1"><label>1</label><institution>Department of Orthopaedics, University Hospital Giessen and Marburg</institution><addr-line>Location Marburg, Baldingerstrasse, 35033 Marburg</addr-line><country>Germany</country></aff>
 <aff num="2740268" id="aff2"><label>2</label><institution>Institute of Pathology, University Hospital Giessen and Marburg</institution><addr-line>Location Marburg, Baldingerstrasse, 35033 Marburg</addr-line><country>Germany</country></aff>
-www.w3.org/1999/xlink" id="AF0001"><institution>Department of Orthopaedics</institution>, <addr-line>IKE, Faculty of Health Sciences, Link&#246;ping University</addr-line>, <country>Sweden</country><email ns0:href="per.aspenberg@liu.se">per.aspenberg@liu.se</email></aff>
 <aff num="3269101"><institution>Department of Orthopaedic Surgery, Guy's &amp; St Thomas' Hospitals</institution>, <addr-line>London SE1 9RT</addr-line>, <country>UK</country></aff>
 <aff num="2791052" id="af1"><label>1</label><addr-line>Department of Cardiovascular Science</addr-line>, <institution>School of Medicine and Biomedical Sciences, Floor L, Medical School</institution>, <addr-line>Beech Hill Road, Sheffield S10 2RX</addr-line>, <country>UK</country></aff>
 <aff num="2791052" id="af2"><label>2</label><institution>Brivant Medical Engineering</institution>, <addr-line>Galway</addr-line>, <country>Ireland</country></aff>
@@ -1767,7 +1766,6 @@ www.w3.org/1999/xlink" id="AF0001"><institution>Department of Orthopaedics</inst
 <aff num="2769463" id="aff2"><label>2</label><institution>Cardiology, 2<sup>nd</sup> Propedeutic Department of Internal Medicine, Aristotle University, Hippokration Hospital</institution><addr-line>49 Konstantinoupoleos Str 54642, Thessaloniki</addr-line><country>Greece</country></aff>
 <aff num="3278649" id="AF0003"><sup>3</sup><institution>Department of Surgical Sciences, University of Bergen</institution>, <addr-line>Bergen</addr-line>, <country>Norway</country></aff>
 <aff num="3216091" id="AF0001"><institution>Nuclear medicine department, Dept of Orthopaedics&amp; Trauma</institution>, <addr-line>Southern General Hospital, Glasgow</addr-line>, <country>U.K.</country></aff>
-www.w3.org/1999/xlink" id="AF0002"><institution>Orthopaedic Research Unit</institution>, <addr-line>University of Turku, Turku</addr-line>, <country>Finland</country>, <email ns0:href="hannu.aro@utu.fi">hannu.aro@utu.fi</email></aff>
 <aff num="3013413" id="af1"><label>1</label><addr-line>Institute of Healthy Ageing</addr-line> and <addr-line>Department of Genetics, Evolution and Environment</addr-line>, <institution>University College London</institution>, <addr-line>London WC1E 6BT</addr-line>, <country>UK</country></aff>
 <aff num="3013413" id="af2"><label>2</label><institution>Department of Zoology, Edward Grey Institute</institution>, <addr-line>Oxford University, Oxford OX1 3PS</addr-line>, <country>UK</country></aff>
 <aff num="3013413" id="af3"><label>3</label><institution>Max Planck Institute for Biology of Ageing</institution>, <addr-line>Gleueler Stra&#223;e 50a, 50931 Cologne</addr-line>, <country>Germany</country></aff>
@@ -6345,8 +6343,6 @@ www.w3.org/1999/xlink" id="AF0002"><institution>Orthopaedic Research Unit</insti
 <aff num="2950036" id="aff1"><label>1</label><institution>Department of Cell Biology, Yale University School of Medicine</institution><addr-line>333 Cedar Street New Haven, CT 06520</addr-line><country>USA</country></aff>
 <aff num="2950036" id="aff2"><label>2</label><institution>Heidelberg University Biochemistry Center (BZH)</institution><addr-line>Im Neuenheimer Feld 328, D-69120 Heidelberg</addr-line><country>Germany</country></aff>
 <aff num="1360650" id="aff1"><bold>1</bold><institution>Institut Pasteur</institution><addr-line>Paris</addr-line><country>France</country></aff>
-www.w3.org/1999/xlink" id="AF0001"><institution>Division of Orthopaedic Surgery and Traumatology</institution>, <addr-line>CH-1211 Geneva</addr-line>, <country>Switzerland</country><email ns0:href="Anne.LubbekeWolff@hcuge.ch">Anne.LubbekeWolff@hcuge.ch</email></aff>
-www.w3.org/1999/xlink" id="AF0002"><institution>Department of Orthopaedic Surgery</institution>, <addr-line>NL-1100 DD Amsterdam</addr-line>, <country>The Netherlands</country><email ns0:href="Daniel@drhaverkamp.com">Daniel@drhaverkamp.com</email></aff>
 <aff num="2740178" id="aff1"><label>1</label><institution>1<sup>st</sup> Department of Orthopaedics, University of Athens, KAT Hospital</institution><addr-line>Nikis 2 Street, Athens, 14561</addr-line><country>Greece</country></aff>
 <aff num="2740178" id="aff2"><label>2</label><institution>Radiology Department, KAT Hospital</institution><addr-line>Nikis 2 Street, Athens, 14561</addr-line><country>Greece</country></aff>
 <aff num="2740178" id="aff3"><label>3</label><institution>Radiology Department, Metropolitan Hospital</institution><addr-line>Ethn. Makariou 9 &amp; El. Venizelou 1 Street, Athens, 18547</addr-line><country>Greece</country></aff>
@@ -7304,7 +7300,6 @@ www.w3.org/1999/xlink" id="AF0002"><institution>Department of Orthopaedic Surger
 <aff num="3147240" id="af4"><label>4</label><institution>Department of Cardiothoracic Surgery, Hammersmith Hospital</institution>, <addr-line>London</addr-line>, <country>UK</country></aff>
 <aff num="3147240" id="af5"><label>5</label><institution>Department of Colorectal Surgery, Charing Cross Hospital</institution>, <addr-line>London</addr-line>, <country>UK</country></aff>
 <aff num="3369162" id="AF0001"><institution>The Trauma and Orthopaedic Department, University Hospital of North Staffordshire</institution>, <addr-line>Stoke on Trent</addr-line>, <country>UK</country></aff>
-www.w3.org/1999/xlink" id="AF0002"><institution>Orthopaedic Pathology Unit</institution>, <addr-line>University Medical Center Hamburg-Eppendorf, Martinistr. 52, DE-20246</addr-line><country>Hamburg</country><email ns0:href="j.zustin@uke.de">j.zustin@uke.de</email></aff>
 <aff num="3479917" id="af1"><label>1</label><addr-line>Department of Zoology</addr-line>, <institution>Oxford University</institution>, <addr-line>Oxford</addr-line>, <country>UK</country></aff>
 <aff num="3479917" id="af2"><label>2</label><addr-line>MRC Epidemiology Unit</addr-line>, <institution>Institute of Metabolic Science</institution>, <addr-line>Addenbrooke's Hospital, Cambridge CB2 0QQ</addr-line>, <country>UK</country></aff>
 <aff num="3479917" id="af3"><label>3</label><addr-line>Center for Infectious Disease Dynamics</addr-line>, <institution>Pennsylvania State University</institution>, <addr-line>Pennsylvania, PA 16802</addr-line>, <country>USA</country></aff>
@@ -9045,7 +9040,6 @@ www.w3.org/1999/xlink" id="AF0002"><institution>Orthopaedic Pathology Unit</inst
 <aff num="3295201" id="af1"><label>1</label><addr-line>Department of Clinical Biochemistry</addr-line>, <institution>Herlev Hospital, Copenhagen University Hospital</institution>, <addr-line>University of Copenhagen, DK-2730 Herlev</addr-line>, <country>Denmark</country></aff>
 <aff num="3295201" id="af2"><label>2</label><institution>European Atherosclerosis Society, INSERM UMR-S939, Piti&#233;-Salpetriere University Hospital</institution>, <addr-line>Paris 75651</addr-line>, <country>France</country></aff>
 <aff num="3230010" id="AF0001"><institution>Orthopaedic Department</institution>, <addr-line>Oslo University Hospital, Oslo</addr-line>, <country>Norway</country></aff>
-www.w3.org/1999/xlink" id="AF0002"><institution>Department of Orthopaedics, IKE</institution>, <addr-line>Faculty of Health Sciences, Link&#246;ping University</addr-line>, <country>Sweden</country><email ns0:href="per.aspenberg@liu.se">per.aspenberg@liu.se</email></aff>
 <aff num="3230010" id="AF0004"><institution>Department of Orthopedics</institution>, <addr-line>Clinical Sciences Lund, Lund University</addr-line>, <country>Sweden</country></aff>
 <aff num="3201061" id="aff1"><institution>Department of Molecular Medicine and Surgery</institution><institution>Karolinska Institutet</institution><addr-line>SE-17176, Stockholm</addr-line><country>Sweden</country></aff>
 <aff num="3201061" id="aff2"><institution>Center for Molecular Medicine</institution><institution>Karolinska University Hospital Solna</institution><addr-line>SE-17176, Stockholm</addr-line><country>Sweden</country></aff>
@@ -11663,4 +11657,4 @@ www.w3.org/1999/xlink" id="AF0002"><institution>Department of Orthopaedics, IKE<
 <aff num="2769404" id="aff1"><institution>Department of General Surgery/Accident and Emergency, Sheri-Kashmir Instuite of Medical Sciences</institution><addr-line>Srinagar, Kashmir</addr-line><country>India</country></aff>
 <aff num="2517155" id="af1"><label>1</label><addr-line>Department of Biotechnology</addr-line>, <institution>Institute of Molecular and Cell Biology, University of Tartu</institution>, <addr-line>Riia Street 23, 51010 Tartu</addr-line>, <country>Estonia</country></aff>
 <aff num="2517155" id="af2"><label>2</label><institution>Andrology Unit, Tartu University Clinics</institution>, <addr-line>Tartu</addr-line>, <country>Estonia</country></aff>
-</args>
+</affs>

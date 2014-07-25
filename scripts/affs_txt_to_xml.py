@@ -31,10 +31,13 @@ if __name__ == '__main__':
     input_file = open(args.input, 'rb')
     output_file = open(args.output, 'wb')
 
-    print >>output_file, '<args>'
+    print >>output_file, '<affs>'
    
     for line in input_file:
-        cline = re.sub(r'^(\d+) <aff', r'<aff num="\1"', line.rstrip())
-        print >>output_file, cline
+        if not re.match(r'^(\d+) <aff', line):
+            print line
+            continue
+        cline = re.sub(r'^(\d+) <aff', r'<aff num="\1"', line)
+        print >>output_file, cline.rstrip()
     
-    print >>output_file, '</args>'
+    print >>output_file, '</affs>'
