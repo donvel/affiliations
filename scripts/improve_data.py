@@ -101,7 +101,7 @@ def split_by_commas(root):
 
         for elem in aff:
             current_text = ''
-            tokens = tokenize(elem.text, keep_all=True, split_alphanum=True)
+            tokens = tokenize(elem.text, keep_all=True)
             for t in tokens:
                 current_text += t
                 if len(to_unicode(t)) == 1 and unicodedata.category(to_unicode(t)) == 'Po':

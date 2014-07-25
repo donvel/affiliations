@@ -25,7 +25,7 @@ def split_more(format_str, split_list, flags=0):
     return glue_lists(pres)
 
 
-def tokenize(text, keep_all=False, split_alphanum=False):
+def tokenize(text, keep_all=False, split_alphanum=True):
     text = text or ''
     space_splitter = '(\s+)' if keep_all else '\s+'
     split_list = [text]
@@ -47,12 +47,20 @@ def to_unicode(string):
     return string if isinstance(string, unicode) else string.decode('utf8')
 
 
-def normalize(string):
-    """u'Aあä' -> 'aa'"""
+def normalize(string, lowercase=True):
+    """u'Aあä' -> 'aa' or -> 'Aa' (depending on the flag lowercase)"""
     string = to_unicode(string)
-    return unicodedata.normalize('NFKD', string).encode('ascii', 'ignore').lower()
+    normalized = unicodedata.normalize('NFKD', string).encode('ascii', 'ignore')
+    if lowercase:
+        return normalized.lower()
+    else:
+        return normalized
 
 
 def print_out(node):
     string = ET.tostring(node, encoding="utf-8")
     print string
+
+
+def text_in_element(elem):
+    return ''.join(txt for txt in elem.itertext())
