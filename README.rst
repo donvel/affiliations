@@ -41,7 +41,6 @@ CRF training and evaluation
 
     scripts/export.py --train_number 1000 --test_number 5000 --neighbor 2 --rare 12 '["Word", "UpperCase", "AllUpperCase", "Number", "Punct", "Freq", "Rare", "Country"]'
 
-
 #. To perform the actual training, you need to install and modify MALLET GRMM.
    Download grmm-0.1.3.tar.gz from http://mallet.cs.umass.edu/grmm/download.php
    and extract it to `grmm`. Then move the files in `grmm_custom` to corresponding
@@ -51,3 +50,9 @@ CRF training and evaluation
     cp --parents src/edu/umass/cs/mallet/grmm/learning/ACRFTrainer.java ../grmm
     cd ../grmm
     make
+
+#. Now you may use the `train.sh` script::
+    ./test.sh training_data_size neighbor_feature_range rare_threshold features_list
+   for example::
+    ./test.sh 100 0 0 '["Word"]'
+   Note that this script calls `export.py` for you.

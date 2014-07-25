@@ -246,7 +246,7 @@ def get_args():
     parser.add_argument('--test_number', type=int, default=1000)
     parser.add_argument('--train', dest='training_file', default='crfdata/default-train.crf')
     parser.add_argument('--test', dest='test_file', default='crfdata/default-test.crf')
-    parser.add_argument('--hint', dest='hint_file', default='crfdata/deafult-hint.txt')
+    parser.add_argument('--hint', dest='hint_file', default='crfdata/default-hint.txt')
     parser.add_argument('--input', dest='input_file', default='data/affs-improved.xml')
     parser.add_argument('--rare', type=int, default=2)
     parser.add_argument('--neighbor', type=int, default=0)

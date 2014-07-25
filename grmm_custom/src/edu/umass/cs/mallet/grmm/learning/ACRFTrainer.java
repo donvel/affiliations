@@ -295,7 +295,7 @@ public class ACRFTrainer {
 
     public LogEvaluator ()
     {
-    	this("acrf_output_");
+    	this("crfdata/acrf_output_");
     }
     
     public LogEvaluator(String filename) {
