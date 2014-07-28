@@ -6,6 +6,7 @@ import unicodedata
 import ast
 import codecs
 import argparse
+import random
 
 from collections import defaultdict
 from utils import normalize, tokenize, text_in_element, to_unicode, glue_lists
@@ -226,13 +227,29 @@ def create_input(li, f, h, word_freq=None):
             print >> h
 
 
-def export_to_crf_input(root, num1, num2, file1, file2, hint_file):
-    affs = list(root)
-    aff_list = [(affs[0:num1], file1, None), (affs[num1:num1 + num2], file2, hint_file)]
+def export_to_crf_input(input_file, test_input, num1, num2, file1, file2, hint_file):
+    tree = ET.parse(input_file)
+    affs = list(tree.getroot())
+    random.shuffle(affs)
+
+    if test_input:
+        test_tree = ET.parse(test_input)
+        test_affs = list(test_tree.getroot())
+        random.shuffle(test_affs)
+        
+        assert num1 <= len(affs) and num2 <= len(test_affs)
+        test_affs = affs[:num2]
+    else:
+        assert num1 + num2 <= len(affs)
+        test_affs = affs[num1:num1 + num2]
+    
+    train_affs = affs[:num1]
+
+    aff_list = [(train_affs, file1, None), (test_affs, file2, hint_file)]
     
     word_freq = set([])
     if any(x in features_on for x in ['Rare', 'Freq']):
-        word_freq=find_word_freq(affs[0:num1])
+        word_freq=find_word_freq(train_affs)
 
     for (li, f, h) in aff_list:
         create_input(li, f, h, word_freq)
@@ -244,10 +261,12 @@ def get_args():
     parser.add_argument('features', default='[]', help="Python list eg. '[\"Word\"]'")
     parser.add_argument('--train_number', type=int, default=100)
     parser.add_argument('--test_number', type=int, default=1000)
-    parser.add_argument('--train', dest='training_file', default='crfdata/default-train.crf')
+    parser.add_argument('--train', dest='train_file', default='crfdata/default-train.crf')
     parser.add_argument('--test', dest='test_file', default='crfdata/default-test.crf')
     parser.add_argument('--hint', dest='hint_file', default='crfdata/default-hint.txt')
     parser.add_argument('--input', dest='input_file', default='data/affs-improved.xml')
+    parser.add_argument('--input_test', dest='input_test_file', default=None,
+            help="Specify a separate file with test data")
     parser.add_argument('--rare', type=int, default=2)
     parser.add_argument('--neighbor', type=int, default=0)
     
@@ -255,6 +274,7 @@ def get_args():
 
 
 if __name__ == '__main__':
+    random.seed(10101)
 
     args = get_args()
 
@@ -264,11 +284,11 @@ if __name__ == '__main__':
     nei_thr = args.neighbor
 
     print features_on
-    training_file = open(args.training_file, 'wb')
+    train_file = open(args.train_file, 'wb')
     test_file = open(args.test_file, 'wb')
     hint_file = open(args.hint_file, 'wb')
 
     load_dicts(dicts)
-    tree = ET.parse(args.input_file)
-    root = tree.getroot()
-    export_to_crf_input(root, args.train_number, args.test_number, training_file, test_file, hint_file)
+    export_to_crf_input(args.input_file, args.input_ test_file, \
+            args.train_number, args.test_number, \
+            train_file, test_file, hint_file)

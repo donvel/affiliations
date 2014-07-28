@@ -138,7 +138,7 @@ def get_args():
     parser.add_argument('--input_file', dest='input_file', default='crfdata/acrf_output_Testing.txt')
     parser.add_argument('--hint_file', dest='hint_file', default='crfdata/default-hint.txt')
     parser.add_argument('--error_file', dest='error_file', default='crfdata/default-err.txt')
-    parser.add_argument('--one_number', type=bool, dest='one_number', default=True)
+    parser.add_argument('--one_number', type=int, dest='one_number', default=1)
     
     return parser.parse_args()
 
@@ -148,4 +148,4 @@ if __name__ == '__main__':
 
     args = get_args()
 
-    read_file(args.input_file, args.hint_file, args.error_file, args.one_number)
+    read_file(args.input_file, args.hint_file, args.error_file, args.one_number == 1)

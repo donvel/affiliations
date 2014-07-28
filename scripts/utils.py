@@ -4,6 +4,7 @@
 import xml.etree.ElementTree as ET
 import unicodedata
 import re
+import sys
 import codecs
 
 
@@ -57,9 +58,9 @@ def normalize(string, lowercase=True):
         return normalized
 
 
-def print_out(node):
+def print_out(node, where=sys.stdout):
     string = ET.tostring(node, encoding="utf-8")
-    print string
+    print >>where, string
 
 
 def text_in_element(elem):

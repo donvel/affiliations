@@ -35,8 +35,8 @@ def process_files(input_file, output_file):
 def get_args():
     parser = argparse.ArgumentParser(description="Export xml to human-readable html")
     
-    parser.add_argument('--xml', default='data/affs-improved.xml')
-    parser.add_argument('--html', default='data/affs-improved.html')
+    parser.add_argument('--xml', default='data/affs-real-like.xml')
+    parser.add_argument('--html', default='data/affs-real-like.html')
     
     return parser.parse_args()
 
