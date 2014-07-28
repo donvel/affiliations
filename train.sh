@@ -1,11 +1,13 @@
 GRMM=grmm
-train=crfdata/default-train.xml
-tst=crfdata/default-test.xml
+train=crfdata/default-train.txt
+tst=crfdata/default-test.txt
 affs=data/real-like-train.xml
 affs_test=data/real-like-test.xml
 model=crfdata/tmpls_chain.txt
 err=crfdata/default-err.xml
 err_html=crfdata/default-err.html
+label=crfdata/default-label.xml
+label_html=crfdata/default-label.html
 test_number=1000
 
 python scripts/export.py --train $train --test $tst \
@@ -20,7 +22,8 @@ java -Xmx2000M \
     --testing $tst \
     --model-file $model 2> logs/err_$1_$2_$3.txt
 
-python scripts/count_score.py --error_file $err
-python scripts/make_readable.py --xml $err --html $err_html
+python scripts/count_score.py --error_file $err --label_file $label
+python scripts/make_readable.py --xml $err --html $err_html 
+python scripts/make_readable.py --xml $label --html $label_html
 
 firefox $err_html &

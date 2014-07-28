@@ -94,7 +94,6 @@ bxda
 byggnad
 bygn
 bygning
-c/
 cách
 cadrado
 calle

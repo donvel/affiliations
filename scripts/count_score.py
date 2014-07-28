@@ -57,29 +57,29 @@ def print_aff(aff, lb, f):
     print >>f, '</aff>'
 
 
-def show_errors(labeling, hint_file, error_file):
+def show_labels(labeling, hint_file, output_file, only_errors=False):
     tokens = get_tokens(hint_file)
     assert len(labeling) == len(tokens)
-    with open(error_file, 'wb') as error:
+    with open(output_file, 'wb') as f:
 
 
-        print >>error, "<affs>"
+        print >>f, "<affs>"
 
         for (aff, (lb_t, lb2)) in zip(tokens, labeling):
         
             assert len(aff) == len(lb_t)
             
-            if lb_t != lb2:
+            if not only_errors or lb_t != lb2:
 
-                print_aff(aff, lb_t, error)
-                print_aff(aff, lb2, error)
+                print_aff(aff, lb_t, f)
+                print_aff(aff, lb2, f)
 
-                print >>error, "<br>"
+                print >>f, "<br>"
 
-        print >>error, "</affs>"
+        print >>f, "</affs>"
 
 
-def read_file(filename, hint_file, error_file, one_number):
+def read_file(filename, hint_file, error_file, label_file, one_number):
     with open(filename, 'rb') as f:
         t_lbng = []
         lbng = []
@@ -108,7 +108,7 @@ def read_file(filename, hint_file, error_file, one_number):
                 t_lbng = []
                 lbng = []
             elif len(tokens) == 1: # Joint score, next test
-                accuracy = float(tokens[0])
+                f1 = float(tokens[0])
                 score = correct / total
                 if score > best:
                     best = score
@@ -116,8 +116,8 @@ def read_file(filename, hint_file, error_file, one_number):
                 c_labeling = []
 
                 if not one_number:
-                    print 'S: %f, LA: %f, GA: %f' % \
-                            (score, accuracy, ac / at)
+                    print 'S: %f, F1: %f, GA: %f' % \
+                            (score, f1, ac / at)
 
                 correct = 0.0
                 total = 0.0
@@ -129,16 +129,18 @@ def read_file(filename, hint_file, error_file, one_number):
                 lbng += [tokens[1]]
 
         print 'max score: %f, score after training %f' % (best, score)
-        show_errors(best_labeling, hint_file, error_file)
+        show_labels(best_labeling, hint_file, error_file, only_errors=True)
+        show_labels(best_labeling, hint_file, label_file)
 
 
 def get_args():
     parser = argparse.ArgumentParser(description="Count score and generate error file")
     
-    parser.add_argument('--input_file', dest='input_file', default='crfdata/acrf_output_Testing.txt')
-    parser.add_argument('--hint_file', dest='hint_file', default='crfdata/default-hint.txt')
-    parser.add_argument('--error_file', dest='error_file', default='crfdata/default-err.txt')
-    parser.add_argument('--one_number', type=int, dest='one_number', default=1)
+    parser.add_argument('--input_file', default='crfdata/acrf_output_Testing.txt')
+    parser.add_argument('--hint_file', default='crfdata/default-hint.txt')
+    parser.add_argument('--error_file', default='crfdata/default-err.xml')
+    parser.add_argument('--label_file', default='crfdata/default-label.xml')
+    parser.add_argument('--one_number', type=int, default=1)
     
     return parser.parse_args()
 
@@ -148,4 +150,5 @@ if __name__ == '__main__':
 
     args = get_args()
 
-    read_file(args.input_file, args.hint_file, args.error_file, args.one_number == 1)
+    read_file(args.input_file, args.hint_file, args.error_file,
+            args.label_file, args.one_number == 1)

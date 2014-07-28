@@ -332,7 +332,7 @@ public class ACRFTrainer {
       TestResults results = computeTestResults (testList, returnedList, logFilename);
       results.log (description);
       lastResults = results;
-//		results.printConfusion ();
+      results.printConfusion ();
     }
 
     public static TestResults computeTestResults (InstanceList testList, List returnedList,
@@ -367,7 +367,7 @@ public class ACRFTrainer {
       }
       
       results.computeStatistics ();
-      writer.println(results.getJointAccuracy());
+      writer.println(results.f1_mean);
       writer.close();    
       
       return results;
@@ -447,6 +447,7 @@ public class ACRFTrainer {
     public double[] precision;
     public double[] recall;
     public double[] f1;
+    public double f1_mean;
 
     // Measuring accuracy of each factor
     public TIntArrayList[] factors;
@@ -524,7 +525,7 @@ public class ACRFTrainer {
           returnedCounts[j] += confusion[i][j];
         }
       }
-
+      f1_mean = 0.0;
       // Compute per-class precision, recall, and F1
       for (int i = 0; i < numClasses; i++) {
         double correct = confusion[i][i];
@@ -542,7 +543,9 @@ public class ACRFTrainer {
         }
 
         f1[i] = (2 * precision[i] * recall[i]) / (precision[i] + recall[i]);
+        f1_mean += f1[i];
       }
+      f1_mean /= numClasses;
     }
 
     public void log ()

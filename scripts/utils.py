@@ -26,7 +26,7 @@ def split_more(format_str, split_list, flags=0):
     return glue_lists(pres)
 
 
-def tokenize(text, keep_all=False, split_alphanum=True):
+def tokenize(text, keep_all=False, split_alphanum=False):
     text = text or ''
     space_splitter = '(\s+)' if keep_all else '\s+'
     split_list = [text]

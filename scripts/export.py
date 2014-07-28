@@ -20,12 +20,13 @@ AVAILABLE_FEATURES = [
         'UpperCase',
         'AllUpperCase',
         'Number',
-        # 'AlphaNum', doesn't apply to the current tokenizing method
+        'AlphaNum', # does not apply for one tokenizing method
         'Punct',
         'WeirdLetter',
         'Freq',
         'Rare',
         'Length',
+        'Institution', # WARNING - used also for test / training data generation!
 
         # dict - based
         'StopWord',
@@ -53,8 +54,9 @@ def dict_from_file(filename):
 def load_dicts(dd):
     what_where = [
             ('StopWord', 'stop_words_short.txt'),
-            ('Country', 'countries.txt'),
+            ('Country', 'countries2.txt'),
             ('Address', 'address_keywords.txt'),
+            ('Institution', 'institution_keywords.txt'),
         ]
 
     for (what, where) in what_where:
@@ -207,8 +209,8 @@ def create_instance(aff, f, word_freq=None, hint_file=None):
 
     token_list2, label_list = zip(*labeled_list)
 
-    assert token_list == list(token_list2), \
-            '%r %r' % (token_list, token_list2) # If not, the training data may be faulty
+    if not token_list == list(token_list2):
+        print '%r %r' % (token_list, token_list2)
 
     time_steps = get_timesteps(token_list, word_freq=word_freq)
     for (label, features) in zip(label_list, time_steps):
