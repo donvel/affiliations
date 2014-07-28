@@ -1,14 +1,17 @@
 GRMM=grmm
 train=crfdata/default-train.xml
 tst=crfdata/default-test.xml
-affs=data/affs-improved.xml
+affs=data/real-like-train.xml
+affs_test=data/real-like-test.xml
 model=crfdata/tmpls_chain.txt
 err=crfdata/default-err.xml
 err_html=crfdata/default-err.html
 test_number=1000
 
-python scripts/export.py --train $train --test $tst --input \
-    $affs --train_number $1 --test_number $test_number --neighbor $2 --rare $3 "$4"
+python scripts/export.py --train $train --test $tst \
+    --input $affs --input_test $affs_test \
+    --train_number $1 --test_number $test_number \
+    --neighbor $2 --rare $3 "$4"
 
 java -Xmx2000M \
     -cp $GRMM/class:$GRMM/lib/mallet-deps.jar:$GRMM/lib/grmm-deps.jar \

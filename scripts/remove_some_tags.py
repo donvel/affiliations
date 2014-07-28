@@ -44,8 +44,8 @@ def get_args():
     
     parser.add_argument('--input', default='data/affs-improved.xml')
     parser.add_argument('--output', default='data/affs-real-like.xml')
-    parser.add_argument('--address_ratio', type=int, default=5, help='in \%')
-    parser.add_argument('--country_ratio', type=int, default=8, help='in \%')
+    parser.add_argument('--address_ratio', type=int, default=5, help='in perc')
+    parser.add_argument('--country_ratio', type=int, default=8, help='in perc')
     
     return parser.parse_args()
 

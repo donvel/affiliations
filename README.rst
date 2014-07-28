@@ -26,10 +26,21 @@ Data preparation
 
     scripts/improve_data.py
 
+#. Another thing to do is to remove some of the tagged parts, so the
+   training / test data is more realistic.::
+
+    scripts/remove_some_tags.py
+
 #. To browse the created dataset one may visualize it with::
 
     scripts/make_readable.py
-    firefox data/affs-improved.html &
+    firefox data/affs-real-like.html &
+
+#. (Optionally) You may want to split data into two files for training and
+   testing. However, you may also keep all your data in one file, and
+   the `export.py` script may split it later for you::
+
+    scripts/split_data.py
 
 
 CRF training and evaluation
@@ -40,6 +51,8 @@ CRF training and evaluation
    is a string representing a Python list. So you may invoke it like::
 
     scripts/export.py --train_number 1000 --test_number 5000 --neighbor 2 --rare 12 '["Word", "UpperCase", "AllUpperCase", "Number", "Punct", "Freq", "Rare", "Country"]'
+
+   It creates a hint file, which is later used for the score counting.
 
 #. To perform the actual training, you need to install and modify MALLET GRMM.
    Download grmm-0.1.3.tar.gz from http://mallet.cs.umass.edu/grmm/download.php
@@ -55,4 +68,13 @@ CRF training and evaluation
     ./test.sh training_data_size neighbor_feature_range rare_threshold features_list
    for example::
     ./test.sh 100 0 0 '["Word"]'
-   Note that this script calls `export.py` for you.
+
+   (You will need a `log/` directory for the CRF output.)
+    
+   The following things will happen:
+   #. `export.py` will be called with appropriate arguments
+   #. The CRF diagnostic output will be redirected to `log\err_*.txt`
+   #. `count_score.py` will calculate the labeling accuracy based on
+      `crfdata/acrf_output_*` (created during the CRF training) and the hint
+      file
+   #. All the incorrect labelings will be displayed in Firefox.

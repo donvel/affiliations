@@ -238,7 +238,7 @@ def export_to_crf_input(input_file, test_input, num1, num2, file1, file2, hint_f
         random.shuffle(test_affs)
         
         assert num1 <= len(affs) and num2 <= len(test_affs)
-        test_affs = affs[:num2]
+        test_affs = test_affs[:num2]
     else:
         assert num1 + num2 <= len(affs)
         test_affs = affs[num1:num1 + num2]
@@ -289,6 +289,6 @@ if __name__ == '__main__':
     hint_file = open(args.hint_file, 'wb')
 
     load_dicts(dicts)
-    export_to_crf_input(args.input_file, args.input_ test_file, \
+    export_to_crf_input(args.input_file, args.input_test_file, \
             args.train_number, args.test_number, \
             train_file, test_file, hint_file)
