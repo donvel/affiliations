@@ -17,19 +17,19 @@ DICTS_DIR = 'dicts/'
 
 AVAILABLE_FEATURES = [
         'Word',
+        'Punct',
+        'Number',
         'UpperCase',
         'AllUpperCase',
-        'Number',
-        'AlphaNum', # does not apply for one tokenizing method
-        'Punct',
-        'WeirdLetter',
-        'Freq',
+        'AlphaNum', # does not apply to one tokenizing method
         'Rare',
+        'WeirdLetter',
         'Length',
+        'Freq',
 
         # dict - based
-        'StopWord',
         'Country',
+        'StopWord',
         'Address',
         'Institution', # WARNING - used also for test / training data generation!
     ]
