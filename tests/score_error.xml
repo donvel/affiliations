@@ -1,0 +1,17 @@
+<affs>
+<aff>
+<institution>Double or </institution><addr-line>Trouble </addr-line>Yo Yo Yo </aff>
+<aff>
+<institution>Double or Trouble </institution>Yo Yo Yo </aff>
+<br>
+<aff>
+<institution>Institution </institution><addr-line>Address Address </addr-line>none none <country>Country </country>none </aff>
+<aff>
+<institution>Institution </institution><addr-line>Address </addr-line><country>Address </country>none none <country>Country </country>none </aff>
+<br>
+<aff>
+<institution>Hi man </institution><addr-line>are you </addr-line><country>okay ? </country></aff>
+<aff>
+<addr-line>Hi man are you </addr-line><country>okay ? </country></aff>
+<br>
+</affs>

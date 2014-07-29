@@ -19,6 +19,9 @@ ADDR ---- AlphaNum Length:3
 ADDR ---- Punct W=; Length:1
 ADDR ---- Freq:2 W=llp Length:3 Institution
 ADDR ---- Punct W=. Length:1 Institution
+ADDR ---- Punct W=" Length:1
+ADDR ---- UpperCase Freq:2 W=Lichtenbergstrae Length:17
+ADDR ---- Punct W=" Length:1
 COUN ---- UpperCase AllUpperCase Freq:2 W=T Length:1 Country
 COUN ---- Punct W=' Length:1 Country
 COUN ---- Freq:2 W=ai Length:2 Country
@@ -53,6 +56,9 @@ ADDR ---- AlphaNum Length:3
 ADDR ---- Punct W=; Length:1
 ADDR ---- Freq:2 W=llp Length:3 Institution
 ADDR ---- Punct W=. Length:1 Institution
+ADDR ---- Punct W=" Length:1
+ADDR ---- UpperCase Freq:2 W=Lichtenbergstrae Length:17
+ADDR ---- Punct W=" Length:1
 COUN ---- UpperCase AllUpperCase Freq:2 W=T Length:1 Country
 COUN ---- Punct W=' Length:1 Country
 COUN ---- Freq:2 W=ai Length:2 Country
