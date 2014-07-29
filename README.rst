@@ -65,16 +65,18 @@ CRF training and evaluation
     make
 
 #. Now you may use the `train.sh` script::
-    ./test.sh training_data_size neighbor_feature_range rare_threshold features_list
-   for example::
-    ./test.sh 100 0 0 '["Word"]'
 
-   (You will need a `log/` directory for the CRF output.)
+    ./test.sh training_data_size neighbor_feature_range rare_threshold features_list
+   
+   for example::
+
+    ./test.sh 100 0 0 '["Word"]'
     
    The following things will happen:
+
    #. `export.py` will be called with appropriate arguments
    #. The CRF diagnostic output will be redirected to `log\err_*.txt`
    #. `count_score.py` will calculate the labeling accuracy based on
-      `crfdata/acrf_output_*` (created during the CRF training) and the hint
+      `crfdata/acrf_output*` (created during the CRF training) and the hint
       file
    #. All the incorrect labelings will be displayed in Firefox.
