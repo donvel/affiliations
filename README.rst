@@ -66,11 +66,11 @@ CRF training and evaluation
 
 #. Now you may use the `train.sh` script::
 
-    ./test.sh training_data_size neighbor_feature_range rare_threshold features_list
+    ./train.sh training_data_size neighbor_feature_range rare_threshold split_alphanum features_list training_name
    
    for example::
 
-    ./test.sh 100 0 0 '["Word"]'
+    ./train.sh 100 0 0 1 '["Word"]' test
     
    The following things will happen:
 
