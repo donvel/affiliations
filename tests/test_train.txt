@@ -1,0 +1,68 @@
+INST ---- UpperCase Freq:2 W=Pediatric Length:9
+INST ---- UpperCase Freq:2 W=Department Length:10 Institution
+INST ---- Punct W=, Length:1
+INST ---- UpperCase Freq:2 W=The Length:3 StopWord
+INST ---- UpperCase Freq:2 W=Peter Length:5
+INST ---- Freq:2 W=and Length:3 StopWord
+INST ---- UpperCase Freq:2 W=Paul Length:4
+INST ---- UpperCase Freq:2 W=Hospital Length:8 Institution
+INST ---- Punct W=, Length:1
+INST ---- Freq:2 W=CamP Length:4 Address
+INST ---- Punct W=, Length:1
+ADDR ---- UpperCase Freq:1 Rare Length:5
+ADDR ---- UpperCase Freq:2 W=Route Length:5 Address
+ADDR ---- AllUpperCase Freq:2 W=ME Length:2
+ADDR ---- Number Length:2
+ADDR ---- WeirdLetter W=- Length:1
+ADDR ---- Number Length:3
+ADDR ---- AlphaNum Length:3
+ADDR ---- Punct W=; Length:1
+ADDR ---- Freq:2 W=llp Length:3 Institution
+ADDR ---- Punct W=. Length:1 Institution
+COUN ---- UpperCase AllUpperCase Freq:2 W=T Length:1 Country
+COUN ---- Punct W=' Length:1 Country
+COUN ---- Freq:2 W=ai Length:2 Country
+COUN ---- WeirdLetter W=- Length:1 Country
+COUN ---- Freq:2 W=wan Length:3 Country
+NONE ---- Freq:2 W=john Length:4
+NONE ---- Punct W=. Length:1
+NONE ---- Freq:2 W=ricky Length:5
+NONE ---- Punct W=@ Length:1
+NONE ---- Freq:2 W=ticky Length:5
+NONE ---- Punct W=. Length:1
+NONE ---- Freq:2 W=com Length:3
+
+INST ---- UpperCase Freq:2 W=Pediatric Length:9
+INST ---- UpperCase Freq:2 W=Department Length:10 Institution
+INST ---- Punct W=, Length:1
+INST ---- UpperCase Freq:2 W=The Length:3 StopWord
+INST ---- UpperCase Freq:2 W=Peter Length:5
+INST ---- Freq:2 W=and Length:3 StopWord
+INST ---- UpperCase Freq:2 W=Paul Length:4
+INST ---- UpperCase Freq:2 W=Hospital Length:8 Institution
+INST ---- Punct W=, Length:1
+INST ---- Freq:2 W=CamP Length:4 Address
+INST ---- Punct W=, Length:1
+ADDR ---- UpperCase Freq:1 Rare Length:4
+ADDR ---- UpperCase Freq:2 W=Route Length:5 Address
+ADDR ---- AllUpperCase Freq:2 W=ME Length:2
+ADDR ---- Number Length:2
+ADDR ---- WeirdLetter W=- Length:1
+ADDR ---- Number Length:3
+ADDR ---- AlphaNum Length:3
+ADDR ---- Punct W=; Length:1
+ADDR ---- Freq:2 W=llp Length:3 Institution
+ADDR ---- Punct W=. Length:1 Institution
+COUN ---- UpperCase AllUpperCase Freq:2 W=T Length:1 Country
+COUN ---- Punct W=' Length:1 Country
+COUN ---- Freq:2 W=ai Length:2 Country
+COUN ---- WeirdLetter W=- Length:1 Country
+COUN ---- Freq:2 W=wan Length:3 Country
+NONE ---- Freq:2 W=john Length:4
+NONE ---- Punct W=. Length:1
+NONE ---- Freq:2 W=ricky Length:5
+NONE ---- Punct W=@ Length:1
+NONE ---- Freq:2 W=ticky Length:5
+NONE ---- Punct W=. Length:1
+NONE ---- Freq:2 W=com Length:3
+

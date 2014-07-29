@@ -8,12 +8,14 @@ err=crfdata/default-err.xml
 err_html=crfdata/default-err.html
 label=crfdata/default-label.xml
 label_html=crfdata/default-label.html
-test_number=1000
+test_number=3000
+split_alphanum=1 
 
 python scripts/export.py --train $train --test $tst \
     --input $affs --input_test $affs_test \
     --train_number $1 --test_number $test_number \
-    --neighbor $2 --rare $3 "$4"
+    --neighbor $2 --rare $3 --split_alphanum $split_alphanum \
+    "$4"
 
 java -Xmx2000M \
     -cp $GRMM/class:$GRMM/lib/mallet-deps.jar:$GRMM/lib/grmm-deps.jar \

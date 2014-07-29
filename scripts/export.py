@@ -26,12 +26,12 @@ AVAILABLE_FEATURES = [
         'Freq',
         'Rare',
         'Length',
-        'Institution', # WARNING - used also for test / training data generation!
 
         # dict - based
         'StopWord',
         'Country',
         'Address',
+        'Institution', # WARNING - used also for test / training data generation!
     ]
 
 
@@ -39,13 +39,16 @@ features_on = []
 dicts = {}
 rare_thr = 2 # Rare <=> at most rare_thr occurences in the training set
 nei_thr = 0 # Copy neighbours' features in this range
+split_alphanum = False # Should alphanumeric words be split into many parts
 
+split_alphanum = False # Should alphanumeric words be split into many parts
 
 def dict_from_file(filename):
     d = defaultdict(list)
     with codecs.open(DICTS_DIR + filename, 'rb', encoding='utf8') as f:
         for line in f:
-            tokens = [normalize(t) for t in tokenize(line)]
+            tokens = [normalize(t) for t in tokenize(line,
+                split_alphanum=split_alphanum)]
             for (nb, token) in enumerate(tokens):
                 d[token] += [(tokens, nb)]
         return d
@@ -150,7 +153,8 @@ def get_dict_features(token_list):
 def find_word_freq(li):
     all_tokens = [normalize(t)
              for aff in li
-             for t in tokenize(text_in_element(aff))]
+             for t in tokenize(text_in_element(aff),
+                 split_alphanum=split_alphanum)]
     freq = defaultdict(int)
     for token in all_tokens:
         freq[token] += 1
@@ -193,12 +197,12 @@ def get_timesteps(token_list, word_freq=None):
 
 
 def get_labels(text, label):
-    return [(t, label) for t in tokenize(text)]
+    return [(t, label) for t in tokenize(text, split_alphanum=split_alphanum)]
 
 
 def create_instance(aff, f, word_freq=None, hint_file=None):
     full_text = text_in_element(aff)
-    token_list = tokenize(full_text)
+    token_list = tokenize(full_text, split_alphanum=split_alphanum)
 
 
     labeled_list = []
@@ -271,6 +275,7 @@ def get_args():
             help="Specify a separate file with test data")
     parser.add_argument('--rare', type=int, default=2)
     parser.add_argument('--neighbor', type=int, default=0)
+    parser.add_argument('--split_alphanum', type=int, default=0)
     
     return parser.parse_args()
 
@@ -289,6 +294,8 @@ if __name__ == '__main__':
     train_file = open(args.train_file, 'wb')
     test_file = open(args.test_file, 'wb')
     hint_file = open(args.hint_file, 'wb')
+
+    split_alphanum = args.split_alphanum == 1
 
     load_dicts(dicts)
     export_to_crf_input(args.input_file, args.input_test_file, \

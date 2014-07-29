@@ -1,10 +1,12 @@
-import argparse
 """ Returns a labeling score:
     Let T = sum_(s - an affiliation) (# of labels in the target labeling of s)
     C = sum_s (# of labels l in the target labeling of s such that
         the occurences of l in s are exactly the same in the tested labeling)
     The score equals C / T
 """
+import argparse
+
+from collections import defaultdict
 
 def check_labelings(target_lbng, lbng):
     processed = []
@@ -79,6 +81,10 @@ def show_labels(labeling, hint_file, output_file, only_errors=False):
         print >>f, "</affs>"
 
 
+def group_type(labeling):
+    return tuple(set(l for l in labeling if l != 'NONE'))
+
+
 def read_file(filename, hint_file, error_file, label_file, one_number):
     with open(filename, 'rb') as f:
         t_lbng = []
@@ -86,10 +92,14 @@ def read_file(filename, hint_file, error_file, label_file, one_number):
 
         correct = 0.0
         total = 0.0
-        accuracy = 0.0
+
+        group_correct = defaultdict(int)
+        group_total = defaultdict(int)
+
         at = 0.0
         ac = 0.0
         best = 0.0
+        group_best = []
 
         best_labeling = []
         c_labeling = []
@@ -102,6 +112,9 @@ def read_file(filename, hint_file, error_file, label_file, one_number):
                 correct += c
                 total += t
 
+                group_correct[group_type(t_lbng)] += t_lbng == lbng
+                group_total[group_type(t_lbng)] += 1
+
                 ac += t_lbng == lbng
                 at += 1
 
@@ -112,12 +125,16 @@ def read_file(filename, hint_file, error_file, label_file, one_number):
                 score = correct / total
                 if score > best:
                     best = score
+                    group_best = (group_correct, group_total)
                     best_labeling = c_labeling
                 c_labeling = []
 
                 if not one_number:
                     print 'S: %f, F1: %f, GA: %f' % \
                             (score, f1, ac / at)
+
+                group_correct = defaultdict(int)
+                group_total = defaultdict(int)
 
                 correct = 0.0
                 total = 0.0
@@ -129,6 +146,13 @@ def read_file(filename, hint_file, error_file, label_file, one_number):
                 lbng += [tokens[1]]
 
         print 'max score: %f, score after training %f' % (best, score)
+       
+        group_correct, group_total = group_best
+        for key in group_total:
+            print 'score %f, total %d, correct %d, %r' % \
+                    (group_correct[key] / float(group_total[key]),
+                            group_total[key], group_correct[key], key)
+
         show_labels(best_labeling, hint_file, error_file, only_errors=True)
         show_labels(best_labeling, hint_file, label_file)
 
@@ -140,7 +164,7 @@ def get_args():
     parser.add_argument('--hint_file', default='crfdata/default-hint.txt')
     parser.add_argument('--error_file', default='crfdata/default-err.xml')
     parser.add_argument('--label_file', default='crfdata/default-label.xml')
-    parser.add_argument('--one_number', type=int, default=1)
+    parser.add_argument('--one_number', type=int, default=0)
     
     return parser.parse_args()
 
