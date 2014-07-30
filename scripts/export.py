@@ -30,6 +30,7 @@ AVAILABLE_FEATURES = [
         # dict - based
         'Country',
         'StopWord',
+        'StopWordMulti',
         'Address',
         'State',
         'StateCode',
@@ -59,7 +60,8 @@ def dict_from_file(filename):
 
 def load_dicts(dd):
     what_where = [
-            ('StopWord', 'stop_words_short2.txt'),
+            ('StopWord', 'stop_words_short.txt'),
+            ('StopWordMulti', 'stop_words_multilang.txt'),
             ('Country', 'countries2.txt'),
             ('Address', 'address_keywords.txt'),
             ('Institution', 'institution_keywords.txt'),

@@ -6,7 +6,7 @@ affs_test=data/real-like-test.xml
 
 model=crfdata/tmpls_chain.txt
 
-test_number=3521
+test_number=4267
 
 
 train=crfdata/default-train_$6.txt
