@@ -36,5 +36,7 @@ if __name__ == '__main__':
     affs = list(ET.parse(args.input).getroot())
     random.shuffle(affs)
 
-    write_tree(list(affs)[:args.split_point], args.train)
-    write_tree(list(affs)[args.split_point:], args.test)
+    write_tree(affs[:args.split_point], args.train)
+    write_tree(affs[args.split_point:], args.test)
+
+    print len(affs)

@@ -31,6 +31,9 @@ AVAILABLE_FEATURES = [
         'Country',
         'StopWord',
         'Address',
+        'State',
+        'StateCode',
+        'City',
         'Institution', # WARNING - used also for test / training data generation!
     ]
 
@@ -56,10 +59,13 @@ def dict_from_file(filename):
 
 def load_dicts(dd):
     what_where = [
-            ('StopWord', 'stop_words_short.txt'),
+            ('StopWord', 'stop_words_short2.txt'),
             ('Country', 'countries2.txt'),
             ('Address', 'address_keywords.txt'),
             ('Institution', 'institution_keywords.txt'),
+            ('City', 'cities.txt'),
+            ('State', 'states.txt'),
+            ('StateCode', 'state_codes.txt'),
         ]
 
     for (what, where) in what_where:

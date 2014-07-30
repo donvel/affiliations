@@ -11,7 +11,7 @@ INST ---- Freq:2 W=CamP Length:4 Address
 INST ---- Punct W=, Length:1
 ADDR ---- UpperCase Freq:1 Rare Length:5
 ADDR ---- UpperCase Freq:2 W=Route Length:5 Address
-ADDR ---- AllUpperCase Freq:2 W=ME Length:2
+ADDR ---- AllUpperCase Freq:2 W=ME Length:2 StateCode
 ADDR ---- Number Length:2
 ADDR ---- WeirdLetter W=- Length:1
 ADDR ---- Number Length:3
@@ -48,7 +48,7 @@ INST ---- Freq:2 W=CamP Length:4 Address
 INST ---- Punct W=, Length:1
 ADDR ---- UpperCase Freq:1 Rare Length:4
 ADDR ---- UpperCase Freq:2 W=Route Length:5 Address
-ADDR ---- AllUpperCase Freq:2 W=ME Length:2
+ADDR ---- AllUpperCase Freq:2 W=ME Length:2 StateCode
 ADDR ---- Number Length:2
 ADDR ---- WeirdLetter W=- Length:1
 ADDR ---- Number Length:3

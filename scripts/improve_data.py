@@ -54,7 +54,12 @@ def enhance_untagged(root):
                 elif is_end_word_or_accent(elem.tail):
                     elem.text += elem.tail
                     elem.tail = ''
+                elif len(elem.tail.strip()) <= 2:
+                    print "GLUEING %s + %s" % (elem.text, elem.tail)
+                    elem.text += elem.tail
+                    elem.tail = ''
                 else:
+                    print "REMOVING"
                     print_out(aff)
                     root.remove(aff)
                     break

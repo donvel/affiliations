@@ -28,6 +28,8 @@ def write_xml(matching, f):
         i = 0
         tag_to_write = None
         for c in tagged:
+            if not normalize(c):
+                continue
             if len(c) > 1 and c[1] == '/': # closing tag
                 f.write(c)
             elif len(c) > 1: # opening tag
@@ -53,9 +55,9 @@ def write_xml(matching, f):
 
 
 def is_subseq(s1, s2):
-    """ Tests if s1 is a subseq of s2 """
-    s1 = [normalize(c) for c in s1 if len(c) == 1] # ignore tags
-    s2 = [normalize(c) for c in s2]
+
+    s1 = [normalize(c) for c in s1 if len(c) == 1 and normalize(c)] # ignore tags
+    s2 = [normalize(c) for c in s2 if normalize(c)]
 
     i = 0
     for c in s1:
@@ -66,6 +68,7 @@ def is_subseq(s1, s2):
             if i == len(s2):
                 return False
         i += 1
+
     return True
 
 
@@ -77,6 +80,7 @@ def get_matching(tagged, raw):
     """
     matches = [(filter(lambda x: is_subseq(x, y), tagged), y) for y in raw]
     matching = [(li[0], y) for (li, y) in matches if len(li) == 1]
+
     return matching
 
 
@@ -94,11 +98,17 @@ def chars_from_aff(aff):
 
     chars = []
     chars += list_of_chars(aff.text)
-    for element in aff:
+    for nb, element in enumerate(aff):
         chars += [tag_string(element, opening=True)]
         chars += list_of_chars(element.text)
         chars += [tag_string(element, opening=False)]
-        chars += list_of_chars(element.tail)
+
+        element.tail = element.tail or ''
+        if nb + 1 != len(aff):
+            chars += list_of_chars(element.tail)
+
+    if chars[-1] == ',':
+        chars = chars[:-1]
     return [to_unicode(c) for c in chars]
 
 
@@ -141,6 +151,16 @@ def match_text(root, text_file, doc_num, out_file):
         matched += len(matching)
         total += len(str_dict[doc])
         write_xml(matching, out_file)
+
+        """
+        import sys
+        happy = [''.join(m[1]) for m in matching]
+        for strn in str_dict[doc]:
+            line = ''.join(strn)
+            if line in happy:
+                print doc, to_unicode(line).encode('utf8')
+            else:
+                print >> sys.stderr, doc, to_unicode(line).encode('utf8')"""
 
     print >>out_file, tag_string(root, opening=False)
 

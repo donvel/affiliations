@@ -1,13 +1,13 @@
 18
 25
-29
-36 Canada
+29 no address
+36 Canada, no address
 60
 63
 72
 81
 85
-106
+106, no address
 111
 134
 149
@@ -16,9 +16,11 @@
 176 India
 182
 
-/ 200
+17 / 200
 
-9 % no country
+8.5 % no country
+
+usually some kind of state code like: TX (or Texas) 32420
 
 =================================
 29
@@ -28,7 +30,23 @@
 106
 136
 150
+158
+161
+162
+165
+170 no country
+174
+193
 
-/ 150
+14 / 200
 
-5 % no address
+7 % no address
+
+(but City or State in the Institution name)
+usually (90% cases)
+=================================
+
+4 / 200
+
+2 % no both
+
