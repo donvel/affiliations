@@ -27,6 +27,8 @@ log_stdout=logs/stdout_$6.txt
 
 log_err=logs/err_$6.txt
 
+score_file=/logs/score_$6.txt
+
 acrf_prefix=crfdata/acrf_output_$6_
 
 acrf_suffix=Testing.txt
@@ -52,7 +54,7 @@ java -Xmx2000M \
     --model-file $model > $log_stdout 2> $log_err
 
 python scripts/count_score.py --error_file $err --label_file $label \
-    --hint_file $hint --input_file $acrf_out
+    --hint_file $hint --input_file $acrf_out | tee $score_file
 python scripts/make_readable.py --xml $err --html $err_html 
 python scripts/make_readable.py --xml $label --html $label_html
 

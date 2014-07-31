@@ -9,7 +9,8 @@ import argparse
 import random
 
 from collections import defaultdict
-from utils import normalize, tokenize, text_in_element, to_unicode, glue_lists
+from utils import normalize, tokenize, text_in_element, to_unicode, glue_lists, \
+        is_punct
 
 
 DICTS_DIR = 'dicts/'
@@ -120,7 +121,7 @@ def get_local_features(token, word_freq=None):
 
     elif len(to_unicode(token)) == 1:
 
-        if unicodedata.category(to_unicode(token)) == 'Po':
+        if is_punct(token):
             if 'Punct' in features_on:
                 features += ['Punct']
         else:
