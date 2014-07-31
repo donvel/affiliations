@@ -8,6 +8,10 @@ import sys
 import codecs
 
 
+def is_punct(char):
+    return char in [',', ';', '.']
+
+
 def set_from_file(filename, normal=False):
     with codecs.open(filename, 'rb', encoding='utf8') as f:
         if normal:

@@ -3,8 +3,9 @@
 import xml.etree.ElementTree as ET
 import argparse
 import unicodedata
+import sys
 
-from utils import to_unicode, print_out, tokenize, set_from_file, normalize
+from utils import to_unicode, print_out, tokenize, set_from_file, normalize, is_punct
 
 
 COMMA_WORDS = [',', ';', '.', ':', '`', '\'', '-', '\',',
@@ -55,7 +56,9 @@ def enhance_untagged(root):
                     elem.text += elem.tail
                     elem.tail = ''
                 elif len(elem.tail.strip()) <= 2:
-                    print "GLUEING %s + %s" % (elem.text, elem.tail)
+                    print "GLUEING %s + %s" % \
+                            (to_unicode(elem.text).encode('utf8'),
+                                    to_unicode(elem.tail).encode('utf8'))
                     elem.text += elem.tail
                     elem.tail = ''
                 else:
@@ -109,7 +112,8 @@ def split_by_commas(root):
             tokens = tokenize(elem.text, keep_all=True)
             for t in tokens:
                 current_text += t
-                if len(to_unicode(t)) == 1 and unicodedata.category(to_unicode(t)) == 'Po':
+                #if len(to_unicode(t)) == 1 and unicodedata.category(to_unicode(t)) == 'Po':
+                if is_punct(t):
                     new_elems += [make_elem(elem.tag, current_text)]
                     current_text = ''
             if current_text:
@@ -137,7 +141,7 @@ def change_institution_by_dict(root):
                 if any(t in institution_keywords for t in tokens) \
                         and not any(t.isdigit() for t in tokens):
                     elem.tag = 'institution'
-                    #print_out(elem)
+                    print_out(elem, sys.stderr)
 
 
 def get_args():
