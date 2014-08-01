@@ -24,6 +24,10 @@ def get_args():
     parser.add_argument('--test', default='data/improved-test.xml')
     parser.add_argument('--input', default='data/affs-improved.xml')
     parser.add_argument('--split_point', type=int, default=4000)
+    parser.add_argument('--number', type=int, default=1600)
+    parser.add_argument('--cross', type=int, default=0)
+    parser.add_argument('--part', type=int, default=1)
+    parser.add_argument('--parts', type=int, default=5)
     
     return parser.parse_args()
 
@@ -36,7 +40,19 @@ if __name__ == '__main__':
     affs = list(ET.parse(args.input).getroot())
     random.shuffle(affs)
 
-    write_tree(affs[:args.split_point], args.train)
-    write_tree(affs[args.split_point:], args.test)
+    if args.cross == 1:
+        test_from = (args.part - 1) * args.number
+        test_to = args.part * args.number
+        test_train_to = args.parts * args.number
+        
+        affs_train = affs[:test_from] + affs[test_to:test_train_to]
+        affs_test = affs[test_from:test_to]
+        
+        write_tree(affs_train, args.train)
+        write_tree(affs_test, args.test)
+    else:
 
-    print len(affs)
+        write_tree(affs[:args.split_point], args.train)
+        write_tree(affs[args.split_point:], args.test)
+
+        print len(affs)

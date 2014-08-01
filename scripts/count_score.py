@@ -127,18 +127,23 @@ class Score:
                 self.success[t] = self.type_correct[t] / float(self.type_total[t])
 
         self.success_mean = sum(self.success[t] for t in self.types) / len(self.types)
+        self.success_wmean = (sum(self.type_correct[t] for t in self.types)
+                / float(sum(self.type_total[t] for t in self.types)))
 
         for l in self.labels:
             self.matched[l] = self.label_correct[l] / float(self.label_total[l])
 
         self.matched_mean = sum(self.matched[l] for l in self.labels) / len(self.labels)
 
-    def write(self):
-        print 'f1: %f, success: %f, matched: %f' % \
+    def write(self, where=sys.stdout):
+        print >>where, 'f1: %f, success: %f, matched: %f' % \
                 (self.f1_mean, self.success_mean, self.matched_mean)
 
 
     def full_write(self):
+        print
+        self.write()
+        print 'total success: %f' % self.success_wmean
         print
         print 10 * '=' + ' CONFUSION ' + 10 * '='
         for l1 in ['name'] + self.labels:
@@ -240,6 +245,7 @@ def read_file(filename, hint_file, error_file, label_file, full_output):
             show_labels(last_score.labeling, hint_file, error_file, only_errors=True)
             show_labels(last_score.labeling, hint_file, label_file)
         else:
+            last_score.write(sys.stderr)
             last_score.serialize()
 
 

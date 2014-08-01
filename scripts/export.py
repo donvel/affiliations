@@ -18,15 +18,15 @@ DICTS_DIR = 'dicts/'
 
 AVAILABLE_FEATURES = [
         'Word',
-        'Punct',
         'Number',
         'UpperCase',
         'AllUpperCase',
         'AlphaNum', # does not apply to one tokenizing method
-        'Rare',
+        'Punct',
         'WeirdLetter',
         'Length',
         'Freq',
+        'Rare',
 
         # dict - based
         'Country',
