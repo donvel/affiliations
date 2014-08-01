@@ -80,3 +80,8 @@ CRF training and evaluation
       `crfdata/acrf_output*` (created during the CRF training) and the hint
       file
    #. All the incorrect labelings will be displayed in Firefox.
+
+#. Default cross validation is hard-coded in the `cross_validate.sh` shell
+   script. It will perform a 5-fold cross validation using 5 * `number` affiliations.::
+
+    ./cross_validate.sh 1600

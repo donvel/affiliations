@@ -1,4 +1,13 @@
 """
+f1 -- average of f1 scores for all labels
+
+matched -- avarage of partially correct labeling over the label types: ADDR, COUN, INST
+    (example: target = AAIIC, then AAAIC is partially correct for COUN, but not for ADDR or INST)
+
+success -- average of completely correct labelings over possible affiliation types:
+    (ADDR, COUN, INST), (COUN, INST), (ADDR, INST), (INST)
+
+total success -- amount of completely correct labelings
 """
 import argparse
 import sys
@@ -84,6 +93,7 @@ class Score:
         self.type_total = dict((t, 0) for t in self.types)
         self.success = dict((t, 0) for t in self.types)
         self.success_mean = 0
+        self.success_wmean = 0
 
         self.label_correct = dict((l, 0) for l in self.labels)
         self.label_total = dict((l, 0) for l in self.labels)
@@ -125,6 +135,8 @@ class Score:
         for t in self.types:
             if self.type_total[t] != 0:
                 self.success[t] = self.type_correct[t] / float(self.type_total[t])
+            else:
+                self.success[t] = 1.0
 
         self.success_mean = sum(self.success[t] for t in self.types) / len(self.types)
         self.success_wmean = (sum(self.type_correct[t] for t in self.types)
