@@ -27,7 +27,7 @@ log_stdout=logs/stdout_$6.txt
 
 log_err=logs/err_$6.txt
 
-score_file=/logs/score_$6.txt
+score_file=logs/score_$6.txt
 
 acrf_prefix=crfdata/acrf_output_$6_
 

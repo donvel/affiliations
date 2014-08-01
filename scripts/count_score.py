@@ -1,26 +1,9 @@
-""" Returns a labeling score:
-    Let T = sum_(s - an affiliation) (# of labels in the target labeling of s)
-    C = sum_s (# of labels l in the target labeling of s such that
-        the occurences of l in s are exactly the same in the tested labeling)
-    The score equals C / T
+"""
 """
 import argparse
+import sys
 
 from collections import defaultdict
-
-def check_labelings(target_lbng, lbng):
-    processed = []
-    total = 0
-    correct = 0
-    for label in target_lbng:
-        if label not in processed:
-            processed += [label]
-            target_positions = [x == label for x in target_lbng]
-            positions = [x == label for x in lbng]
-            total += 1
-            if positions == target_positions:
-                correct += 1
-    return (correct, total)
 
 
 def get_tokens(hint_file):
@@ -81,80 +64,181 @@ def show_labels(labeling, hint_file, output_file, only_errors=False):
         print >>f, "</affs>"
 
 
-def group_type(labeling):
-    return tuple(set(l for l in labeling if l != 'NONE'))
+def aff_type(labeling):
+    return tuple(sorted(list(set(l for l in labeling if l != 'NONE'))))
 
 
-def read_file(filename, hint_file, error_file, label_file, one_number):
+class Score:
+
+    def __init__(self):
+        self.labels = ['ADDR', 'COUN', 'INST']
+        self.types = [('INST',), ('ADDR', 'INST'), ('COUN', 'INST'), ('ADDR', 'COUN', 'INST')]
+
+        self.confusion = dict(((l1, l2), 0) for l1 in self.labels for l2 in self.labels)
+        self.precision = dict((l, 0) for l in self.labels)
+        self.recall = dict((l, 0) for l in self.labels)
+        self.f1 = dict((l, 0) for l in self.labels)
+        self.f1_mean = 0
+        
+        self.type_correct = dict((t, 0) for t in self.types)
+        self.type_total = dict((t, 0) for t in self.types)
+        self.success = dict((t, 0) for t in self.types)
+        self.success_mean = 0
+
+        self.label_correct = dict((l, 0) for l in self.labels)
+        self.label_total = dict((l, 0) for l in self.labels)
+        self.matched = dict((l, 0) for l in self.labels)
+        self.matched_mean = 0
+
+        self.labeling = []
+
+    def update(self, t_lbng, lbng):
+        self.labeling += [(t_lbng, lbng)]
+
+        for (target, given) in zip(t_lbng, lbng):
+            self.confusion[(target, given)] += 1
+
+        all_tags = aff_type(t_lbng)
+        
+        self.type_correct[all_tags] += t_lbng == lbng
+        self.type_total[all_tags] += 1
+
+        for label in all_tags:
+            target_positions = [x == label for x in t_lbng]
+            positions = [x == label for x in lbng]
+            self.label_correct[label] += positions == target_positions
+            self.label_total[label] += 1
+
+    def calculate(self):
+    
+        for l in self.labels:
+            retrieved = sum(self.confusion[(x, l)] for x in self.labels)
+            relevant = sum(self.confusion[(l, x)] for x in self.labels)
+            rel_ret = self.confusion[(l, l)]
+            self.precision[l] = rel_ret / float(retrieved)
+            self.recall[l] = rel_ret / float(relevant)
+            prec, rec = self.precision[l], self.recall[l]
+            self.f1[l] = 2 * prec * rec / (prec + rec)
+
+        self.f1_mean = sum(self.f1[l] for l in self.labels) / len(self.labels)
+
+        for t in self.types:
+            if self.type_total[t] != 0:
+                self.success[t] = self.type_correct[t] / float(self.type_total[t])
+
+        self.success_mean = sum(self.success[t] for t in self.types) / len(self.types)
+
+        for l in self.labels:
+            self.matched[l] = self.label_correct[l] / float(self.label_total[l])
+
+        self.matched_mean = sum(self.matched[l] for l in self.labels) / len(self.labels)
+
+    def write(self):
+        print 'f1: %f, success: %f, matched: %f' % \
+                (self.f1_mean, self.success_mean, self.matched_mean)
+
+
+    def full_write(self):
+        print
+        print 10 * '=' + ' CONFUSION ' + 10 * '='
+        for l1 in ['name'] + self.labels:
+            for l2 in ['name'] + self.labels + ['PREC', 'REC ', 'F1  ']:
+                if l1 == 'name' and l2 == 'name':
+                    sys.stdout.write(9 * ' ')
+                elif l1 == 'name':
+                    sys.stdout.write(l2 + 4 * ' ')
+                elif l2 == 'name':
+                    sys.stdout.write(l1 + 2 * ' ')
+                elif l2 == 'PREC':
+                    sys.stdout.write('%.5f ' % self.precision[l1])
+                elif l2 == 'REC ':
+                    sys.stdout.write('%.5f ' % self.recall[l1])
+                elif l2 == 'F1  ':
+                    sys.stdout.write('%.5f ' % self.f1[l1])
+                else:
+                    sys.stdout.write('%7.1d ' % self.confusion[l1, l2])
+                    if l2 == 'INST':
+                        sys.stdout.write(2 * ' ')
+            print
+        
+        print
+        print 10 * '=' + ' SUCCESS ' + 10 * '='
+        for key, value in self.success.items():
+            print '%.5f %r' % (value, key)
+
+        print
+        print 10 * '=' + ' MATCHED ' + 10 * '='
+        for key, value in self.matched.items():
+            print '%.5f %r' % (value, key)
+
+
+    def serialize(self):
+        for l1 in self.labels:
+            for l2 in self.labels:
+                print self.confusion[(l1, l2)]
+
+        for t in self.types:
+            print self.type_correct[t]
+            print self.type_total[t]
+
+        for l in self.labels:
+            print self.label_correct[l]
+            print self.label_total[l]
+
+
+    def deserialize(self, files):
+        for fname in files:
+            with open(fname, 'rb') as f:
+                for l1 in self.labels:
+                    for l2 in self.labels:
+                        self.confusion[(l1, l2)] += int(f.readline())
+
+                for t in self.types:
+                    self.type_correct[t] += int(f.readline())
+                    self.type_total[t] += int(f.readline())
+
+                for l in self.labels:
+                    self.label_correct[l] += int(f.readline())
+                    self.label_total[l] += int(f.readline())
+
+
+def read_file(filename, hint_file, error_file, label_file, full_output):
     with open(filename, 'rb') as f:
-        t_lbng = []
-        lbng = []
+        t_lbng, lbng = [], []
 
-        correct = 0.0
-        total = 0.0
-
-        group_correct = defaultdict(int)
-        group_total = defaultdict(int)
-
-        at = 0.0
-        ac = 0.0
-        best = 0.0
-        group_best = []
-
-        best_labeling = []
-        c_labeling = []
+        score = Score()
+        best_score = Score()
+        last_score = None
 
         for line in f:
             tokens = line.split()
             if len(tokens) == 0: # Next affiliation
-                (c, t) = check_labelings(t_lbng, lbng)
-                c_labeling += [(t_lbng, lbng)]
-                correct += c
-                total += t
-
-                group_correct[group_type(t_lbng)] += t_lbng == lbng
-                group_total[group_type(t_lbng)] += 1
-
-                ac += t_lbng == lbng
-                at += 1
-
-                t_lbng = []
-                lbng = []
+                score.update(t_lbng, lbng)
+                t_lbng, lbng = [], []
             elif len(tokens) == 1: # Joint score, next test
-                f1 = float(tokens[0])
-                score = correct / total
-                if score > best:
-                    best = score
-                    group_best = (group_correct, group_total)
-                    best_labeling = c_labeling
-                c_labeling = []
-
-                if not one_number:
-                    print 'S: %f, F1: %f, GA: %f' % \
-                            (score, f1, ac / at)
-
-                group_correct = defaultdict(int)
-                group_total = defaultdict(int)
-
-                correct = 0.0
-                total = 0.0
-                ac = 0.0
-                at = 0.0
+                score.calculate()
+                if full_output:
+                    score.write()
+                if score.matched_mean > best_score.matched_mean:
+                    best_score = score
+                last_score = score
+                score = Score()
             else: # (target, given)
                 assert len(tokens) == 2
                 t_lbng += [tokens[0]]
                 lbng += [tokens[1]]
 
-        print 'max score: %f, score after training %f' % (best, score)
-       
-        group_correct, group_total = group_best
-        for key in group_total:
-            print 'score %f, total %d, correct %d, %r' % \
-                    (group_correct[key] / float(group_total[key]),
-                            group_total[key], group_correct[key], key)
-
-        show_labels(best_labeling, hint_file, error_file, only_errors=True)
-        show_labels(best_labeling, hint_file, label_file)
+        if full_output:
+            print '==================== BEST SCORE =========================='
+            best_score.write()
+            print '==================== LAST SCORE =========================='
+            last_score.write()
+            last_score.full_write()
+           
+            show_labels(last_score.labeling, hint_file, error_file, only_errors=True)
+            show_labels(last_score.labeling, hint_file, label_file)
+        else:
+            last_score.serialize()
 
 
 def get_args():
@@ -164,10 +248,9 @@ def get_args():
     parser.add_argument('--hint_file', default='crfdata/default-hint.txt')
     parser.add_argument('--error_file', default='crfdata/default-err.xml')
     parser.add_argument('--label_file', default='crfdata/default-label.xml')
-    parser.add_argument('--one_number', type=int, default=0)
+    parser.add_argument('--full_output', type=int, default=0)
     
     return parser.parse_args()
-
 
 
 if __name__ == '__main__':
@@ -175,4 +258,4 @@ if __name__ == '__main__':
     args = get_args()
 
     read_file(args.input_file, args.hint_file, args.error_file,
-            args.label_file, args.one_number == 1)
+            args.label_file, args.full_output == 1)
