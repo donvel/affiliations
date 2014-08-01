@@ -163,8 +163,10 @@ class Score:
         
         print
         print 10 * '=' + ' SUCCESS ' + 10 * '='
+        print "RATIO     CORRECT  TOTAL  TYPE"
         for key, value in self.success.items():
-            print '%.5f %r' % (value, key)
+            print '%.5f %7.1d %7.1d %r' % \
+                    (value, self.type_correct[key], self.type_total[key], key)
 
         print
         print 10 * '=' + ' MATCHED ' + 10 * '='
