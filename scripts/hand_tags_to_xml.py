@@ -53,7 +53,7 @@ def get_args():
     parser = argparse.ArgumentParser(description="Export hand-made tags to XML")
     
     parser.add_argument('--xml', default='data/hand-inf.xml')
-    parser.add_argument('--txt', default='data/hand-inf-cleaned.txt')
+    parser.add_argument('--txt', default='data/hand-inf.txt')
     
     return parser.parse_args()
 
