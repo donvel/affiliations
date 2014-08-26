@@ -15,6 +15,11 @@ import sys
 from collections import defaultdict
 
 
+def ignore_none(t_lbng, lbng):
+    filtered = [(t, p) for (t, p) in zip(t_lbng, lbng) if t != 'NONE']
+    return zip(*filtered)
+
+
 def get_tokens(hint_file):
     tokens = []
     ctokens = []
@@ -63,7 +68,9 @@ def show_labels(labeling, hint_file, output_file, only_errors=False):
         
             assert len(aff) == len(lb_t)
             
-            if not only_errors or lb_t != lb2:
+            lb_t_fil, lb2_fil = ignore_none(lb_t, lb2)
+
+            if not only_errors or lb_t_fil != lb2_fil:
 
                 print_aff(aff, lb_t, f)
                 print_aff(aff, lb2, f)
@@ -107,8 +114,7 @@ class Score:
         self.labeling += [(t_lbng, lbng)]
 
         # Ignore NONE
-        filtered = [(t, p) for (t, p) in zip(t_lbng, lbng) if t != 'NONE']
-        t_lbng, lbng = zip(*filtered)
+        t_lbng, lbng = ignore_none(t_lbng, lbng)
 
         for (target, given) in zip(t_lbng, lbng):
             self.confusion[(target, given)] += 1

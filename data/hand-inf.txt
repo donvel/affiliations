@@ -109,7 +109,7 @@ German Research Center for Artificial Intelligence (DFKI),$ Kaiserslautern,$ Ger
 
 Technical University of Kaiserslautern,$$ Germany
 
-Department of Computer Science and Engineering University at Buffalo$ Buffalo,$ NY >chetanra, utkarshp
+Department of Computer Science and Engineering University at Buffalo$ Buffalo, NY$ >chetanra, utkarshp
 
 Computer Vision and Pattern Recognition Unit, Indian Statistical Institute,$ Kolkata - 108,$ India
 
@@ -121,7 +121,7 @@ Florian Kleber< Institute of Computer Aided Automation$ Favoritenstr. 9/1832 104
 
 REsearch Group on Intelligent Machines (REGIM), ENIS, University of Sfax,$ Sfax,$ Tunisia
 
-Vienna University of Technology,$ Austria$
+Vienna University of Technology,$$ Austria
 
 Computational Intelligence Laboratory, Institute of Informatics and Telecommunications, National Center for Scientific Research “Demokritos”,$ GR-153 10 Athens,$ Greece
 
