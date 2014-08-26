@@ -1,0 +1,164 @@
+Department of Computer Science, University of South Florida,$ Tampa, FL,$ USA
+
+Marcus Liwicki< DFKI,$ Kaiserslautern,$ Germany
+
+Research Group on Intelligent Machines, REGIM,University of Sfax,$$ Tunisia
+
+Beijing Laboratory of Intelligent Information Technology, School of Computer Science and Technology, Beijing Institute of Technology$$
+
+Krishna Subramanian< Raytheon BBN Technologies$ 10 Moulton Street Cambridge, MA 02138$
+
+Yoann Champeil< Dept. Eng. of Image Interaction Immersion EISTI Engineering School$ Cergy,$ France
+
+Center of Informatics, Federal University of Pernambuco$ Recife, PE, $Brazil >- www.cin.ufpe.br/~viisar
+
+Department of Computer Science Institute of Mathematics and Statistics / University of Sa˜o Paulo$ Sa˜o Paulo,$ Brazil
+
+Kyushu University,$ Fukuoka,$ Japan
+
+Department of Informatics, Technological Educational Institute of Athens,$ Agiou Spiridonos Aigaleo 12210 Athens,$ Greece
+
+Joost van Beusekom< University of Kaiserslautern German Research Center for Artificial Intelligence (DFKI)$ Trippstadterstraße 122 67663 Kaiserslautern,$ Germany
+
+Toru Wakahara< Faculty of Computer and Information Sciences Hosei University$ 3-7-2 Kajino-cho, Koganei-shi, Tokyo 184-8584$ Japan
+
+Image Understanding and Pattern Recognition Group Technical University of Kaiserslautern,$ Kaiserslautern,$ Germany
+
+Elisa H. Barney Smith< Boise State University$ Boise, Idaho,$ USA
+
+Haikal El Abed, Volker Ma¨rgner< Technische Universitaet Braunschweig, Institute for Communications Technology (IfN),$ Schleinitzstrasse 22, 38106 Braunschweig,$ Germany
+
+State Key Laboratory of Digital Publishing Technology,$ Beijing,$ China
+
+Ernest Valveny< Computer Vision Center Universitat Auto`noma de Barcelona,$$ Spain
+
+Markus Diem, Florian Kleber and Robert Sablatnig< Computer Vision Lab Vienna University of Technology$ Vienna,$ Austria
+
+Department of Computer Science, City University of Hong Kong,$ Hong Kong SAR,$ PR China
+
+Radhika Nangia Umapada Pal< Institute of Engineering and Management Indian Statistical Institute,$ Kolkata$
+
+Department of Computer Science, University of Kaiserslautern,$ P.O. Box 3049, 67653 Kaiserslautern,$Germany
+
+Emanuel Indermühle< Institute of Computer Science and Applied Mathematics University of Bern,$ CH-3012 Bern,$ Switzerland
+
+Fujitsu Laboratories Ltd,$ Kawasaki,$ Japan
+
+Vadim Mazalov and Stephen M. Watt< Ontario Research Centre for Computer Algebra Department of Computer Science University of Western Ontario$ London,$ Canada
+
+Department of Studies in Computer Science, University of Mysore,$ Mysore, Karnataka,$ India
+
+Itshak Dinstein< Computer and Electrical Engineering department Ben-Gurion university$ Beer-Sheva,$ Israel
+
+Vu Nguyen< School of ICT Griffith University,$$ Australia
+
+Business Information System Institute, HES-SO // Wallis,$ Sierre,$ Switzerland
+
+Donders Institute for Brain, Cognition and Behavior, Radboud University$ Nijmegen,$ The Netherlands
+
+Masakazu Iwamura< Graduate School of Engineering Osaka Prefecture University$$
+
+School of Mathematics and Computer Applications, Thapar University,$ Chandigarh $(INDIA)
+
+Language and Media Processing Laboratory Institute of Advanced Computer Studies University of Maryland$ College Park, MD,$ USA
+
+Jung Gap Kuk< Seoul National University School of Electrical Engineering$ Seoul 151-744,$ Korea
+
+Sofiene Haboubi Samia Maddouri Noureddine Ellouze< Image Processing and Pattern Recognition Unit National Engineering School of Tunis (ENIT)$ BP 37, Belvedere 1002, Tunis,$ Tunisia
+
+Institute of Informatics and Telecommunications, Computational Intelligence Laboratory, National Center for Scientific Research “Demokritos”,$ GR-153 10 Agia Paraskevi, Athens,$ Greece
+
+ECSE Department Rensselaer Polytechnic Institute Troy,$ NY 12180,$ USA
+
+Josep Lladós <Computer Vision Center Dept. of Computer Science Campus UAB, Ed. O,$ 08193 Bellatera (Barcelona),$ Spain
+
+Department of Computer Science, The University of Hong Kong,$ Hong Kong,$ China
+
+Institute of Computer Science and Technology, Peking University,$ Beijing,$ China
+
+F. Morain-Nicolier< Univ. of Reims-Champagne-Ardenne - CReSTIC IUT,$ 9 rue de Que´bec, BP 396 10 026 Troyes cedex,$ France
+
+Ricard Coll, Alicia Forne´s, Josep Llad o´s< Computer Vision Center - Computer Science Department Universitat Aut o`noma de Barcelona,$$ Spain
+
+Computer Science & Engineering Dept., Lehigh University$ 19 Memorial Dr West, Bethlehem, PA 18017$ USA
+
+Electrical Engineering Department, Amirkabir University of Technology,$ Tehran,$ Iran
+
+Department of Computer Engineering & IT, Amirkabir University of Technology (Tehran Polytechnic),$ Tehran,$ Iran
+
+Sabine Barrat and Salvatore Tabbone< LORIA-UMR7503 - University of Nancy$ 2 BP 239 - 54506 Vandœuvre-les-Nancy Cedex,$ France
+
+Department of Electrical and Electronic Engineering, The University of Hong Kong,$ Pokfulam Road, Hong Kong$
+
+Ermelinda Oro< Department of Computer and Systems Science University of Calabria$ Via P. Bucci Cubo 41/C, Rende (CS),$ Italy
+
+Computational Intelligence Laboratory , Institute of Informatics and Telecommunications, National Centre for Scientific Research “Demokritos”,$ GR - 153 Agia Paraskevi, Athens,$ Greece >http://www.iit.demokritos.gr/cil
+
+Institute for Advanced Computer Studies University of Maryland$ College Park, MD,$ USA
+
+Loria - Nancy University$ Nancy,$ France
+
+
+Marcus Liwicki< Knowledge Management Department German Research Center for AI (DFKI),$Kaiserslautern,$ Germany
+
+Linlin Li and Chew Lim Tan< Department of Computer Science, National University of Singapore$$
+
+Department of Surveying Engineering Technological Educational Institution of Athens$ GR-12210 Athens,$ Greece
+
+German Research Center for Artificial Intelligence (DFKI),$ Kaiserslautern,$ Germany
+
+Technical University of Kaiserslautern,$$ Germany
+
+Department of Computer Science and Engineering University at Buffalo$ Buffalo,$ NY >chetanra, utkarshp
+
+Computer Vision and Pattern Recognition Unit, Indian Statistical Institute,$ Kolkata - 108,$ India
+
+Enrico Pontelli< Department of Computer Science New Mexico State University Las Cruces,$ NM 88003,$ USA
+
+Osaka Prefecture University,$ 1-1 Gakuencho, Sakai, Osaka, 599-8531,$ Japan
+
+Florian Kleber< Institute of Computer Aided Automation$ Favoritenstr. 9/1832 1040 Vienna$
+
+REsearch Group on Intelligent Machines (REGIM), ENIS, University of Sfax,$ Sfax,$ Tunisia
+
+Vienna University of Technology,$ Austria$
+
+Computational Intelligence Laboratory, Institute of Informatics and Telecommunications, National Center for Scientific Research “Demokritos”,$ GR-153 10 Athens,$ Greece
+
+Ying Li Ching Y. Suen< CENPARMI (Center for Pattern Recognition and Machine Intelligence),Computer Science and Software Engineering Department, Concordia University,$1455 de Maisonneuve Blvd. West, Montreal, Quebec,$ Canada>, H3G 1M8, Tel (514)-848-2424-Ext: 7950, Fax: (514)-848-2830
+
+Jie Wang, Michael S. Brown and Chew Lim Tan <School of Computing National University of Singapore$$
+
+Damascus University Faculty of Information Technology Eng$$
+
+Ujjwal Bhattacharya, Bidyut B. Chaudhuri <CVPR Unit, Indian Statistical Institute,$ Kolkata,$ India
+
+Qiu-Feng Wang, Fei Yin, Cheng-Lin Liu< National Laboratory of Pattern Recognition (NLPR), Institute of Automation, Chinese Academy of Sciences$ 95 Zhongguancun East Road, Beijing 100190,$ P.R. China
+
+Raid Saabni< Computer Science Department Ben-Gurion University Of the Negev, Israel Traingle R&D Center,$ Kafr Qarea,$ Israel
+
+Knowledge-Based Systems Group, Department of Computer Science, University of Kaiserslautern$ Kaiserslautern,$ Germany
+
+Pattern Recognition and Image Analysis (PRImA) Research Lab School of Computing, Science and Engineering, University of Salford,$ Greater Manchester,$ United Kingdom> http://www.primaresearch.org
+
+DIVA Group, Department of Computer Sciences University of Fribourg,$$ Switzerland
+
+Institute of Computer Science and Applied Mathematics, University of Bern, $Neubru¨ckstrasse 10, CH-3012 Bern$
+
+Palaiahnakote Shivakumara, Trung Quy Phan and Chew Lim Tan< School of Computing, National University of Singapore$$
+
+Massimo Ruffolo< High Performance Computing and Networking Institute Italian National Research Council$ Via P. Bucci Cubo 41/C, Rende (CS),$ Italy
+
+Itaru Tatsumi Hitoshi Habe Masatsugu Kidode <Graduate School of Information Science, Nara Institute of Science and Technology$ Takayama 8916-5, Ikoma-shi, Nara 630-0192,$ Japan
+
+Institute of Artificial Intelligence and Robotics Xi'an Jiaotong University$ Xi'an,$ P.R.China
+
+Saher Mohamed El-Neklawy< German University in Cairo$$ Egypt
+
+Jan Richarz< Department of Computer Science TU Dortmund,$$ Germany
+
+Department of Electronics, University of Kent,$$ UK
+
+Universidade Estadual de Ponta Grossa (UEPG),$ Ponta Grossa (PR),$ Brasil
+
+Graduate School of Engg., Mie University;$ 1577 Kurimamachiya-cho, TSU, 514-8507,$ Japan

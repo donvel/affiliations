@@ -8,6 +8,11 @@ import sys
 import codecs
 
 
+def xml_escape(s):
+    """ Escapes '&'s """
+    return re.sub('&', '&amp;', s)
+
+
 def is_punct(char):
     return char in [',', ';', '.']
 

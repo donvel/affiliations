@@ -7,15 +7,10 @@ import codecs
 import argparse
 
 from collections import defaultdict
-from utils import tokenize, normalize, to_unicode
+from utils import tokenize, normalize, to_unicode, xml_escape
 
 
 NUM_LEN = len('2740170 ') # Assume all ids look like this
-
-
-def xml_escape(c):
-    """ Escapes '&'s """
-    return u'&amp;' if c == u'&' else c
 
 
 def write_xml(matching, f):

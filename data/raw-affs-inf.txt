@@ -1,0 +1,565 @@
+Department of Electrical Engineering Indian Institute of Technology Delhi, India
+Atsuhiro Takasu National Institute of Informatics
+School of Mathematics and Computer Applications, Thapar University, Chandigarh (INDIA)
+Anuj Sharma Department of Mathematics, Panjab University, Chandigarh (INDIA)
+Rensselaer Polytechnic Institute, Troy, NY 12180, USA Lehigh University, Bethlehem, PA 18015, USA Boise State University, Boise, ID 83725, USA
+Ying Liu, Kun Bai, Prasenjit Mitra, C. Lee Giles College of Information Sciences and Technology The Penn State University, University Park, PA, 16803
+yliu, kbai, pmitra, giles
+Joachim Schenk and Benedikt Hörnler and Björn Schuller and Artur Braun and Gerhard Rigoll Institute for Human-Machine Communication Technische Universität München Theresienstraße 90, 80333 München
+Jihad El-Sana Department of Computer Science Ben-Gurion University of the Negev, Israel Negev Research&Development Center, Israel
+Raid Saabni Department of Computer Science Ben-Gurion University of the Negev, Israel Triangle Research&Development Center, Israel
+Hajime Imura and Yuzuru Tanaka Department of Information Science and Technology Hokkaido University, N-13, W-8, Sapporo, 060-8628, Japan
+Vanessa Long Macquarie University Sydney, Australia
+Andrew Seniuk and Dorothea Blostein School of Computing Queen's University Kingston, Ontario, Canada
+Electrical and Computer Engineering Department, Semana University, Semnan, Iran
+Computational Intelligence Laboratory, Institute of Informatics and Telecommunications, National Center for Scientific Research “Demokritos”, GR-153 10 Agia Paraskevi, Athens, Greece
+Jihad El-sana Computer Science Department Ben-Gurion University Of the Negev Beer Sheva, Israel
+Raid Saabni Computer Science Department Ben-Gurion University Of the Negev, Israel Traingle R&D Center, Kafr Qarea, Israel
+Ricard Coll, Alicia Forne´s, Josep Llad o´s Computer Vision Center - Computer Science Department Universitat Aut o`noma de Barcelona, Spain
+rcoll, afornes, josep
+DIVA Group, Department of Informatics University of Fribourg, Switzerland
+Bangy Li, Zhenan Sun and Tieniu Tan Center for Biometrics and Security Research, National Lab of Pattern Recognition, Institute of Automation,Chinese Academy of Science,P.R.China
+our method Bulacu method Liwicki method
+Fratelli Alinari Museum Collections, (RMFA), Largo Fratelli Alinari, 15, 50123, Florence, Italy
+Institute of Computer Science and Technology, Peking University, Beijing 100871, China
+College of Electronic and Information, South China University of Technology, Guangzhou, PRC
+Abdellatif Ennaji Laboratory LITIS, University of Rouen, France
+Abdelkarim Elbaati, Houcine Boubaker, Monji Kherallah, Adel M. Alimi Research Group on Intelligent Machines, REGIM University of Sfax, Tunisia
+abdelkarim.elbaati, adel.alimi
+thomas.strecker,sahin.albayrak
+German Research Center for Artificial Intelligence (DFKI), Kaiserslautern, Germany
+Image Understanding and Pattern Recognition (IUPR) Research Group Technical University of Kaiserslautern, Germany
+DAI Labor Technical University Berlin, Germany
+Dept. Information Engineering, Shinshu University 4-17-1 Wakasato, Nagano 380-8553, Japan
+Dwi Sianto Mansjur, Ted S. Wada, Biing Hwang Juang Center for Signal and Image Processing Georgia Institute of Technology Atlanta, GA 30318, USA
+Microsoft Research Asia, Beijing, China (
+Department of Computer Science, The University of Hong Kong, Hong Kong, China
+University of Massachusetts, Amherst MA
+Paris Descartes University, Laboratoire CRIP5 - SIP 45, rue des Saints-Pères, 75006 Paris, France
+HCII Lab, College of Electronics &Information, South China University of Technology, Guangzhou 510640, China
+School of Computing, National University of Singapore
+baishuyo, lilinlin, tancl} @ comp.nus.edu.sg
+Department of Computer Science, City University of Hong Kong, Hong Kong SAR, PR China
+Department of Computer Science, University of South Florida, Tampa, FL, USA
+samia.maddouri,noureddine.ellouze
+Haikal El-Abed Institute for Communications Technology Department of Signal Processing for Mobile Information Systems 38106 Braunschweig,Germany
+Sofiene Haboubi Samia Maddouri Noureddine Ellouze Image Processing and Pattern Recognition Unit National Engineering School of Tunis (ENIT) BP 37, Belvedere 1002, Tunis, Tunisia
+Oleg Golubitsky Stephen M. Watt Department of Computer Science University of Western Ontario London, Ontario, Canada N6A 5B7
+Tobias Knaup Pingsta, Inc. 1700 Seaport Boulevard, Redwood City, CA 94063, USA
+Technische Universita¨t M u¨nchen, Institute for Human-Machine Communication D-80333 Munich, Germany
+Room F404, Graduate School at Shenzhen, Tsinghua University, Shenzhen, 518055, China
+German Research Center for Artificial Intelligence (DFKI), Kaiserslautern, Germany
+Technical University of Kaiserslautern, Germany
+College of Electronic and Information, South China University of Technology, Guangzhou, PRC
+Fujitsu R&D Center Co. Ltd
+Department of Computer Science, School of Information Engineering, University of Science and Technology Beijing, China
+vanthai.hoang,tabbone
+Universite´ Nancy 2, LORIA, UMR 7503, 54506 Vandoeuvre-le`s-Nancy, France
+MICA Research Center, Hanoi University of Technology, Hanoi, Vietnam
+M.C.Fairhurst, mcda2
+Michael Fairhurst and Ma´rjory Abreu Department of Electronics University of Kent Canterbury, Kent CT2 7NT, UK
+College of Electronic and Information, South China University of Technology, Guangzhou, PRC
+Nancy University, LORIA UMR 7503 Nancy, France
+benoit.naegel,laurent.wendling
+Universite´ de Rouen LITIS EA 4108 BP 12 76801 Saint-Etienne du Rouvray, FRANCE
+Seiichi Uchida Faculty of Information Science and Electrical Engineering, Kyushu University 744 Motooka, Nishi-ku, Fukuoka-shi 819-0395 Japan
+Toru Wakahara Faculty of Computer and Information Sciences Hosei University 3-7-2 Kajino-cho, Koganei-shi, Tokyo 184-8584 Japan
+Business Information System Institute, HES-SO // Wallis, Sierre, Switzerland
+REsearch Group on Intelligent Machines (REGIM), ENIS, University of Sfax, Sfax, Tunisia
+DIVA Group, Department of Informatics, University of Fribourg, Fribourg, Switzerland
+Computational Intelligence Laboratory , Institute of Informatics and Telecommunications, National Centre for Scientific Research “Demokritos”, GR - 153 Agia Paraskevi, Athens, Greece http://www.iit.demokritos.gr/cil
+gbam, bgat, sper} @ iit.demokritos.gr
+International Institute of Information Technology, Hyderabad 500032, INDIA
+Kang Kim, Taik Heon Rhee, Jae Seung Lee and Jin Hyung Kim Department of Computer Science, Korea Advanced Institute of Science and Technology, Korea
+kkim,three,jslee,jkim
+School of Information Science, Computer and Electrical Engineering Halmstad University, Halmstad, Sweden
+Pontif´ıcia Universidade Cat o´lica do Parana´, Curitiba, Brazil Universidade Federal do Parana´, Curitiba, Brazil
+Universidade Federal da Para´ıba, Joa˜o Pessoa, Brazil
+Brain Science Institute, RIKEN
+Shengming Huang, Lianwen Jin
+adrianhsm, lianwen.jin
+D. Llorens A. Marzal F. Prat J. M. Vilar Dept. de Llenguatges i Sistemes Informàtics Universitat Jaume I 12071 Castelló, Spain
+dllorens, amarzal, fprat
+Resampling sizes: 10, 20, 30, . . . , 200
+Department of Computer Science, University of Massachusetts Amherst, MA 01003, USA
+Computer Science & Engineering Dept., Lehigh University 19 Memorial Dr West, Bethlehem, PA 18017 USA
+Katrin Franke Norwegian Information Security Laboratory, Gjøvik University College, Norway
+School of Electronics and Information Engineering South China University of Technology
+) Dept. of Systems Engineering and Control School of Industrial Engineering University of Valladolid, Spain
+Center for Pattern Recognition and Machine Intelligence, Concordia University wumo pan, bui, suen @cenparmi.concordia.ca
+Daniel Lopresti Lehigh University
+Institut Tecnol o`gic d'Informa`tica Universitat Polite`cnica de Vale`ncia Cam´ı de Vera s/n, 46022 Vale`ncia, Spain
+ernesto.tapia,raul.rojas
+Ernesto Tapia, Ra u´l Rojas Freie Universita¨t Berlin Institut f u¨r Informatik Takustr. 9 D-14195 Berlin, Germany
+Research Group on Intelligent Machines (REGIM), National School of Engineers ENIS, University of Sfax, BP 1173, Sfax 3038, Tunisia
+Mudit Agrawal and David Doermann Institute of Advanced Computer Studies University of Maryland College Park, MD, USA
+Palaiahnakote Shivakumara, Trung Quy Phan and Chew Lim Tan School of Computing, National University of Singapore
+shiva, phanquyt, tancl
+State Key Laboratory of Software Novel Technology, Nanjing University, Nanjing 210093
+School of Computing, Queen's University, Kingston, Ontario, Canada
+first-name.last-name
+Fraunhofer Institute for Intelligent Analysis and Information Systems (IAIS) Schloss Birlinghoven, 53754 Sankt Augustin, Germany
+Zhixin Shi, Srirangaraj Setlur and Venu Govindaraju Center for Unified Biometrics and Sensors Department of Computer Science and Engineering State University of New York at Buffalo Buffalo, NY 14260, U.S.A
+German Research Center for Artificial Intelligence (DFKI), Tripp- stadter Strasse 122, D-67663 Kaiserslautern
+Institute of Computer Science and Applied Mathematics, University of Bern, Neubru¨ckstrasse 10, CH-3012 Bern
+Institut fu¨r Germanistik, University of Bern, La¨nggassstrasse 49, CH- 3012 Bern
+michael.stolz,viehhauser
+mahdi.hamdani, elabed, monji.kherallah, adel.alimi
+Institute for Communications Technology (IfN), Schleinitzstrasse 22, 38092 Braunschweig, Germany
+Research Group on Intelligent Machines (REGIM), University of Sfax, ENIS, B.P.W, Sfax, 3038, Tunisia
+Department of Electrical and Electronic Engineering, The University of Hong Kong, Pokfulam Road, Hong Kong
+Qiu-Feng Wang, Fei Yin, Cheng-Lin Liu National Laboratory of Pattern Recognition (NLPR), Institute of Automation, Chinese Academy of Sciences 95 Zhongguancun East Road, Beijing 100190, P.R. China
+Haikal El Abed Technische Universitaet Braunschweig, Institute for Communications Technology (IfN), Braunschweig, Germany
+Department of Computer Science, Duke University Durham, NC, USA
+Faculty of Information Science and Electrical Engineering, Kyushu University, 819-0395, Japan
+Vassiliki Kokla University of Westminster CVIR Research Lab Harrow, HA1 3TP, UK mat
+Alexandra Psarrou University of Westminster CVIR Research Lab Harrow, HA1 3TP, UK
+Aaron Licata University of Westminster CVIR Research Lab Harrow, HA1 3TP, UK
+Marius Bulacu Axel Brink Tijn van der Zant Lambert Schomaker Artificial Intelligence Institute, University of Groningen, The Netherlands (bulacu, a.a.brink, tijn
+Tokyo University of Agriculture and Technology, Tokyo 184-8588, Japan
+Guizhou University, Guiyang 550025, China
+Stefan Pletschacher Pattern Recognition and Image Analysis (PRImA) Research Lab School of Computing, Science and Engineering, University of Salford, Greater Manchester, United Kingdom
+Department of Electronics, University of Kent, UK
+Department of Computer Science, The University of Hong Kong, Hong Kong, China (
+Microsoft Research Asia, Beijing, China
+Christoph Dalitz Christine Pranzas Niederrhein University of Applied Sciences Reinarzstr. 49, 47805 Krefeld, Germany christoph.dalitz(at)hsnr.de, christine(at)pranzas.com
+wamageed, jayant, doermann
+Wael Abd-Almageed Jayant Kumar David Doermann Language and Media Processing Laboratory Institute for Advanced Computer Studies University of Maryland at College Park
+IRCCyN, UMR CNRS 6597, Ecole Polytechnique de l'Université de Nantes, France
+Nanyang Technological University, Singapore
+Institute of Automation,Chinese Academy of Science,P.R.China
+Weihan Sun, Koichi Kise Graduate School of Engineering, Osaka Prefecture University, Japan
+Institute of Computer Science and Applied Mathematics, University of Bern, Neubru¨ ckstrasse 10, CH-3012 Bern, Switzerland
+Center of Informatics, Federal University of Pernambuco Recife, PE, Brazil - www.cin.ufpe.br/~viisar
+Reza Farrahi Moghaddam
+Laboratoire MIRACL, university of Sfax Tunisia
+Laboratoire LITIS EA 4108, university of Rouen France
+[2] J.J. Lee, M. Nakajima and J. Kim, A Hierarchical HMM Network-based Approach for On-line Recognition of Multi-Lingual Cursive Handwritings, IEICE Transactions on Information and Systems, 1998, vol. E81-D, No. 8, pp. 881-888
+Graduate School of Engineering, Mie University, TSU, Mie 514-8507, Japan
+Computer Vision and Pattern Recognition Unit, Indian Statistical Institute, Kolkata-108, India
+Peng Zhou, Linlin Li, Chew Lim Tan School of Computing, National University of Singapore
+L3I, University of La Rochelle, Avenue Michel Crépeau
+German Research Center for Artificial Intelligence (DFKI), Kaiserslautern, Germany
+Technical University of Kaiserslautern, Germany
+Department of Computer Science, Punjabi University, Patiala, INDIA
+Norwegian Information Security Laboratory, Gjøvik University College, Norway
+University of Amsterdam, The Netherlands
+Netherlands Forensic Institute, Den Haag, The Netherlands
+Donders Institute for Brain, Cognition and Behavior, Radboud University Nijmegen, The Netherlands
+L3I, University of La Rochelle, Avenue Michel Crépeau
+Nam Ik Cho Seoul National University School of Electrical Engineering Seoul 151-744, Korea
+Jung Gap Kuk Seoul National University School of Electrical Engineering Seoul 151-744, Korea
+He is now with the Computer Science Department, Loughborough University, United Kingdom
+Computational Intelligence Laboratory, Institute of Informatics and Telecommunications, National Research Center "Demokritos", 153 10 Athens, Greece
+Department of Informatics, Technological Educational Institute of Athens, Agiou Spiridonos Aigaleo 12210 Athens, Greece
+Computational Intelligence Laboratory, Institute of Informatics and Telecommunications, National Center for Scientific Research “Demokritos”, GR-153 10 Athens, Greece
+Tohoku University, Japan hgot @ isc.tohoku.ac.jp
+Faculty of Engineering, Oita University Oita, 870-1192, Japan
+Itaru Tatsumi Hitoshi Habe Masatsugu Kidode Graduate School of Information Science, Nara Institute of Science and Technology Takayama 8916-5, Ikoma-shi, Nara 630-0192, Japan
+Computer Vision & Pattern Recognition Unit India Statistical Institute 203, B.T. Road, Kolkata 700108, India
+Department of Informatics and Telecommunications University of Athens, Greece
+Computational Intelligence Laboratory, Institute of Informatics and Telecommunications, National Center for Scientific Research “Demokritos”, GR-153 10 Agia Paraskevi, Athens, Greece
+Ste´phanie Dord-Crousle´, Philippe Re´gnier Universite´ de Lyon, CNRS LIRE, UMR 5611 F-69007, France
+Department of Computer Science University of Western Ontario London, Ontario, Canada N6A 5B7
+IBM T.J. Watson Research Center 1101 Kitchawan Road, Route 134 Yorktown Heights, NY 10598
+Pattern Recognition and Image Analysis (PRImA) Research Lab School of Computing, Science and Engineering, University of Salford, Greater Manchester, United Kingdom http://www.primaresearch.org
+Department of Computer Science, Punjabi University, Patiala, INDIA
+Graduate School of Engg., Mie University; 1577 Kurimamachiya-cho, TSU, 514-8507, Japan
+Dept. of Comp. Sc., West Bengal State University, Barasat, India
+Computer Vision and Pattern Recognition Unit; Indian Statistical Institute, Kolkata-108, India
+Institute of Mathematics and Informatics, BAS ”Acad. G. Bonchev” Str., Bl. 8, 1113 Sofia, Bulgaria
+Business Information System Institute, HES-SO // Wallis, Sierre, Switzerland
+REsearch Group on Intelligent Machines (REGIM), ENIS, University of Sfax, Sfax, Tunisia
+DIVA Group, Department of Informatics, University of Fribourg, Fribourg, Switzerland
+Osaka Prefecture University, 1-1 Gakuencho, Sakai, Osaka, 599-8531, Japan
+Sabine Barrat and Salvatore Tabbone LORIA-UMR7503 - University of Nancy 2 BP 239 - 54506 Vandœuvre-les-Nancy Cedex, France
+Computer Science & Engineering Dept Lehigh University 19 Memorial Drive West, Bethlehem, PA 18017 USA
+Center for Pattern Recognition and Machine Intelligence, Concordia University, Canada
+Computer Engineering and IT Department, Amirkabir University of Technology, Tehran, Iran
+Electrical Engineering Department, Amirkabir University of Technology, Tehran, Iran
+m_ziaratban , kfaez} @aut.ac.ir
+Muhammad Talal Ibrahim
+Antoine Doucet University of Caen, France
+Dublin City University Exalead Inc. Fraunhofer Institute Microsoft Development Center Serbia Noopsis Inc. Peking University Texas A&M University of Amsterdam University of Caen University of Firenze Xerox Research Centre Europe
+Vienna University of Technology, Austria
+Mohamed Cheriet Synchromedia Laboratory, Ecole de Technologie Superieure (ETS), 1100 Notre-Dame Street West, Montreal, Quebec, Canada, H3C 1K3
+Javad Sadri School of Computer Science, McGill University, 3480 University Street, McGill Center for Bioinformatics, Montreal, Quebec, Canada, H3A 2A7
+Massimo Ruffolo High Performance Computing and Networking Institute Italian National Research Council Via P. Bucci Cubo 41/C, Rende (CS), Italy
+Ermelinda Oro Department of Computer and Systems Science University of Calabria Via P. Bucci Cubo 41/C, Rende (CS), Italy
+Beijing Laboratory of Intelligent Information Technology, School of Computer Science and Technology, Beijing Institute of Technology
+Chun Lei He Louisa Lam Ching Y. Suen CENPARMI (Centre for Pattern Recognition and Machine Intelligence) Computer Science and Software Engineering Department, Concordia University Montreal, Quebec, H3G 1M8, Canada
+Institute of Machine Intelligence, Nankai University, Tianjin, China
+xinwang, gsshi, jfyang
+Md. Abul Hasnat Muttakinur Rahman Chowdhury Mumit Khan Center for Research on Bangla Language Processing, Department of Computer Science and Engineering, BRAC University, 66 Mohakhali, Dhaka, Bangladesh
+Computational Intelligence Laboratory, Institute of Informatics and Telecommunications, National Research Center "Demokritos", 153 10 Athens, Greece
+Tomohiro Nakai, Koichi Kise and Masakazu Iwamura Graduate School of Engineering, Osaka Prefecture University 1-1 Gakuen-cho, Naka, Sakai, Osaka, 599-8531 Japan
+Indian Statistical Institute, 203, B.T. Road, Kolkata 700108, India
+Pattern Recognition and Image Analysis (PRImA) Research Lab School of Computing, Science and Engineering, University of Salford, Greater Manchester, United Kingdom http://www.primaresearch.org
+Tokyo University of Agriculture and Technology, Tokyo 184-8588, Japan
+Institute of Automation, Chinese Academy of Sciences, Beijing 100190, China
+Institute of Computer Science & Technology, Peking University
+gaoliangcai, tangzhi, taoxin
+Vienna University of Technology Favoritenstr. 9/1832 1040 Vienna
+Department of Computer Engineering & IT, Amirkabir University of Technology (Tehran Polytechnic), Tehran, Iran
+Philippe Dreuw, Georg Heigold, and Hermann Ney RWTH Aachen University Human Language Technology and Pattern Recognition Ahornstr 55, D-52056 Aachen, Germany
+Jean-Philippe Ropers Nancy-Université - I
+Shinshu University, 4-17-1 Wakasato, Nagano 380-8553, Japan
+School of Computing, National University of Singapore
+shiva, phanquyt, tancl
+German Research Center for AI (DFKI GmbH) Knowledge Management Department, Kaiserslautern, Germany
+Institute of Computer Science and Applied Mathematics University of Bern, Neubr u¨ckstrasse 10, CH-3012 Bern, Switzerland
+Emanuel Indermu¨ hle
+Da-Han Wang, Cheng-Lin Liu, Jin-Lun Yu, Xiang-Dong Zhou National Laboratory of Pattern Recognition (NLPR) Institute of Automation of Chinese Academy of Sciences (CASIA) P.O. Box 2728, Beijing 100190, P.R. China
+Mudit Agrawal and David Doermann Institute of Advanced Computer Studies University of Maryland College Park, MD, USA
+Institute of Machine Intelligence, Nankai University, Tianjin 300071, P. R. China
+Kai Wang Institute of Machine Intelligence, Nankai University, Tianjin 300071, P. R. China
+Indian Statistical Institute 203, B.T. Road, Kolkata 700108, India
+Thomas C. Henderson and Trevor Linton School of Computing University of Utah Salt Lake City, UT 84112 USA
+, 203 B.T. Road, Kolkata-700108, India
+, Gjøvik-2802, Norway CVPR Unit, Indian Statistical Institute
+Department of Computer Science and Engineering University at Buffalo, Amherst, NY, USA
+Honggang Zhang, Jun Guo, Guang Chen, Chunguang Li Beijing University of Posts and Telecommunications Pattern Recognition and Intelligent System Laboratory
+zhhg, guojun, chenguang, lichunguang
+Joachim Schenk and Moritz Kaiser and Gerhard Rigoll Institute for Human-Machine Communication Technische Universität München Theresienstraße 90, 80333 München
+K. Ntirogiannis, B. Gatos and I. Pratikakis Computational Intelligence Laboratory, Institute of Informatics and Telecommunications, National Center for Scientific Research “Demokritos”, GR-153 10 Agia Paraskevi, Athens, Greece
+University of Maryland, College Park, MD 20742, USA
+Department of Studies in Computer Science, University of Mysore, Mysore-570 006, India
+Technical University Braunschweig, Institute for Communication Technology (IfN), Germany
+IUT, Université du Havre, Place Robert Schuman, 76610 Le Havre, France
+University of Sfax, REGIM, ENIS, Route Soukra, BPW, 3038, Sfax, Tunisia
+Universidade Federal do Paraná (UFPR), Curitiba (PR), Brasil
+École de Technologie Supérieure (ETS), Montreal (QC), Canada
+Pontifícia Universidade Católica do Paraná (PUCPR), Curitiba (PR), Brasil
+Universidade Estadual de Ponta Grossa (UEPG), Ponta Grossa (PR), Brasil
+CVPR Unit, Indian Statistical Institute 203, B. T. Road, Kolkata-700 108, INDIA
+Itshak Dinstein Computer and Electrical Engineering department Ben-Gurion university Beer-Sheva, Israel
+Itay Bar-Yosef, Nate Hagbi, Klara Kedem Computer Science Department Ben-Gurion university Beer-Sheva, Israel
+itaybar,natios,klara
+Thibault Lelore, Fre´de´ric Bouchara UMR CNRS 6168 LSIS Southern University of Toulon-Var BP 20132, 83957 La Garde Cedex
+Center of Informatics, Federal University of Pernambuco www.cin.ufpe.br/∼viisar Recife, PE, Brazil
+Federal Institute of Pernambuco - Department of Electro-electronics and Systems
+Institute of Machine Intelligence, Nankai University, Tianjin China
+Tamir Hassan Database and Artificial Intelligence Group Institute of Information Systems Vienna University of Technology Favoritenstraße 9-11, 1040 Wien, Austria
+Haikal El Abed, Volker Ma¨rgner Technische Universitaet Braunschweig, Institute for Communications Technology (IfN), Schleinitzstrasse 22, 38106 Braunschweig, Germany
+Horst Bunke Institute of Computer Science and Applied Mathematics University of Bern, Neubru¨ ckstrasse 10 CH-3012 Bern, Switzerland
+Jie Wang, Michael S. Brown and Chew Lim Tan School of Computing National University of Singapore
+School of Computing, National University of Singapore
+S. Ruan Univ. of Reims-Champagne-Ardenne - CReSTIC IUT, 9 rue de Que´bec, BP 396 10 026 Troyes cedex, France
+F. Morain-Nicolier Univ. of Reims-Champagne-Ardenne - CReSTIC IUT, 9 rue de Que´bec, BP 396 10 026 Troyes cedex, France
+Univ. of Reims-Champagne-Ardenne - CReSTIC IUT, 9 rue de Que´bec, BP 396 10 026 Troyes cedex, France
+Philippe Dreuw, David Rybach, Christian Gollan, and Hermann Ney RWTH Aachen University Human Language Technology and Pattern Recognition Ahornstr 55, D-52056 Aachen, Germany
+Figure 1. Automatic Offline Signature Verifi- cation System
+Vu.Nguyen2, M.Blumenstein
+School of Science & Technology University of New England, Australia
+Vu Nguyen, Michael Blumenstein School of Information & Communication Technology Griffith University, Australia
+Seiichi Uchida Graduate School of Information Science and Electrical Engineering, Kyushu University 744 Motooka, Nishi-ku, Fukuoka, 819-0395, Japan
+Masakazu Suzuki Graduate School of Mathematics, Kyushu University 6-10-1 Hakozaki, Higashi-ku, Fukuoka, 812-8581, Japan
+Akio Fujiyoshi Department of Computer and Information Sciences, Ibaraki University 4-12-1 Nakanarusawa, Hitachi, Ibaraki, 316-8511, Japan
+Haikal El Abed, Volker Ma¨rgner Technische Universitaet Braunschweig, Institute for Communications Technology (IfN), Braunschweig, Germany
+Yunde Jia Beijing Laboratory of Intelligent Information Technology School of Computer Science and Technology Beijing Institute of Technology, Beijing 100081, China
+Yanjie Wang Xiabi Liu
+wangyanjie, liuxiabi, jiayunde
+Pierre He´roux LITIS EA 4108 Universite´ de Rouen 76800 Saint Etienne du Rouvray
+shaoyuanlong, xgliu, xyqin, xuyi, bao
+State Key Laboratory of CAD&CG, Zhejiang University, P.R.China
+Department of Electrical, Computer, and Systems Engineering, Rens- selaer Polytechnic Institute, Troy, NY 12180, USA
+Department of Computer Science & Engineering, Lehigh University, Bethlehem, PA 18015, USA
+Department of Electrical and Computer Engineering, Boise State Uni- versity, Boise, ID 83725, USA
+Department of Electrical Engineering and Bioscience, Waseda University 3-4-1 Okubo, Shinjuku-ku, Tokyo, Japan
+Research Center for Information Security (RCIS) National Institute of Advanced Industrial Science and Technology (AIST) 1-18-13, Sotokanda, Chiyoda-ku,Tokyo, Japan
+Pattern Recognition and Image Analysis (PRImA) Research Lab School of Computing, Science and Engineering, University of Salford, Manchester, M5 4WT, United Kingdom http://www.primaresearch.org
+DSIC/ITI,Univ. Polite`cnica de Vale`ncia, E-46022 Vale`ncia (Spain)
+Microsoft Research Asia, Beijing, China (
+Department of Computer Science, The University of Hong Kong, Hong Kong, China
+Yao-Yi Chiang and Craig A. Knoblock University of Southern California Department of Computer Science and Information Sciences Institute 4676 Admiralty Way, Marina del Rey, CA 90292 yaoyichi
+Fei Yin Qiu-Feng Wang, Cheng-Lin Liu National Laboratory of Pattern Recognition (NLPR), Institute of Automation, Chinese Academy of Sciences 95 Zhongguancun East Road, Beijing 100190, P.R. China
+Martin Lettner and Robert Sablatnig Pattern Recognition and Image Processing Group Institute of Computer Aided Automation, Vienna University of Technology, Austria
+University of Edinburgh
+Gifu Shotoku Gakuen University, Nakauzura 1-38, Gifu-shi, Gifu, 501-6194 Japan
+Nagoya University, Furo-cho, Chikusa-ku, Nagoya, Aichi, 464-8601 Japan
+ddeguchi, ide, murase
+Ste´phane Nicolas Universite´ de Rouen, LITIS EA 4108 BP 12 - 76801 Saint-Etienne du Rouvray, FRANCE
+Laurent Heutte Universite´ de Rouen, LITIS EA 4108 BP 12 - 76801 Saint-Etienne du Rouvray, FRANCE
+Graduate School of Engineering, Mie University, 1577 Kurimamachiya-cho, TSU, Mie 514-8507, Japan
+Computer Vision and Pattern Recognition Unit, Indian Statistical Institute, Kolkata - 108, India
+Laboratory LITIS,University of Rouen, France
+Research Group on Intelligent Machines, REGIM,University of Sfax, Tunisia
+abdelkarim.elbaati,adel.alimi
+Dep. TELIN/IPI, Ghent University, Sint-Pietersnieuwstraat 41, B-9000 Ghent, Belgium
+Masakazu Suzuki Department of Mathematics, Kyushu University 6-10-1, Hakozaki, Higashi-ku, Fukuoka-shi, Japan
+Akio Fujiyoshi Department of Computer and Information Sciences, Ibaraki University 4-12-1 Nakanarusawa, Hitachi, Ibaraki, 316-8511, Japan
+Walaa Aly, Seiichi Uchida Department of Intelligent Systems, Kyushu University 744 Motooka, Nishi-ku, Fukuoka-shi, Japan
+Tokyo University of Agriculture and Technology, Tokyo 184-8588, Japan
+National Laboratory of Pattern Recognition (NLPR), Institute of Automation of Chinese Academy of Sciences, Beijing 100190, P.R. China
+Daniel Lopresti Xiang Zhou Xiaolei Huang Department of Computer Science and Engineering Lehigh University Bethlehem, PA 18015, USA
+IRCCyN, UMR CNRS 6597, Ecole Polytechnique de l'Université de Nantes, France
+Nanyang Technological University, Singapore
+Yi-Feng Pan, Xinwen Hou, Cheng-Lin Liu National Laboratory of Pattern Recognition Institute of Automation, Chinese Academy of Sciences 95 Zhongguancun East Road, Beijing 100190, P. R. China
+Dr. Nizar Zarka Higher Institute for Applied Science and Technology Damascus - Syria
+Damascus University Faculty of Information Technology Eng
+Centro “Rete Puglia” - Università degli Studi di Bari - via G. Petroni 15/F.1- 70100 Bari
+Dipartimento di Elettrotecnica ed Elettronica-Politecnico di Bari -Via Orabona 4, 70126 - Bari
+Dipartimento di Informatica- Università degli Studi di Bari - via Orabona 4, 70126 - Bari
+Anand S and Raghunath R. Sharma Sri Satya Sai University Puttaparthi, India
+Department of Informatics and Telecommunications, University of Athens, Greece http://www.di.uoa.gr
+Institute of Informatics and Telecommunications, Computational Intelligence Laboratory, National Center for Scientific Research “Demokritos”, GR-153 10 Agia Paraskevi, Athens, Greece
+Fei Yin Cheng-Lin Liu National Laboratory of Pattern Recognition Institute of Automation, Chinese Academy of Sciences 95 Zhongguancun East Road, Beijing 100190, P.R. China
+Apostolos Antonacopoulos School of Computing, Science and Engineering University of Salford
+Gregory R. Ball and Sargur N. Srihari Center of Excellence for Document Analysis and Recognition University at Buffalo UB Commons 520 Lee Entrance, Suite 202 Amherst, NY 14228
+Center for Unified Biometrics and Sensors Dept of Computer Science and Engineering SUNY at Buffalo, Amherst, NY 14228, USA
+ECSE Department Rensselaer Polytechnic Institute Troy, NY 12180, USA
+Daniel Lopresti CSE Department Lehigh University Bethlehem, PA 18055, USA
+Thomas Roth-Berghofer Centre for Model-based Software Eng. and Explanation-aware Computing, School of Computing and Technology University of West London, United Kingdom
+Knowledge-Based Systems Group, Department of Computer Science, University of Kaiserslautern, P.O. Box 3049, 67653 Kaiserslautern,Germany
+German Research Center for AI (DFKI) Knowledge Management Department, Kaiserslautern, Germany
+Knowledge-Based Systems Group, Department of Computer Science, University of Kaiserslautern Kaiserslautern, Germany
+German Research Center for Artificial Intelligence
+Daniel Lopresti Lehigh University - CSE Department Bethlehem, PA 18055, USA
+Ernest Valveny Computer Vision Center Universitat Auto`noma de Barcelona, Spain
+School of Computing, National University of Singapore, Singapore
+Graduate School of Engineering, Mie University, Japan
+Sokoine National Agricultural Library Sokoine University of Agriculture, Morogoro, Tanzania
+Lazaro S.P. Busagala
+Department of Computer Science University of Massachusetts, Amherst Amherst, MA, USA, 01003
+Graduate School at Shenzhen Tsinghua University Shenzhen, China
+State Key Laboratory of Intelligent Control and Management of Complex Systems Institute of Automation, Chinese Academy of Sciences Beijing, China
+cunzhao.shi, baihua.xiao, chunheng.wang
+Computer Vision and Pattern Recognition Unit, Indian Statistical Unit, Kolkata, India
+Griffith University, Queensland, Australia
+National Laboratory of Pattern Recognition Institute of Automation of Chinese Academy of Sciences 95 Zhongguancun East Road, Beijing 100190, P. R. China
+Haikal El Abed, Volker Ma¨rgner Institute for Communications Technology (IfN) Technische Universita¨t Braunschweig Braunschweig, Germany
+Vienna Univ. of Technology 1040 Vienna, Austria
+Institute of Automation of Chinese Academy of Science National Laboratory of Pattern Recognition Beijing 100190, China fyin
+Muna Khayyat, Louisa Lam and Ching Y. Suen Concordia University Center for Pattern Recognition and Machine Intelligence Montreal, Quebec H3G 1M8, Canada m khay, llam
+German Research Center for Artificial Intelligence (DFKI), Kaiserslautern, Germany
+Department of Computer Science Technical University Kaiserslautern, Germany
+Sheikh Faisal Rashid
+Qiu-Feng Wang, Fei Yin, Cheng-Lin Liu National Laboratory of Pattern Recognition (NLPR) Institute of Automation of Chinese Academy of Sciences 95 Zhongguancun East Road, Beijing 100190, P.R. China
+A. Basic Architecture of LeNet-5
+College of Information Technical Science Nankai University Tianjin City, China
+yuanaiquan123, jiaolijing0612, liuyajie1988
+University of Maryland, College Park, MD, USA
+Yoann Champeil Dept. Eng. of Image Interaction Immersion EISTI Engineering School Cergy, France
+Osaka Prefecture University Osaka, Japan
+Stefan Fiel and Robert Sablatnig Computer Vision Lab Institute of Computer Aided Automation Vienna University of Technology
+Department of Computer Science Institute of Mathematics and Statistics / University of Sa˜o Paulo Sa˜o Paulo, Brazil
+CVPR Unit, Indian Statistical Institute 203 B. T. Road, Kolkata, India 700108
+21-01 Connexis, Singapore 138632
+Department of Computer Vision and Image Understanding,Institute for Infocomm Research 1 Fusionopolis Way
+Department of Computer Science,School of Computing,National University of Singapore Computing 1, 13 Computing Drive, Singapore 117417
+LORIA UMR 7503 - University of Nancy 2 Nancy, France
+Ameni Boumaiza LORIA UMR 7503 - University of Nancy 2 Nancy, France
+The Sackler School of Physics and Astronomy Tel Aviv University Tel Aviv 69978, Israel
+Facsimile, quality evaluation, registration, CMI, epigraphy, First Temple Period, Iron Age, ostracon
+The Department of Applied Mathematics Tel Aviv University Tel Aviv 69978, Israel
+J.Francisco Vargas GEPAR, Universidad de Antioquia Medellín, Colombia
+Szila´rd Vajda Department of Computer Science TU Dortmund, Germany
+Jan Richarz Department of Computer Science TU Dortmund, Germany
+Kyushu University, Fukuoka, Japan
+Faculty of Engineering, Shinshu Univ. Nagano, Japan
+Department of Computer and System Sciences Visva Bharati, Santiniketan India
+Faculty of Mathematics and Natural Sciences University of Groningen Netherlands
+Computer Vision and Pattern Recognition Unit Indian Statistical Institute, Kolkata India
+Radhika Nangia Umapada Pal Institute of Engineering and Management Indian Statistical Institute, Kolkata
+Indian Statistical Institute, Kolkata
+University of California at Santa Cruz Baskin School of Engineering (Computer Engineering department) Santa Cruz, CA, USA
+State Key Laboratory of Intelligent Control and Management of Complex Systems Institute of Automation, Chinese Academy of Sciences Beijing, China
+cunzhao.shi, baihua.xiao, chunheng.wang
+Department of Computer Science and Technology Bengal Engineering and Science University Howrah, India
+Samit Biswas Department of Computer Science and Engineering Bengal Institute of Technology Kolkata, India
+Dipartimento di Informatica - Università degli Studi di Bari “A. Moro”, via Orabona 4, 70126, Bari, Italy
+Dept. of CSIS, Graduate School of Engineering Osaka Prefecture University
+Department of Computer and Information Sciences Tokyo University of Agriculture and Technology Tokyo, Japan
+Ujjwal Bhattacharya, Bidyut B. Chaudhuri CVPR Unit, Indian Statistical Institute, Kolkata, India
+DIVA Group, Department of Computer Sciences University of Fribourg, Switzerland
+Lehigh University Bethlehem, Pennsylvania, USA
+Elisa H. Barney Smith Boise State University Boise, Idaho, USA
+Faculty of Information Science and Electrical Engineering, Kyushu University, Fukuoka-shi, Fukuoka, 819-0395 Japan
+NTT Communication Science Laboratories, NTT Corporation, Atsugi-shi, Kanagawa, 243-0198 Japan
+NTT Communication Science Laboratories, NTT Corporation, Seika-cho, Kyoto, Japan 619-0237 Japan
+Michael Blumenstein SEET Group Griffith University Gold Coast Australia
+School of ICT Griffith University Gold Coast, Australia
+Marcus Liwicki DFKI, Kaiserslautern, Germany
+Kyushu University, Fukuoka, Japan
+Graduate School of Engineering Mie University Tsu-shi, Mie, Japan
+Atsuhiro Takasu, Jun Adachi National Institute of Informatics Tokyo, Japan
+Okayama University Okayama, Japan
+Michael Blumenstein School of Information and Communication Technology, Griffith University, Gold Coast
+Vu Nguyen School of Information and Communication Technology, Griffith University, Gold Coast
+Srikanta Pal School of Information and Communication Technology, Griffith University, Gold Coast
+State Key Laboratory of Digital Publishing Technology, Beijing, China
+Vobile Inc Santa Clara, California, USA
+Institute of Computer Science and Technology, Peking University, Beijing, China
+Markus Diem, Florian Kleber and Robert Sablatnig Computer Vision Lab Vienna University of Technology Vienna, Austria
+Fujitsu Laboratories Ltd, Kawasaki, Japan
+Fujitsu Research & Development Center CO., LTD., Beijing , P. R. China
+katsuyama, minagawa.a
+A. Papandreou and B. Gatos Computational Intelligence Laboratory, Institute of Informatics and Telecommunications, National Research Center "Demokritos", 153 10 Athens, Greece
+Department of Computer Science and Engineering University at Buffalo Buffalo, NY chetanra, utkarshp
+Department of Computer Science and Engineering University at Buffalo - SUNY, Amherst, NY - 14228
+Graduate School of Engineering, Osaka Prefecture University, 1-1 Gakuencho, Naka, Sakai 599-8531 Japan
+German Research Center for Artificial Intelligence (DFKI), Trippstadter Straße 122, 67663 Kaiserslautern, Germany
+Graduate School of Engineering Osaka Prefecture University, 1-1 Gakuencho, Naka, Sakai 599-8531 Japan
+Knowledge-Based Systems Group, Department of Computer Science, University of Kaiserslautern, P.O. Box 3049, 67653 Kaiserslautern,Germany
+German Research Center for AI (DFKI) Knowledge Management Department, Kaiserslautern, Germany
+Department of Computer and Information Sciences Tokyo University of Agriculture and Technology Tokyo, Japan
+Knowledge-Based Systems Group, Department of Computer Science, University of Kaiserslautern, P.O. Box 3049, 67653 Kaiserslautern,Germany
+German Research Center for AI (DFKI) Knowledge Management Department, Kaiserslautern, Germany
+Nara National Research Institute for Cultural Properties Nijo-cho 2-9-1, Nara, Japan
+Tokyo University of Agriculture & Technology Naka-machi 2-24-16 Koganei, Tokyo, Japan
+J. F. Oberlin University Tokiwa-machi 3758, Machida, Tokyo, Japan
+Department of Computer Science, University of Kaiserslautern, P.O. Box 3049, 67653 Kaiserslautern,Germany
+German Research Center for AI (DFKI) Kaiserslautern, Germany
+Umapada Pal Computer Vision and Pattern Recognition Unit, Indian Statistical Institute India
+Department of Computer Science and Media Technology, Gjøvik University College, Norway
+Sukalpa Chanda Department of Computer Science and Media Technology, Gjøvik University College, Norway
+Loria - Nancy University Nancy, France
+Emilie Philippot Loria - Nancy University Nancy, France
+Department of Surveying Engineering Technological Educational Institution of Athens GR-12210 Athens, Greece
+Computational Intelligence Laboratory Institute of Informatics and Telecommunications National Center for Scientific Research "Demokritos" GR-15310 Athens, Greece
+louloud, akesidis, bgat
+Institute of Artificial Intelligence and Robotics Xi'an Jiaotong University Xi'an, P.R.China
+Institute of Artificial Intelligence and Robotics Xi'an Jiaotong University Xi'an, P.R.China
+Deepak Kumar and A G Ramakrishnan Medical Intelligence and Language Engineering Laboratory Department of Electrical Engineering, Indian Institute of Science Bangalore - 560012, India
+Image Understanding and Pattern Recognition Group Technical University of Kaiserslautern, Kaiserslautern, Germany
+Multimedia Analysis and Data Mining Research Group German Research Center for Artificial Intelligence (DFKI), Kaiserslautern, Germany
+Muhammad Zeshan Afzal
+German Research Center for Artificial Intelligence (DFKI), Kaiseralutern, Germany
+Department of Computer Science, Technical University of Kaiserslautern, Germany
+Kandan Ramakrishnan Dept. of Computer Science and Engineering University of Minnesota Minneapolis, MN 55455
+Department of Computer Science, University of Kaiserslautern, Germany
+German Research Center for AI (DFKI GmbH) Knowledge Management Department, Kaiserslautern, Germany
+Muhammad Imran Malik
+Laboratoire L3i, University of La Rochelle, Avenue Michel Crepeau, 17042 La Rochelle Cedex 1, France anh.ngo
+Vadim Mazalov and Stephen M. Watt Ontario Research Centre for Computer Algebra Department of Computer Science University of Western Ontario London, Canada
+Universidade Federal de Pernambuco Recife, Brazil
+and Computational Modelling, Univ. of Warsaw Prosta 69, 00-838 Warsaw, Poland
+Ying Liu Department of Knowledge Service Engineering KAIST, Daejeon, Republic of Korea
+Institute of Computer Science & technology, Peking University; State Key Laboratory of Digital Publishing Technology; Founder Group Substation, Postdoctoral Workstation of the Zhongguancun Haidian Science Park, Beijing,China
+Institute of Computer Science & Technology, Peking University, Beijing, China
+Interfaculty Centre “Rete Puglia” University of the Studies of Bari “Aldo Moro” Via Giulio Petroni, 15/F.1 - 70126 Bari - Italy http://www.retepuglia.uniba.it/Impedovo/index.htm
+Department of Computer Science University of the Studies of Bari “Aldo Moro” Via Edoardo Orabona, 4 - 70125 Bari - Italy
+Shenzhen Graduate School, Harbin Institute of Technology, P.R. China
+zhoushusen,qingcai.chen
+Institute for Advanced Computer Studies University of Maryland College Park, MD, USA
+Interdisciplinary Centre for Mathematical and Computational Modelling, Univ. of Warsaw ul. Prosta 69, 00-838 Warszawa, Poland
+Emanuel Indermühle Institute of Computer Science and Applied Mathematics Neubrückstrasse 10 3012 Bern, Switzerland
+Andreas Fischer Institute of Computer Science and Applied Mathematics Neubrückstrasse 10 3012 Bern, Switzerland
+Categories and Subject Descriptors I.4 [Image Processing and Computer Vision]; J.5 [Arts and Humanities]
+Robert Wisnovsky Morrice Hall 026 McGill University
+Mathias M. Adankon Synchromedia Laboratory ETS, Montréal, (QC) Canada H3C 1K3
+General Terms Algorithms, Measurement, Performance
+Elisa H. Barney Smith Boise State University Boise, Idaho, USA
+Stephen M. Watt Dept. of Computer Science University of Western Ontario London, Ontario, Canada
+Vadim Mazalov Dept. of Computer Science University of Western Ontario London, Ontario, Canada
+General Terms Design, Algorithms, Experimentation
+Categories and Subject Descriptors I.7.5 [Document and Text Processing]: Document Cap- ture; E.4 [Coding and Information Theory]: Error con- trol codes; B.m [Hardware]: Miscellaneous—Design Man- agement
+Osaka Prefecture Univ. Osaka, Japan
+Prem Natarajan Raytheon BBN Technologies Cambridge, MA 02138
+University of Buffalo Amherst, NY 14260
+Lehigh University Bethlehem, PA 18015
+Stephen M. Watt University of Western Ontario Dept of Computer Science London, Ontario, Canada
+Categories and Subject Descriptors I.7.5 [Document and Text Processing]: Document Cap- ture
+(c) Detected Table Regions
+David Doermann Institute of Advanced Computer Studies University of Maryland College Park, MD, USA
+Mudit Agrawal Institute of Advanced Computer Studies University of Maryland College Park, MD, USA
+CSE Department, University of Nebraska - Lincoln, Lincoln, NE 68502, USA
+DocLab, Rensselaer Polytechnic Institute, Troy, NY 12180, USA
+General Terms Algorithms, Experimentation, Performance
+Tomohiko Tsuji Graduate School of Engineering Osaka Prefecture University
+Masakazu Iwamura Graduate School of Engineering Osaka Prefecture University
+Horst Bunke Institute of Computer Science and Applied Mathematics University of Bern, CH-3012 Bern, Switzerland
+Marcus Liwicki Knowledge Management Department German Research Center for AI (DFKI),Kaiserslautern, Germany
+Emanuel Indermühle Institute of Computer Science and Applied Mathematics University of Bern, CH-3012 Bern, Switzerland
+Department of Electrical, Computer, and Systems Engi- neering, Rensselaer Polytechnic Institute, Troy, NY 12180
+Department of Computer Science and Engineering, Lehigh University, Bethlehem, PA 18015
+Department of Electrical and Computer Engineering, Boise State University, Boise, ID 83725
+General Terms Algorithm, Design, Experimentation, Performance
+Xiaoli Zhang, Jie Zou, Daniel X. Le, George R. Thoma National Library of Medicine, Lister Hill National Center for Biomedical Communications, 8600 Rockville Pike, Bethesda, 20894 1-301-4353245
+Categories and Subject Descriptors I.4.6 [Image Processing and Computer Vision]: Seg- mentation—Region growing, partitioning; I.5.4 [Pattern Recognition]: Applications—Text processing
+Srirangaraj Setlur CUBS, Department of CSE University at Buffalo, SUNY, Amherst, NY 14228, USA
+Xujun Peng CUBS, Department of CSE University at Buffalo, SUNY, Amherst, NY 14228, USA
+Venu Govindaraju CUBS, Department of CSE University at Buffalo, SUNY, Amherst, NY 14228, USA
+General Terms Design, Experimentation, MRF, Machine Learning
+Language and Media Processing Laboratory Institute of Advanced Computer Studies University of Maryland College Park, MD, USA
+General Terms Design, Documentation, Experimentation
+Categories and Subject Descriptors I.4.6 [Image Processing and Computer Vision]: Seg- mentation; I.5.4 [Pattern Recognition]: Applications
+MICA, UMI 2954, Hanoi University of Technology, Hanoi, Vietnam LORIA, UMR 7503, Université Nancy 2, 54506 Vandoeuvre-lès-Nancy, France
+document analysis, graphics recogni- tion and interpretation
+Categories and Subject Descriptors I.7.5 [DOCUMENT AND TEXT PROCESSING]: Document Cap- ture—Document analysis; I.4.6 [IMAGE PROCESSING AND COMPUTER VISION]: Segmentation—Pixel classification
+Bolan Su Department of Computer Science School of Computing National University of Singapore Computing 1, 13 Computing Drive Singapore 117417
+Thomas M. Breuel Technical University of Kaiserslautern, Kaiserslautern, Germany
+Mayce Ibrahim Ali Al Azawi Technical University of Kaiserslautern, Germany
+Syed Saqib Bukhari Technical University of Kaiserslautern, Germany
+Umapada Pal Indian Statistical Institute Kolkata, India
+Josep Lladós Computer Vision Center Dept. Ciències de la Computació Edifici O, Univ. Autònoma de Barcelona 08193 Bellaterra (Barcelona), Spain
+Categories and Subject Descriptors I.7.5 [Document and Text Processing]: Document Cap- ture—Graphics recognition and interpretation; H.3.7 [In- formation Storage and Retrieval]: Digital Libraries; H.2.8 [Database Management]: Database Applications— Image databases
+Edifici O, Univ. Autònoma de Barcelona 08193 Bellaterra (Barcelona), Spain
+Shusen Zhou, Qingcai Chen and Xiaolong Wang MOS-MS Key lab of NLP & Speech Shenzhen Graduate School, Harbin Institute of Technology Shenzhen, P.R. China 518055
+Keywords Typeface, Personality Traits, Survey, Analysis, Typeface Design Characteristics
+Ying Li Ching Y. Suen CENPARMI (Center for Pattern Recognition and Machine Intelligence),Computer Science and Software Engineering Department, Concordia University,1455 de Maisonneuve Blvd. West, Montreal, Quebec, Canada, H3G 1M8, Tel (514)-848-2424-Ext: 7950, Fax: (514)-848-2830
+Josep Lladós Computer Vision Center Dept. of Computer Science Campus UAB, Ed. O, 08193 Bellatera (Barcelona), Spain
+M Gopal Department of Electrical Engg. IIT Delhi
+Santanu Chaudhury Department of Electrical Engg. IIT Delhi
+Ehtesham Hassan Department of Electrical Engg. IIT Delhi
+General Terms Algorithms, Design, Performance, Experimentation
+Faisal Shafait German Research Center for Artificial Intelligence (DFKI) Trippstadterstraße 122 67663 Kaiserslautern, Germany
+Joost van Beusekom University of Kaiserslautern German Research Center for Artificial Intelligence (DFKI) Trippstadterstraße 122 67663 Kaiserslautern, Germany
+General Terms Algorithms, Experimentation
+School of Computing, National University of Singapore Computing 1, 13 Computing Drive, Singapore 117417
+Computer Vision and Pattern Recognition Unit, Indian Statistical Institute, Kolkata, India
+Department of Computer Science, School of Computing, National University of Singapore, Singapore
+Lazaro S.P. Busagala Sokoine University of Agriculture(SUA) P.O.Box 3000 Morogoro, Tanzania
+Gudila Paul Moshi Mie university 1577 Kurimamachiya, Tsu Mie, 514-8507, Japan
+De Cao Tran Can Tho University 1 Ly Tu Trong Can Tho - VIETNAM (84) 71 03 83 13 01
+General Terms Measurement, Experimentation, Performance
+Martin Lettner and Robert Sablatnig Pattern Recognition and Image Processing Group Institute of Computer Aided Automation, Vienna University of Technology, 1040 Vienna, Austria
+General Terms Measurement, Performance, Algorithms
+General Terms Algorithms, Experimentation
+Sebastian Colutto Infmath Imaging Research Group Institute of Mathematics, University of Innsbruck Technikerstr. 21a/2 6020 Innsbruck, Austria
+General Terms Layout Analysis, Segmentation
+Srirangaraj Setlur University at Buffalo - SUNY Amherst, NY - 14228
+Manavender Reddy University at Buffalo - SUNY Amherst, NY - 14228
+Anurag Bhardwaj University at Buffalo - SUNY Amherst, NY - 14228
+Figure 1: Model A: Text Dependent Writer Identi- fication
+Categories and Subject Descriptors I.5.2 [Computing Methodologies]: PATTERN RECOG- NITION—Pattern Analysis
+Venu Govindaraju University at Buffalo - SUNY Amherst, NY - 14228
+Rolf Ingold University of Fribourg Department of Informatics Blvd de Pérolles 90 1700 Fribourg, Switzerland
+P.O. Box 10878, Manama, Kingdom of Bahrain
+Karim Hadjar Ahlia University Department of Multimedia
+General Terms Algorithms, Design, Experimentation
+Marçal Rusiñol Computer Vision Center Dept. of Computer Science Campus UAB, Ed. O, 08193 Bellaterra (Barcelona), Spain
+Categories and Subject Descriptors I.7.5 [Document and Text Processing]: Document Capture—Doc- ument analysis; H.3.7 [Information Storage and Retrieval]: Dig- ital Libraries
+Linlin Li and Chew Lim Tan Department of Computer Science, National University of Singapore
+Categories and Subject Descriptors I.7 [Computing Methodologies]: Document and Text Processing; I.7.5 [Document and Text Processing]: Doc- ument Capture
+Florian Kleber Institute of Computer Aided Automation Favoritenstr. 9/1832 1040 Vienna
+Markus Diem Institute of Computer Aided Automation Favoritenstr. 9/1832 1040 Vienna
+Document Analysis; I.4 [Computing Me- thodologies]: Image Processing and Computer Vision
+T. Georgiou Department of Informatics and Telecommunications University of Athens, Greece
+B. Gatos Computational Intelligence Laboratory, Institute of Informatics and Telecommunications, National Research Center "Demokritos" 153 10 Athens, Greece
+N. Stamatopoulos Computational Intelligence Laboratory, Institute of Informatics and Telecommunications, National Research Center "Demokritos" 153 10 Athens, Greece
+General Terms Algorithms, Design, Experimentation
+Categories and Subject Descriptors I.7.5 [DOCUMENT AND TEXT PROCESSING]: Document Capture - Document analysis, Scanning; I.4.3 [IMAGE PROCESSING AND COMPUTER VISION]: Enhancement
+General Terms Algorithms, Performance, Design, Experimentation
+GR-153 10 Agia Paraskevi, Athens, Greece
+Computational Intelligence Laboratory, Institute of Informatics and Telecommunications
+General Terms Algorithms, Theory, Experimentation
+Dawei Yin, Chang An and Henry S. Baird Department of Computer Science & Engineering Lehigh University Bethlehem, PA 18015 USA http://www.cse.lehigh.edu/prr/
+day207, cha205, baird} @lehigh.edu
+Hassan Mohamed Abou Eisha German University in Cairo Egypt
+Krishna Subramanian Raytheon BBN Technologies 10 Moulton Street Cambridge, MA 02138
+Prem Natarajan Raytheon BBN Technologies 10 Moulton Street Cambridge, MA 02138
+Matin Kamali Raytheon BBN Technologies 10 Moulton Street Cambridge, MA 02138
+General Terms Algorithms, Design, Experimentation, Languages, Performance, System
+Akio Fujiyoshi Department of Computer and Information Sciences Ibaraki University Hitachi, Ibaraki, Japan
+Koji Nakagawa Faculty of Mathematics Kyushu University Fukuoka, Japan
+Michael Blumenstein School of ICT Griffith University, Australia
+Vu Nguyen School of ICT Griffith University, Australia
+Enrico Pontelli Department of Computer Science New Mexico State University Las Cruces, NM 88003, USA
+Iyad Abu Doush Department of Computer Science Yarmouk University Irbid, Jordan
+General Terms Design, Algorithms
+Categories and Subject Descriptors I.7.5 [Document and Text Processing]: Document Cap- ture; B.m [Hardware]: Miscellaneous
+Saher Mohamed El-Neklawy German University in Cairo Egypt
+Josef B. Baker, Alan P. Sexton and Volker Sorge School of Computer Science University of Birmingham J.Baker
+Department of Computer Science, School of Computing, National University of Singapore, Singapore
+Department of Studies in Computer Science, University of Mysore, Mysore, Karnataka, India

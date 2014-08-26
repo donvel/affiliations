@@ -103,7 +103,12 @@ class Score:
         self.labeling = []
 
     def update(self, t_lbng, lbng):
+
         self.labeling += [(t_lbng, lbng)]
+
+        # Ignore NONE
+        filtered = [(t, p) for (t, p) in zip(t_lbng, lbng) if t != 'NONE']
+        t_lbng, lbng = zip(*filtered)
 
         for (target, given) in zip(t_lbng, lbng):
             self.confusion[(target, given)] += 1
