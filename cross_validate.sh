@@ -10,7 +10,7 @@ nei_thr=${3:-$def_nei_thr}
 def_rare_thr=3
 rare_thr=${4:-$def_rare_thr}
 
-def_features='["Word", "Number", "UpperCase"]'
+def_features='["Word", "Number", "UpperCase", "AllUpperCase", "Address", "Country", "City", "State", "StateCode", "StopWordMulti", "Punct", "WeirdLetter"]'
 features=${5:-$def_features}
 
 rm $score*.txt
