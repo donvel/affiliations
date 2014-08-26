@@ -25,7 +25,7 @@ AVAILABLE_FEATURES = [
         'Punct',
         'WeirdLetter',
         'Length',
-        'Freq',
+        # 'Freq', # Irrelevant
         'Rare',
 
         # dict - based

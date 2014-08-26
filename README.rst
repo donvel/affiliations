@@ -8,9 +8,9 @@ Data preparation
 
 #. We want to convert the tagged affiliations in `data/affs-parsed.txt` to valid XML.
    The script will print out invalid entries::
-  
+
     scripts/affs_txt_to_rst.py
-    
+
 #. Then, we want to get rid off unnecessary tags (like `<italic>`)::
 
     scripts/strip_tags.py
@@ -66,12 +66,12 @@ CRF training and evaluation
 
 #. Now you may use the `train.sh` script::
 
-    ./train.sh training_data_size neighbor_feature_range rare_threshold split_alphanum features_list training_name
-   
+    ./train.sh training_data_size neighbor_feature_range rare_threshold split_alphanum 'features_list' training_name
+
    for example::
 
     ./train.sh 100 0 0 1 '["Word"]' test
-    
+
    The following things will happen:
 
    #. `export.py` will be called with appropriate arguments
@@ -81,7 +81,20 @@ CRF training and evaluation
       file
    #. All the incorrect labelings will be displayed in Firefox.
 
-#. Default cross validation is hard-coded in the `cross_validate.sh` shell
-   script. It will perform a 5-fold cross validation using 5 * `number` affiliations.::
+#. To cross validation you may use the `cross_validate.sh` shell
+   script. For example to perform a 5-fold cross validation using 8000
+   affiliations, type::
 
-    ./cross_validate.sh 1600
+    ./cross_validate.sh 8000 5
+
+   (by the way, 8000 is about the size of the full dataset).
+   The fold number should be a divisor of the number of the affiliations used.
+
+   The best feature set and parameters are hard-coded in the script.
+   But you can make experiments by changing the default parameters::
+
+    ./train.sh training_data_size folds_number neighbor_feature_range rare_threshold 'features_list'
+
+   for example::
+
+    ./cross_validate.sh 100 4 1 2 '["Word", "Rare"]'

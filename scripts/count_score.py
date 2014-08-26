@@ -153,9 +153,36 @@ class Score:
 
 
     def full_write(self):
+        
+        HELP_TEXT = """
+1) global statistics
+f1 -- the mean of F1 scores of all label types
+success -- the mean of "success scores" of all affiliation types
+mathed -- the mean of "matched scores" of all label types
+
+total success -- the fraction of the affiliation strings which were labeled 100% correctly
+
+2) Confusion Matrix format:
+
+        PREDICTED1 PREDICTED2
+ACTUAL1
+ACTUAL2
+
+3) SUCCESS -- the fraction of the affiliation strings which were labeled 100% correctly.
+
+This factor is computed separately for different affiliation kinds.
+There are four kinds of affiliations, depending on whether they
+contain "address" and "country" parts.
+
+4) MATCHED -- this factor is computed separately for different label types.
+For a given label type X, this is the ratio of affiliation strings in which
+tokens predicted to be X were exactly the actual X-type tokens.
+"""
+
         print
         self.write()
         print 'total success: %f' % self.success_wmean
+
         print
         print 10 * '=' + ' CONFUSION ' + 10 * '='
         for l1 in ['name'] + self.labels:
@@ -189,6 +216,10 @@ class Score:
         print 10 * '=' + ' MATCHED ' + 10 * '='
         for key, value in self.matched.items():
             print '%.5f %r' % (value, key)
+
+        print
+        print 10 * '-' + ' DESCRIPTION ' + 10 * '-'
+        print HELP_TEXT
 
 
     def serialize(self):

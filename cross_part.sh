@@ -30,16 +30,27 @@ model=crfdata/tmpls_chain.txt
 
 GRMM=grmm
 
-number=$2
+part_number=$(($2 / $3))
 
-python scripts/split_data.py --number $number --cross 1 --part $i --input $real --test $tst --train $train --parts 5
+parts=$3
+
+nei_thr=$4
+
+rare_thr=$5
+
+features=$6
+
+python scripts/split_data.py --number $part_number --cross 1 --part $i --input $real --test $tst --train $train --parts $parts
 
 python scripts/export.py \
     --train $crftrain --test $crftest \
     --input $train --input_test $tst \
-    --train_number $((4*$number)) --test_number $number \
-    --neighbor 1 --rare 0 --split_alphanum 1 \
-    '["Word", "Number", "UpperCase"]'
+    --train_number $((($parts - 1) * $part_number)) --test_number $part_number \
+    --neighbor $nei_thr --rare $rare_thr --split_alphanum 1 \
+    "$features"
+
+echo --train_number $((($parts - 1) * $part_number)) --test_number $part_number --neighbor $nei_thr --rare $rare_thr --split_alphanum 1 "$features"
+
 
 java -Xmx2000M \
     -cp $GRMM/class:$GRMM/lib/mallet-deps.jar:$GRMM/lib/grmm-deps.jar \
