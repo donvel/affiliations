@@ -1,13 +1,3 @@
-NOTE: The strings are split into tokens in a following manner.
-Two following characters are separated if at least one of the following conditions holds:
-1) at least one of the characters is not alphanumeric
-2) one of them is a digit and the other is a letter
-
-Additionaly, spaces are not treated as tokens
-Example:
-'kot pies123_@@123' -> ['kot', 'pies', '123', '_', '@', '@', '123']
-
-
 'Word' -- Add the token as a feature (with a "W=" prefix) unless the token
     has one of the following features: 'Rare', 'Number'
 
@@ -26,7 +16,8 @@ Example:
 'Rare' -- Whether the character is present at most T times in the training set
     (the threshold T is set as an additional parameter)
 
-Dictionary-based features (the text file mapping may be found in the source code).
+The other features are dictionary-based
+The text file mapping may be found in the source code.
 
 'Country',
 'StopWord',

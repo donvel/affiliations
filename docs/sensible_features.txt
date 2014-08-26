@@ -1,0 +1,13 @@
+The following set of features seems to be reasonable:
+'["Word", "Number", "UpperCase", "AllUpperCase", "Address", "Country", "City", "State", "StateCode", "StopWordMulti", "Punct", "WeirdLetter"]'
+
+The minimal set of features which is still quite reasonable:
+'["Word", "Number", "UpperCase"]'
+
+The last parameter worth mentioning is the "neighbor threshold" T.
+(The own features of some token X are treated as features of a token Y if dist(X, Y) <= T).
+The sensible values are something like T = 1, 2, 3, 4, 5.
+We use T = 1.
+
+It is difficult to say something about the right "rare threshold", as the 'Rare'
+feature does not seem to help us at all.
