@@ -53,6 +53,7 @@ def make_statistics(root):
     for aff in root:
         types[aff_type(aff)] += 1
     total = len(list(root))
+    print total
     for key, value in types.items():
         print key, value / float(total)
 

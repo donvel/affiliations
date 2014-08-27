@@ -108,7 +108,7 @@ CRF testing tools
    to choose a subset of a large dataset such that it has an empty intersection
    with the training set.
    
-#  The `hand_tags_to_xml.py` is useful for fast manual affiliation tagging.
+#.  The `hand_tags_to_xml.py` is useful for fast manual affiliation tagging.
    First, you have to prepare a text file with strings tagged like that::
 
     unnecessary head < institution part $ address part $ country part > unnecessary tail
@@ -121,3 +121,5 @@ CRF testing tools
    This script assumes that there are at most three affiliation parts and
    that they are in the order: `INST, ADDR, COUN`. Affiliation strings
    which do not follow this pattern have to be handled separately.
+
+#. Our testing results may be found in the `docs/result_*.txt` files.

@@ -1,0 +1,79 @@
+INFORMATICS
+
+Tested on data/hand-inf.xml (Manually tagged strings from data/raw-inf.txt,
+which in turn is a 100 affiliation subset of data/raw-affs-inf.txt)
+
+82 / 100 entries valid and used for final testing (the others were rejected during the tagging process)
+
+Trained on a 2000-entry sample from data/real-like-train.html.
+
+Parameters:
+Neighbor: 1, SplitAlphanum: True 
+
+./train_test.sh data/hand-inf.xml test-inf 2000
+['Word', 'Number', 'UpperCase', 'AllUpperCase', 'Address', 'Country', 'City', 'State', 'StateCode', 'StopWordMulti', 'Punct', 'WeirdLetter']
+f1: 0.915527, success: 0.704167, matched: 0.724732
+f1: 0.914846, success: 0.745833, matched: 0.730479
+f1: 0.925545, success: 0.750000, matched: 0.734833
+f1: 0.926565, success: 0.745833, matched: 0.729782
+f1: 0.916624, success: 0.754167, matched: 0.746620
+f1: 0.901417, success: 0.745833, matched: 0.724612
+f1: 0.897745, success: 0.700000, matched: 0.702316
+f1: 0.895189, success: 0.700000, matched: 0.702316
+f1: 0.890954, success: 0.704167, matched: 0.706381
+f1: 0.890954, success: 0.704167, matched: 0.706381
+f1: 0.893703, success: 0.704167, matched: 0.711143
+f1: 0.893703, success: 0.704167, matched: 0.711143
+f1: 0.893703, success: 0.704167, matched: 0.711143
+f1: 0.893703, success: 0.704167, matched: 0.711143
+f1: 0.893703, success: 0.704167, matched: 0.711143
+==================== BEST SCORE ==========================
+f1: 0.916624, success: 0.754167, matched: 0.746620
+==================== LAST SCORE ==========================
+f1: 0.893703, success: 0.704167, matched: 0.711143
+
+f1: 0.893703, success: 0.704167, matched: 0.711143
+total success: 0.634146
+
+========== CONFUSION ==========
+         ADDR    COUN    INST    PREC    REC     F1      
+ADDR      259       2      94   0.94526 0.72958 0.82353 
+COUN        7      72       4   0.97297 0.86747 0.91720 
+INST        8       0     836   0.89507 0.99052 0.94038 
+
+========== SUCCESS ==========
+RATIO     CORRECT  TOTAL  TYPE
+0.90000       9      10 ('COUN', 'INST')
+0.33333       2       6 ('ADDR', 'INST')
+0.58333      35      60 ('ADDR', 'COUN', 'INST')
+1.00000       6       6 ('INST',)
+
+========== MATCHED ==========
+0.65854 'INST'
+0.56061 'ADDR'
+0.91429 'COUN'
+
+---------- DESCRIPTION ----------
+
+1) global statistics
+f1 -- the mean of F1 scores of all label types
+success -- the mean of "success scores" of all affiliation types
+mathed -- the mean of "matched scores" of all label types
+
+total success -- the fraction of the affiliation strings which were labeled 100% correctly
+
+2) Confusion Matrix format:
+
+        PREDICTED1 PREDICTED2
+ACTUAL1
+ACTUAL2
+
+3) SUCCESS -- the fraction of the affiliation strings which were labeled 100% correctly.
+
+This factor is computed separately for different affiliation kinds.
+There are four kinds of affiliations, depending on whether they
+contain "address" and "country" parts.
+
+4) MATCHED -- this factor is computed separately for different label types.
+For a given label type X, this is the ratio of affiliation strings in which
+tokens predicted to be X were exactly the actual X-type tokens.

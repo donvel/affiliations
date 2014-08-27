@@ -1,0 +1,56 @@
+CROSS VALIDATION
+
+Cross validated on a 8000-entry subset of data/affs-real-like.xml (which consists of 8267 affiliations).
+
+Parameters:
+Neighbor: 1, SplitAlphanum: True 
+
+Features:
+['Word', 'Number', 'UpperCase', 'AllUpperCase', 'Address', 'Country', 'City', 'State', 'StateCode', 'StopWordMulti', 'Punct', 'WeirdLetter']
+
+
+f1: 0.978743, success: 0.898097, matched: 0.940412
+total success: 0.909250
+
+========== CONFUSION ==========
+         ADDR    COUN    INST    PREC    REC     F1      
+ADDR    42808      55    1302   0.96569 0.96927 0.96748 
+COUN      190    7896      10   0.99134 0.97530 0.98325 
+INST     1331      14   90294   0.98568 0.98532 0.98550 
+
+========== SUCCESS ==========
+RATIO     CORRECT  TOTAL  TYPE
+0.86715     594     685 ('COUN', 'INST')
+0.88288     588     666 ('ADDR', 'INST')
+0.91597    5941    6486 ('ADDR', 'COUN', 'INST')
+0.92638     151     163 ('INST',)
+
+========== MATCHED ==========
+0.92312 'INST'
+0.91303 'ADDR'
+0.98508 'COUN'
+
+---------- DESCRIPTION ----------
+
+1) global statistics
+f1 -- the mean of F1 scores of all label types
+success -- the mean of "success scores" of all affiliation types
+mathed -- the mean of "matched scores" of all label types
+
+total success -- the fraction of the affiliation strings which were labeled 100% correctly
+
+2) Confusion Matrix format:
+
+        PREDICTED1 PREDICTED2
+ACTUAL1
+ACTUAL2
+
+3) SUCCESS -- the fraction of the affiliation strings which were labeled 100% correctly.
+
+This factor is computed separately for different affiliation kinds.
+There are four kinds of affiliations, depending on whether they
+contain "address" and "country" parts.
+
+4) MATCHED -- this factor is computed separately for different label types.
+For a given label type X, this is the ratio of affiliation strings in which
+tokens predicted to be X were exactly the actual X-type tokens.
