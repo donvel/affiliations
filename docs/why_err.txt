@@ -1,0 +1,15 @@
+1, 2   + (BaiYun District is an address)                                           źle w parsed 
+3, 4   + (28041 is not a country)                                                  źle w parsed
+7, 8   + (Home Office is Institution)                                              źle w parsed
+11, 12 + (St George's to INST, "," w głupim miejscu)                               źle w improve (dict)
+13, 14 + (127 Industrial drive to ADDR, Big Pine Key bez sensu rozdzielone)        źle w parsed
+15, 16 + (High Heaton to adres)                                                    źle w parsed
+19, 20 + Copenhagen to nie country                                                 źle w parsed
+23, 24 + Saic Frederick to INST                                                    źle w parsed
+25, 26 + Trondheim to nie kraj                                                     źle w parsed
+9, 10  +/- (FB 18 Natur... to chyba INST, ale jeszcze UNIVERSITAT KASSEL to INST)   INST w środku
+5, 6   - (Norfolk Place is not an Institution)                                      zła granica
+17, 18 - (K. M. Pasa to pewnie adres, ale nawet Google nie wie)                     zła granica
+21, 22 - Nisz do miasto (układ IAI)                                                 ADDR w środku
+27, 28 - Ronda General Mitre to ADDR                                                zła granica
+29, 30 - IFR 128, ENS - LYON to INST, francuskie skróty :P                          zła granica (francuskie skróty)

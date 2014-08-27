@@ -98,3 +98,26 @@ CRF training and evaluation
    for example::
 
     ./cross_validate.sh 100 4 1 2 '["Word", "Rare"]'
+
+CRF testing tools
+-----------------
+
+#. If you want to choose a sample from a file with raw affiliation strings,
+   use the `split_file.py` script. The script is also able to choose lines
+   with ids that are not present in a given file. This is useful if you want
+   to choose a subset of a large dataset such that it has an empty intersection
+   with the training set.
+   
+#  The `hand_tags_to_xml.py` is useful for fast manual affiliation tagging.
+   First, you have to prepare a text file with strings tagged like that::
+
+    unnecessary head < institution part $ address part $ country part > unnecessary tail
+
+   for example::
+    
+    Universidade Estadual de Ponta Grossa (UEPG),$ Ponta Grossa (PR),$ Brasil
+    Jan Richarz< Department of Computer Science TU Dortmund,$$ Germany
+
+   This script assumes that there are at most three affiliation parts and
+   that they are in the order: `INST, ADDR, COUN`. Affiliation strings
+   which do not follow this pattern have to be handled separately.

@@ -1,6 +1,9 @@
 US
+U. S.
 USA
+U. S. A.
 UK
+U. K.
 Afghanistan
 Albania
 Algeria
@@ -39,6 +42,8 @@ Chile
 China
 People's Republic of China
 P. R. China
+PR China
+P R China
 Colombia
 Comoros
 Congo
@@ -193,6 +198,7 @@ United Arab Emirates
 Arab Emirates
 United Kingdom
 United States
+United States of America
 Uruguay
 Uzbekistan
 Vanuatu

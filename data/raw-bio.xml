@@ -1,0 +1,648 @@
+<affs>
+<aff>
+
+<institution>College of Bioinformatics Science and Technology and State-Province Key Laboratories of Biomedicine-Pharmaceutics of China, Harbin Medical University,</institution>
+<addr-line> Harbin, Heilongjiang 150081,</addr-line>
+<country> PR China</country>
+
+</aff>
+<aff>
+
+<institution>Departments of Psychiatry and Genetics and Developmental Biology, University of Connecticut School of Medicine,</institution>
+<addr-line> Farmington, CT,</addr-line>
+<country> USA</country>
+
+</aff>
+<aff>
+
+<institution>Infectious Disease Program, Department of Epidemiology, Johns Hopkins Bloomberg School of Public Health,</institution>
+<addr-line> Baltimore, Maryland,</addr-line>
+<country> USA</country>
+
+</aff>
+<aff>
+
+<institution>School of Public Health, Tehran University of Medical Sciences,</institution>
+<addr-line> Tehran,</addr-line>
+<country> Iran</country>
+
+</aff>
+<aff>
+
+<institution>C. Boucsein Bernstein Center for Computational Neuroscience,</institution>
+<addr-line> Freiburg, 79104,</addr-line>
+<country> Germany</country>
+
+</aff>
+<aff>
+
+<institution>IBB-Institute for Biotechnology and Bioengineering, Centre for Biological and Chemical Engineering, Department of Bioengineering, Instituto Superior Técnico, Technical University of Lisbon,</institution>
+<addr-line> Av. Rovisco Pais, 1049-001 Lisbon,</addr-line>
+<country> Portugal</country>
+
+</aff>
+<aff>
+
+<institution>National Marine Environment Monitoring Center,</institution>
+<addr-line> 42 Linghe Street, Dalian 116023,</addr-line>
+<country> China</country>
+
+</aff>
+<aff>
+
+<institution>Institute of Exercise and Health Sciences, University of Basel,</institution>
+<addr-line> Birsstrasse 320B, 4052 Basel,</addr-line>
+<country> Switzerland</country>
+
+</aff>
+<aff>
+
+<institution>Fondazione Don Gnocchi,</institution>
+<addr-line> Milan,</addr-line>
+<country> Italy</country>
+
+</aff>
+<aff>
+
+<institution>Institutefor Cancer Research,</institution>
+<addr-line> Fox Chase, Philadelphia, Pennsylvania 19111</addr-line>
+<country></country>
+
+</aff>
+<aff>
+
+<institution>Department of Chemistry, Faculty of Science, Semnan University,</institution>
+<addr-line> Semnan,</addr-line>
+<country> Iran</country>
+
+</aff>
+<aff>
+
+<institution>Center for Evidence- Based Orthopaedics, McMaster University, Department of Orthopaedic Surgery, McMaster University,</institution>
+<addr-line> 293 Wellington Street North, Suite 110, Hamilton, ON L8S4L8,</addr-line>
+<country> Canada</country>
+
+</aff>
+<aff>
+
+<institution>Division of Cardiology, Nanfang Hospital, Southern Medical University,</institution>
+<addr-line> Guangzhou,</addr-line>
+<country> China</country>
+
+</aff>
+<aff>
+
+<institution>Department of Urology, Oyokyo Kidney Research Institute,</institution>
+<addr-line> Hirosaki 036-8243,</addr-line>
+<country> Japan</country>
+
+</aff>
+<aff>
+
+<institution>Food and Nutritional Sciences, North Carolina A &amp; T State University,</institution>
+<addr-line> Greensboro, NC,</addr-line>
+<country> USA</country>
+
+</aff>
+<aff>
+
+<institution>Z.-Z. Shen Department of Surgery, Fudan University,</institution>
+<addr-line> Shanghai,</addr-line>
+<country> People's Republic of China</country>
+
+</aff>
+<aff>
+
+<institution>Department of Experimental Medical Science, Section for Neurogastroenterology, BMC B11, Lund University,</institution>
+<addr-line> Lund,</addr-line>
+<country> Sweden</country>
+
+</aff>
+<aff>
+
+<institution>Radiumhemmet's Research Laboratory, Cancer Center Karolinska</institution>
+<addr-line></addr-line>
+<country></country>
+
+</aff>
+<aff>
+
+<institution>Translational Cancer Research Group, Oncology Centre, General Hospital Sint-Augustinus and University of Antwerp,</institution>
+<addr-line> Antwerp,</addr-line>
+<country> Belgium</country>
+
+</aff>
+<aff>
+
+<institution>Section of Urology, Department of Surgical Sciences, Karolinska Institute and Hospital,</institution>
+<addr-line> S-171 76 Stockholm</addr-line>
+<country></country>
+
+</aff>
+<aff>
+
+<institution>Center for Structural and Functional Neuroscience, The University of Montana,</institution>
+<addr-line> Missoula, Montana,</addr-line>
+<country> United States of America</country>
+
+</aff>
+<aff>
+
+<institution>The Institute of Oncology, Rabin Medical Center, Belinson Campus,</institution>
+<addr-line> Petach Tikvah</addr-line>
+<country></country>
+
+</aff>
+<aff>
+
+<institution>Laboratório de Genética Humana e Médica, Departamento de Patologia, Universidade Federal do Pará,</institution>
+<addr-line> Belém, PA,</addr-line>
+<country> Brazil</country>
+
+</aff>
+<aff>
+
+<institution>Case Western Reserve University,</institution>
+<addr-line> Cleveland, Ohio,</addr-line>
+<country> USA</country>
+
+</aff>
+<aff>
+
+<institution>Xennex Inc,</institution>
+<addr-line> Cambridge, MA,</addr-line>
+<country> USA</country>
+
+</aff>
+<aff>
+
+<institution>Faculty of Health and Caring Sciences, Institute of Nursing, The Sahlgrenska Academy at Göteborg University,</institution>
+<addr-line> Göteborg,</addr-line>
+<country> Sweden</country>
+
+</aff>
+<aff>
+
+<institution>Clinical Pathology, College of Veterinary Medicine and BK21 Program for Veterinary Science, Seoul National University,</institution>
+<addr-line> Seoul 151-742,</addr-line>
+<country> Korea</country>
+
+</aff>
+<aff>
+
+<institution>McCaughey Centre, Melbourne School of Population Health, University of Melbourne,</institution>
+<addr-line> Melbourne,</addr-line>
+<country> Australia</country>
+
+</aff>
+<aff>
+
+<institution>Department of Medical Laboratory Technology, Faculty of Health Sciences, Haramaya University,</institution>
+<addr-line> Haramaya,</addr-line>
+<country> Ethiopia</country>
+
+</aff>
+<aff>
+
+<institution>Department of Pathology, University of Wisconsin, School of Medicine and Public Health,</institution>
+<addr-line> Madison, WI 53706,</addr-line>
+<country> USA</country>
+
+</aff>
+<aff>
+
+<institution>From the Department of Experimental Radiotherapy, M. D. Anderson Hospital and Tumor Institute,</institution>
+<addr-line> Houston, Texas 77030,</addr-line>
+<country> U.S.A</country>
+
+</aff>
+<aff>
+
+<institution>Department of Microbiology &amp; Immunology, Medical University of South Carolina,</institution>
+<addr-line> Charleston, South Carolina 29425</addr-line>
+<country></country>
+
+</aff>
+<aff>
+
+<institution>From the Department of Physiology and the Department of Microbiology, School of Medicine and Dentistry, University of Rochester,</institution>
+<addr-line> Rochester, New York 14620</addr-line>
+<country></country>
+
+</aff>
+<aff>
+
+<institution>First Moscow State Medical University,</institution>
+<addr-line> Moscow,</addr-line>
+<country> Russia</country>
+
+</aff>
+<aff>
+Roger French,
+<institution> Cambridge University</institution>
+<addr-line></addr-line>
+<country></country>
+
+</aff>
+<aff>
+
+<institution>Laboratory of Biochemistry, Chulabhorn Research</institution>
+<addr-line></addr-line>
+<country></country>
+
+</aff>
+<aff>
+
+<institution>Boston University School of Medicine,</institution>
+<addr-line> Boston, Massachusetts,</addr-line>
+<country> United States of America</country>
+
+</aff>
+<aff>
+
+<institution>Biochemistry and Molecular Biology, Medical University of South Carolina,</institution>
+<addr-line> Charleston, South Carolina 29425</addr-line>
+<country></country>
+
+</aff>
+<aff>
+
+<institution>Center for Population Health, The Dartmouth Institute for Health Policy and Clinical Practice,</institution>
+<addr-line></addr-line>
+<country> Lebanon</country>
+
+</aff>
+<aff>
+
+<institution>Institute of Phytopathology and Applied Zoology, University of Giessen,</institution>
+<addr-line> Heinrich-Buff-Ring 26-32, 35392 Giessen,</addr-line>
+<country> Germany</country>
+
+</aff>
+<aff>
+
+<institution>Washington University School of Medicine,</institution>
+<addr-line> Saint Louis, Missouri,</addr-line>
+<country> United States of America</country>
+
+</aff>
+<aff>
+
+<institution>Department of Radiotherapy, Sun Yat-Sen University Cancer Center,</institution>
+<addr-line> Guangzhou, 510060,</addr-line>
+<country> China</country>
+
+</aff>
+<aff>
+
+<institution>Stumpf Consulting,</institution>
+<addr-line> Calabasas</addr-line>
+<country></country>
+
+</aff>
+<aff>
+
+<institution>Laboratory of Malaria and Vector Research, National Institute of Allergy and Infectious Diseases,</institution>
+<addr-line> Bethesda MD 20892,</addr-line>
+<country> USA</country>
+
+</aff>
+<aff>
+
+<institution>Department of Cardiology, Leiden University Medical Center,</institution>
+<addr-line> 2300 RC Leiden,</addr-line>
+<country> The Netherlands</country>
+
+</aff>
+<aff>
+
+<institution>Department of Occupational Health, Huaxi School of Public Health, Sichuan University, </institution>
+<addr-line>Chengdu,</addr-line>
+<country> China</country>
+
+</aff>
+<aff>
+
+<institution>The Japan Multinational Trial Organization,</institution>
+<addr-line> Kyoto,</addr-line>
+<country> Japan</country>
+
+</aff>
+<aff>
+
+<institution>Structural Genomics Consortium, MBB, Karolinska Institute,</institution>
+<addr-line> 17177 Stockholm,</addr-line>
+<country> Sweden</country>
+
+</aff>
+<aff>
+
+<institution>Department of Cellular Biology and Center for Tropical and Emerging Global Diseases, University of Georgia,</institution>
+<addr-line> Athens, Georgia 30602</addr-line>
+<country></country>
+
+</aff>
+<aff>
+
+<institution>Struttura Complessa di Cardioradiologia-UTIC, P.O. “Giovanni Paolo II”,</institution>
+<addr-line> Lamezia Terme,</addr-line>
+<country> Italy</country>
+
+</aff>
+<aff>
+
+<institution>Texas Department of State Health Services, Center for Health Statistics,</institution>
+<addr-line> Austin, Texas,</addr-line>
+<country> USA</country>
+
+</aff>
+<aff>
+
+<institution>Department of Radiation Oncology, Universita¨tsklinikum,</institution>
+<addr-line> Robert-Koch-Str. 40, D-37075 Go¨ttingen,</addr-line>
+<country> Germany</country>
+
+</aff>
+<aff>
+
+<institution>Department of Orthopaedic Surgery, Fukushima Medical University School of Medicine,</institution>
+<addr-line> 1-Hikarigaoka, Fukushima City, Fukushima 960-1295,</addr-line>
+<country> Japan</country>
+
+</aff>
+<aff>
+
+<institution>Department of Cranio-Maxillofacial Surgery, Research Unit "Vascular Biology of Oral, Structures (VABOS)", University Hospital Muenster,</institution>
+<addr-line> Waldeyerstrasse 30, D-48149, Muenster,</addr-line>
+<country> Germany</country>
+
+</aff>
+<aff>
+
+<institution>Department of Neurology, the Johns Hopkins School of Medicine,</institution>
+<addr-line> Baltimore, Maryland,</addr-line>
+<country> USA</country>
+
+</aff>
+<aff>
+
+<institution>Department of Chemical Crystallography, Chemistry Research Laboratory, Department of Chemistry, University of Oxford,</institution>
+<addr-line> Oxford OX1 3TA,</addr-line>
+<country> England</country>
+
+</aff>
+<aff>
+
+<institution>Department of Anatomy, Faculty of Medicine, Khon Kaen University</institution>
+<addr-line></addr-line>
+<country></country>
+
+</aff>
+<aff>
+
+<institution>Geisinger Center for Health Research,</institution>
+<addr-line> Danville, Pennsylvania,</addr-line>
+<country> USA</country>
+
+</aff>
+<aff>
+
+<institution>Engineering, Seoul National University,</institution>
+<addr-line> Seoul</addr-line>
+<country></country>
+
+</aff>
+<aff>
+
+<institution>T. Tajima Department of Surgery, Tokai University,</institution>
+<addr-line> Tokyo,</addr-line>
+<country> Japan</country>
+
+</aff>
+<aff>
+
+<institution>Department of Public Health and Primary Health Care, Section for Physiotherapy Science, University of Bergen,</institution>
+<addr-line> Bergen,</addr-line>
+<country> Norway</country>
+
+</aff>
+<aff>
+
+<institution>Robert W. Franz Cancer Research Center, Earle A. Chiles Research Institute, Providence Portland Medical Center,</institution>
+<addr-line> Portland, Oregon,</addr-line>
+<country> USA</country>
+
+</aff>
+<aff>
+
+<institution>Helmholtz Institute, Utrecht University,</institution>
+<addr-line> Utrecht,</addr-line>
+<country> Netherlands</country>
+
+</aff>
+<aff>
+
+<institution>Centro Español de Investigación Farmacoepidemiológica,</institution>
+<addr-line> Madrid,</addr-line>
+<country> Spain</country>
+
+</aff>
+<aff>
+
+<institution>Biophysics Unit, Department of Physiological Sciences II, IDIBELL-University of Barcelona, MRC, Clinical Sciences Centre, Imperial College London,</institution>
+<addr-line> Du Cane Road, W12 0NN London,</addr-line>
+<country> UK</country>
+
+</aff>
+<aff>
+
+<institution>Center for Medicine and the Media, The Dartmouth Institute for Health Policy and Clinical Practice,</institution>
+<addr-line> Lebanon, NH,</addr-line>
+<country> USA</country>
+
+</aff>
+<aff>
+
+<institution>School for Medicine and Health, Durham University Queen's Campus,</institution>
+<addr-line> University Boulevard, Stockton-on-Tees, TS17 6BH,</addr-line>
+<country> UK</country>
+
+</aff>
+<aff>
+
+<institution>Institute of Epidemiology, Faculty of Medicine, University of Belgrade,</institution>
+<addr-line></addr-line>
+<country> Serbia</country>
+
+</aff>
+<aff>
+
+<institution>Lucile Packard Children's Hospital,</institution>
+<addr-line> Palo Alto, CA, 94304,</addr-line>
+<country> USA</country>
+
+</aff>
+<aff>
+
+<institution>Department of Chemistry, University of Illinois at Urbana-Champaign,</institution>
+<addr-line> 600 South Mathews Avenue, Urbana, IL 61801</addr-line>
+<country></country>
+
+</aff>
+<aff>
+
+<institution>The Institute for Genomic Biology, University of Illinois at Urbana-Champaign,</institution>
+<addr-line> 600 South Mathews Avenue, Urbana, IL 61801</addr-line>
+<country></country>
+
+</aff>
+<aff>
+
+<institution>Department of Chemistry, Faculty of Science, Tokyo University of Science,</institution>
+<addr-line> 1-3 Kagurazaka, Shinjuku-ku, Tokyo 162-8601,</addr-line>
+<country> Japan</country>
+
+</aff>
+<aff>
+
+<institution>Centre for Medical Genetics, Ghent University Hospital,</institution>
+<addr-line> De Pintelaan 185, B-9000 Ghent,</addr-line>
+<country> Belgium</country>
+
+</aff>
+<aff>
+
+<institution>Transplant Research Center, Beth Israel Deaconess Medical Center, Harvard Medical School,</institution>
+<addr-line> Boston, MA 02115</addr-line>
+<country></country>
+
+</aff>
+<aff>
+
+<institution>Dr. Margarete Fischer-Bosch - Institute of Clinical Pharmacology, Internal Medicine I, Robert Bosch Hospital,</institution>
+<addr-line> Stuttgart,</addr-line>
+<country> Germany</country>
+
+</aff>
+<aff>
+
+<institution>Jacobs Center for Productive Youth Development, University of Zürich,</institution>
+<addr-line> Culmannstrasse 1, 8001 Zürich,</addr-line>
+<country> Switzerland</country>
+
+</aff>
+<aff>
+
+<institution>Department of Physiology in the Faculty of Medicine and the Network Biology Research Laboratories,Technion - Israel Institute ofTechnology,</institution>
+<addr-line> Haifa,</addr-line>
+<country> Israel</country>
+
+</aff>
+<aff>
+
+<institution>S. E. Petersen Department of Psychology, Washington University,</institution>
+<addr-line> Saint Louis, MO,</addr-line>
+<country> USA</country>
+
+</aff>
+<aff>
+
+<institution>Department of Zoology, University of California,</institution>
+<addr-line> Davis, California 95616</addr-line>
+<country></country>
+
+</aff>
+<aff>
+
+<institution>Department of Respiratory Medicine, Glasgow Royal Infirmary,</institution>
+<addr-line> Glasgow G4 0SF,</addr-line>
+<country> UK</country>
+
+</aff>
+<aff>
+
+<institution>Division of Medical and Dental Education, School of Medicine, University of Aberdeen,</institution>
+<addr-line> Aberdeen,</addr-line>
+<country> UK</country>
+
+</aff>
+<aff>
+
+<institution>Department of Pharmacy, Fukushima Medical University Hospital,</institution>
+<addr-line> 1-Hikarigaoka, Fukushima City, Fukushima 960-1295,</addr-line>
+<country> Japan</country>
+
+</aff>
+<aff>
+
+<institution>Clinical Department of Internal Medicine, Clinical Division of General Internal Medicine, Innsbruck Medical University,</institution>
+<addr-line> 6020 Innsbruck,</addr-line>
+<country> Austria</country>
+
+</aff>
+<aff>
+¤ Current address:
+<institution> Karlsruhe Institute of Technology, Institute for Applied Biosciences, Department of Genetics,</institution>
+<addr-line> Karlsruhe,</addr-line>
+<country> Germany</country>
+
+</aff>
+<aff>
+
+<institution>Research and Testing Laboratory, Medical Biofilm Research Institute,</institution>
+<addr-line> Lubbock, TX,</addr-line>
+<country> USA</country>
+
+</aff>
+<aff>
+
+<institution>Department of Biological Science and Technology, National Chiao Tung University,</institution>
+<addr-line> Hsinchu 300,</addr-line>
+<country> Taiwan</country>
+
+</aff>
+<aff>
+
+<institution>AstraZeneca, Research &amp; Development,</institution>
+<addr-line> Mölndal,</addr-line>
+<country> Sweden</country>
+
+</aff>
+<aff>
+
+<institution>Department of Obstetrics &amp; Gynecology, University of Pennsylvania School of Medicine,</institution>
+<addr-line> Philadelphia, PA 19104,</addr-line>
+<country> USA</country>
+
+</aff>
+<aff>
+
+<institution>Department of Health Sciences, University College of Borås,</institution>
+<addr-line> Borås, </addr-line>
+<country>Sweden</country>
+
+</aff>
+
+<aff>
+    <institution>Departments of Family and Community Medicine and Psychiatry, Faculty of Medicine and the Dalla Lana School of Public Health, University of Toronto; Addictions Program, Centre for Addiction and Mental Health,</institution>
+    <addr-line>Toronto, Ontario;</addr-line>
+    <institution>Ontario Tobacco Research Unit,</institution>
+    <country>Canada</country>
+</aff>
+
+<aff>
+    <institution>Department of Biological Sciences, Korea Advanced Institute of Science and Technology,</institution>
+    <addr-line>Daejeon,</addr-line>
+    <country>Korea,</country>
+    <addr-line>305-701</addr-line>
+</aff>
+
+<aff>
+    <institution>Department of Clinical Sciences, Gastroenterology Division, Skåne University Hospital,</institution>
+    <addr-line>Malmö,</addr-line>
+    <institution>Lund University,</institution>
+    <addr-line>Lund,</addr-line>
+    <country>Sweden</country>
+</aff>
+
+</affs>
