@@ -5,4 +5,4 @@ Two following characters are separated if at least one of the following conditio
 
 Additionally, spaces are not treated as tokens
 Example:
-'kot pies123_@@123' -> ['kot', 'pies', '123', '_', '@', '@', '123']
+'kot pi_es123_@@123' -> ['kot', 'pi', '_', 'es', '123', '_', '@', '@', '123']

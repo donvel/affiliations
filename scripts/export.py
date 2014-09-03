@@ -7,10 +7,11 @@ import ast
 import codecs
 import argparse
 import random
+import operator
 
 from collections import defaultdict
 from utils import normalize, tokenize, text_in_element, to_unicode, glue_lists, \
-        is_punct
+        is_punct, create_xml_tree
 
 
 DICTS_DIR = 'dicts/'
@@ -46,34 +47,32 @@ rare_thr = 2 # Rare <=> at most rare_thr occurences in the training set
 nei_thr = 0 # Copy neighbours' features in this range
 split_alphanum = False # Should alphanumeric words be split into many parts
 
-split_alphanum = False # Should alphanumeric words be split into many parts
-
-def dict_from_file(filename):
+def dict_from_file(filename, match_case=True):
     d = defaultdict(list)
     with codecs.open(DICTS_DIR + filename, 'rb', encoding='utf8') as f:
         for line in f:
-            tokens = [normalize(t) for t in tokenize(line,
-                split_alphanum=split_alphanum)]
+            tokens = tokenize(normalize(line, lowercase=(not match_case)),
+                    split_alphanum=split_alphanum)
             for (nb, token) in enumerate(tokens):
                 d[token] += [(tokens, nb)]
-        return d
+        return (d, match_case)
 
 
 def load_dicts(dd):
     what_where = [
-            ('StopWord', 'stop_words_short.txt'),
-            ('StopWordMulti', 'stop_words_multilang.txt'),
-            ('Country', 'countries2.txt'),
-            ('Address', 'address_keywords.txt'),
-            ('Institution', 'institution_keywords.txt'),
-            ('City', 'cities.txt'),
-            ('State', 'states.txt'),
-            ('StateCode', 'state_codes.txt'),
+            ('Address', 'address_keywords.txt', False),
+            ('City', 'cities.txt', True),
+            ('Country', 'countries2.txt', True),
+            ('Institution', 'institution_keywords.txt', False),
+            ('State', 'states.txt', True),
+            ('StateCode', 'state_codes.txt', True),
+            ('StopWord', 'stop_words_short.txt', True),
+            ('StopWordMulti', 'stop_words_multilang.txt', True),
         ]
 
-    for (what, where) in what_where:
+    for (what, where, match_case) in what_where:
         if what in features_on:
-            dd[what] = dict_from_file(where)
+            dd[what] = dict_from_file(where, match_case)
 
 
 def all_upper_case(word):
@@ -95,11 +94,11 @@ def get_local_features(token, word_freq=None):
     if token.isalpha():
 
         if 'UpperCase' in features_on:
-            if first_upper_case(token):
+            if first_upper_case(normalize(token, lowercase=False)):
                 features += ['UpperCase']
 
         if 'AllUpperCase' in features_on:
-            if all_upper_case(token):
+            if all_upper_case(normalize(token, lowercase=False)):
                 features += ['AllUpperCase']
 
         if 'Freq' in features_on:
@@ -138,21 +137,27 @@ def get_local_features(token, word_freq=None):
     return features
 
 
-def matches((l1, p1), (l2, p2)):
+def matches((l1, p1), (l2, p2), match_case=True):
     """ True for (['Kot', 'je', 'mysz', 'dzis'], 3), (['mysz', 'dzis'], 1) """
     offset = p1 - p2
-    return l1[offset:offset+len(l2)] == l2
+    li1 = l1[offset:offset+len(l2)]
+    li2 = l2
+    if not match_case:
+        li1 = [t.lower() for t in li1]
+        li2 = [t.lower() for t in li2]
+    return li1 == li2
 
 
 def get_dict_features(token_list):
-    token_list = [normalize(t) for t in token_list]
+    token_list = [normalize(t, lowercase=False) for t in token_list]
     features = []
     for (nb, token) in enumerate(token_list):
         cfeatures = []
-        for (feature, d) in dicts.items():
-            possible_hits = d[token]
+        for (feature, (d, match_case)) in sorted(dicts.items(),
+                key=operator.itemgetter(0)):
+            possible_hits = d[token if match_case else token.lower()]
             for phit in possible_hits:
-                if matches((token_list, nb), phit):
+                if matches((token_list, nb), phit, match_case=match_case):
                     cfeatures += [feature]
                     break
         features += [cfeatures]
@@ -215,10 +220,10 @@ def create_instance(aff, f, word_freq=None, hint_file=None):
 
 
     labeled_list = []
-    labeled_list += get_labels(aff.text, 'NONE')
+    labeled_list += get_labels(aff.text, 'INST') #FIXME !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     for item in aff:
         labeled_list += get_labels(item.text, item.tag.upper()[:4])
-        labeled_list += get_labels(item.tail, 'NONE')
+        labeled_list += get_labels(item.tail, 'INST') #FIXME !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
     token_list2, label_list = zip(*labeled_list)
 
@@ -242,15 +247,17 @@ def create_input(li, f, h, word_freq=None):
             print >> h
 
 
-def export_to_crf_input(input_file, test_input, num1, num2, file1, file2, hint_file):
-    tree = ET.parse(input_file)
+def export_to_crf_input(tree, test_input, num1, num2, file1, file2, hint_file,
+        shuffle=True):
     affs = list(tree.getroot())
-    random.shuffle(affs)
+    if shuffle:
+        random.shuffle(affs)
 
     if test_input:
         test_tree = ET.parse(test_input)
         test_affs = list(test_tree.getroot())
-        random.shuffle(test_affs)
+        if shuffle:
+            random.shuffle(test_affs)
         
         assert num1 <= len(affs) and num2 <= len(test_affs)
         test_affs = test_affs[:num2]
@@ -284,7 +291,9 @@ def get_args():
             help="Specify a separate file with test data")
     parser.add_argument('--rare', type=int, default=2)
     parser.add_argument('--neighbor', type=int, default=0)
-    parser.add_argument('--split_alphanum', type=int, default=0)
+    parser.add_argument('--split_alphanum', type=int, default=1)
+    parser.add_argument('--xml_input', type=int, default=1)
+    parser.add_argument('--shuffle', type=int, default=1)
     
     return parser.parse_args()
 
@@ -305,8 +314,15 @@ if __name__ == '__main__':
     hint_file = open(args.hint_file, 'wb')
 
     split_alphanum = args.split_alphanum == 1
+    xml_input = args.xml_input == 1
+
+    if xml_input:
+        tree = ET.parse(args.input_file)
+    else:
+        tree = create_xml_tree(args.input_file)
 
     load_dicts(dicts)
-    export_to_crf_input(args.input_file, args.input_test_file, \
+    export_to_crf_input(tree, args.input_test_file, \
             args.train_number, args.test_number, \
-            train_file, test_file, hint_file)
+            train_file, test_file, hint_file,
+            shuffle=(args.shuffle == 1))

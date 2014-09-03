@@ -1,0 +1,24 @@
+1) http://geography.about.com/library/weekly/aa082399.htm
+2) Used both rows
+3) Added some abbreviations and more names
+
+US
+U. S.
+USA
+U. S. A.
+United States of America
+UK
+U. K.
+People's Republic of China
+P. R. China
+PR China
+P R China
+Arab Emirates
+Bulgariya
+Yugoslavia
+
+4) Split alternative names (by searching for "(" ) into separate rows
+
+5) Cleared "," "or" (by expanding names)
+
+6) Cleared some "and" and "of"

@@ -1,0 +1,6 @@
+Taken from:
+http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2990275/
+
+1) Had to use OCR
+2) Deleted some stuff (probelamtic keywords)
+3) Deleted Russian words (can't make non-ASCII lookups anyway)

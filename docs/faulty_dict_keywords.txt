@@ -1,0 +1,22 @@
+Cities:
+of
+university
+university park ?
+university city ?
+
+StateCodes:
+IN
+
+Less cities? SURE !!!
+Introduce case-sensitive lookups? Probably YES (especially for state codes)!
+
+Merge with existnent "hint files" in CERMINE? institutions.txt -- > zapytac Dominike, jak to wygenerowala :P
+
+Or maybe dict hierarchical exclusions?
+Only one dict match like:
+
+StopWord > StateCode
+StopWord > City
+Institution > City
+
+

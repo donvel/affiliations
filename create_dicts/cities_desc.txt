@@ -1,0 +1,4 @@
+1) File source: cities15000.txt from http://download.geonames.org/export/dump/
+2) We took the third column (apparently English names of the cities)
+3) We deleted all (* patterns
+4) Deleted the annoying cities: University, Of, Central

@@ -49,8 +49,10 @@ def tokenize(text, keep_all=False, split_alphanum=False):
     if split_alphanum:
         # 'lis9' -> 'lis', '9'
         split_list = split_more('(\d+)', split_list)
+    
+    forbidden = [''] if keep_all else ['', ' ']
 
-    return filter(lambda x: x != '', split_list) # don't keep ''s
+    return filter(lambda x: normalize(x) not in forbidden, split_list) # don't keep ''s
 
 
 def to_unicode(string):
@@ -74,3 +76,12 @@ def print_out(node, where=sys.stdout):
 
 def text_in_element(elem):
     return ''.join(txt for txt in elem.itertext())
+
+
+def create_xml_tree(filename):
+    with codecs.open(filename, 'rb', encoding='utf8') as input_file:
+        root = ET.Element('affs')
+        for line in input_file:
+            aff = ET.SubElement(root, 'aff')
+            aff.text = line
+        return ET.ElementTree(root)
