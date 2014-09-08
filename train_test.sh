@@ -37,7 +37,7 @@ acrf_out=$acrf_prefix$acrf_suffix
 
 evaluator="new ACRFTrainer.LogEvaluator(\"$acrf_prefix\")"
 
-def_features='["Word", "Number", "UpperCase", "AllUpperCase", "Address", "Country", "City", "State", "StateCode", "StopWordMulti", "Punct", "WeirdLetter"]'
+def_features='["Word", "Number", "UpperCase", "AllUpperCase", "Address", "Country", "City", "State", "StateCode", "StopWord", "Separator", "NonAlphanum"]'
 features=${4:-$def_features}
 
 python scripts/export.py --train $train --test $tst \

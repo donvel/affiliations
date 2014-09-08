@@ -23,8 +23,8 @@ AVAILABLE_FEATURES = [
         'UpperCase',
         'AllUpperCase',
         'AlphaNum', # does not apply to one tokenizing method
-        'Punct',
-        'WeirdLetter',
+        'Separator',
+        'NonAlphanum',
         'Length',
         # 'Freq', # Irrelevant
         'Rare',
@@ -32,7 +32,7 @@ AVAILABLE_FEATURES = [
         # dict - based
         'Country',
         'StopWord',
-        'StopWordMulti',
+        'StopWordEng',
         'Address',
         'State',
         'StateCode',
@@ -66,8 +66,8 @@ def load_dicts(dd):
             ('Institution', 'institution_keywords.txt', False),
             ('State', 'states.txt', True),
             ('StateCode', 'state_codes.txt', True),
-            ('StopWord', 'stop_words_short.txt', True),
-            ('StopWordMulti', 'stop_words_multilang.txt', True),
+            ('StopWordEng', 'stop_words_short.txt', False),
+            ('StopWord', 'stop_words_multilang.txt', False),
         ]
 
     for (what, where, match_case) in what_where:
@@ -95,11 +95,11 @@ def get_local_features(token, word_freq=None):
 
         if 'UpperCase' in features_on:
             if first_upper_case(normalize(token, lowercase=False)):
-                features += ['UpperCase']
+                features += ['IsUpperCase']
 
         if 'AllUpperCase' in features_on:
             if all_upper_case(normalize(token, lowercase=False)):
-                features += ['AllUpperCase']
+                features += ['IsAllUpperCase']
 
         if 'Freq' in features_on:
             features += ['Freq:%s' % str(word_freq[ntoken])]
@@ -111,24 +111,24 @@ def get_local_features(token, word_freq=None):
     elif token.isdigit():
 
         if 'Number' in features_on:
-            features += ['Number']
+            features += ['IsNumber']
 
     elif token.isalnum():
 
         if 'AlphaNum' in features_on:
-            features += ['AlphaNum']
+            features += ['IsAlphaNum']
 
     elif len(to_unicode(token)) == 1:
 
         if is_punct(token):
-            if 'Punct' in features_on:
-                features += ['Punct']
+            if 'Separator' in features_on:
+                features += ['IsSeparator']
         else:
-            if 'WeirdLetter' in features_on:
-                features += ['WeirdLetter']
+            if 'NonAlphanum' in features_on:
+                features += ['IsNonAlphanum']
     
     if 'Word' in features_on:
-        if not any(x in features for x in ['Rare', 'Number', 'AlphaNum']):
+        if not any(x in features for x in ['Rare', 'IsNumber', 'IsAlphaNum']):
             features += ['W=%s' % normalize(token, lowercase=False)]
 
     if 'Length' in features_on:
@@ -158,7 +158,7 @@ def get_dict_features(token_list):
             possible_hits = d[token if match_case else token.lower()]
             for phit in possible_hits:
                 if matches((token_list, nb), phit, match_case=match_case):
-                    cfeatures += [feature]
+                    cfeatures += ['Keyword' + feature]
                     break
         features += [cfeatures]
     return features
@@ -247,8 +247,13 @@ def create_input(li, f, h, word_freq=None):
             print >> h
 
 
+def add_mock_label(f):
+    print >> f, 'TEXT ----'
+    print >> f
+
+
 def export_to_crf_input(tree, test_input, num1, num2, file1, file2, hint_file,
-        shuffle=True):
+        shuffle=True, mock_label=False):
     affs = list(tree.getroot())
     if shuffle:
         random.shuffle(affs)
@@ -276,6 +281,9 @@ def export_to_crf_input(tree, test_input, num1, num2, file1, file2, hint_file,
     for (li, f, h) in aff_list:
         create_input(li, f, h, word_freq)
 
+    if mock_label:
+        add_mock_label(file1)
+
 
 def get_args():
     parser = argparse.ArgumentParser(description="Export tokens to crf format")
@@ -294,6 +302,7 @@ def get_args():
     parser.add_argument('--split_alphanum', type=int, default=1)
     parser.add_argument('--xml_input', type=int, default=1)
     parser.add_argument('--shuffle', type=int, default=1)
+    parser.add_argument('--mock_text_label', type=int, default=0)
     
     return parser.parse_args()
 
@@ -325,4 +334,5 @@ if __name__ == '__main__':
     export_to_crf_input(tree, args.input_test_file, \
             args.train_number, args.test_number, \
             train_file, test_file, hint_file,
-            shuffle=(args.shuffle == 1))
+            shuffle=(args.shuffle == 1),
+            mock_label=(args.mock_text_label == 1))

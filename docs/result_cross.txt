@@ -8,27 +8,26 @@ Neighbor: 1, SplitAlphanum: True
 Features:
 ['Word', 'Number', 'UpperCase', 'AllUpperCase', 'Address', 'Country', 'City', 'State', 'StateCode', 'StopWordMulti', 'Punct', 'WeirdLetter']
 
-
-f1: 0.978743, success: 0.898097, matched: 0.940412
-total success: 0.909250
+f1: 0.978710, success: 0.898834, matched: 0.940919
+total success: 0.910000
 
 ========== CONFUSION ==========
          ADDR    COUN    INST    PREC    REC     F1      
-ADDR    42808      55    1302   0.96569 0.96927 0.96748 
-COUN      190    7896      10   0.99134 0.97530 0.98325 
-INST     1331      14   90294   0.98568 0.98532 0.98550 
+ADDR    42565      57    1281   0.96548 0.96952 0.96750 
+COUN      190    7895      10   0.99109 0.97529 0.98313 
+INST     1332      14   89650   0.98580 0.98521 0.98551 
 
 ========== SUCCESS ==========
 RATIO     CORRECT  TOTAL  TYPE
-0.86715     594     685 ('COUN', 'INST')
-0.88288     588     666 ('ADDR', 'INST')
-0.91597    5941    6486 ('ADDR', 'COUN', 'INST')
-0.92638     151     163 ('INST',)
+0.86423     592     685 ('COUN', 'INST')
+0.88138     587     666 ('ADDR', 'INST')
+0.91721    5949    6486 ('ADDR', 'COUN', 'INST')
+0.93252     152     163 ('INST',)
 
 ========== MATCHED ==========
-0.92312 'INST'
-0.91303 'ADDR'
-0.98508 'COUN'
+0.92325 'INST'
+0.91401 'ADDR'
+0.98550 'COUN'
 
 ---------- DESCRIPTION ----------
 
@@ -54,3 +53,5 @@ contain "address" and "country" parts.
 4) MATCHED -- this factor is computed separately for different label types.
 For a given label type X, this is the ratio of affiliation strings in which
 tokens predicted to be X were exactly the actual X-type tokens.
+
+

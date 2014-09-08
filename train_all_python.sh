@@ -42,14 +42,14 @@ nei_thr=1
 
 rare_thr=0
 
-features='["Word", "Number", "UpperCase", "AllUpperCase", "Address", "Country", "City", "State", "StateCode", "StopWordMulti", "Punct", "WeirdLetter"]'
-
+features='["Word", "Number", "UpperCase", "AllUpperCase", "Address", "Country", "City", "State", "StateCode", "StopWord", "Separator", "NonAlphanum"]'
 python scripts/export.py \
     --hint $hint \
     --train $crftrain --test $crftest \
     --input $real \
     --train_number $number --test_number $tst_number \
     --neighbor $nei_thr --rare $rare_thr --split_alphanum 1 \
+    --mock_text_label 1 \
     "$features"
 
 
@@ -62,6 +62,6 @@ java -Xmx2000M \
     --model-file $model > $log_stdout 2> $log_err
 
 python scripts/count_score.py --error_file $err --label_file $label \
-    --hint_file $hint --input_file $acrf_out --full_output 1 | tee $score_file
+    --hint_file $hint --input_file $output --full_output 1 | tee $score_file
 python scripts/make_readable.py --xml $err --html $err_html 
 python scripts/make_readable.py --xml $label --html $label_html

@@ -1,4 +1,4 @@
-features='["Word", "Number", "UpperCase", "AllUpperCase", "Address", "Country", "City", "State", "StateCode", "StopWordMulti", "Punct", "WeirdLetter"]'
+features='["Word", "Number", "UpperCase", "AllUpperCase", "Address", "Country", "City", "State", "StateCode", "StopWord", "Separator", "NonAlphanum"]'
 
 javatests=javatests
 
@@ -6,7 +6,7 @@ output=$javatests/features-expected.txt
 
 input=$javatests/affs.txt
 
-neighbor=0
+neighbor=1
 
 train_number=12203 # ALL
 

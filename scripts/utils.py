@@ -59,9 +59,14 @@ def to_unicode(string):
     return string if isinstance(string, unicode) else string.decode('utf8')
 
 
+def remove_em_dashes(string):
+    return string.replace(unicodedata.lookup('EM DASH'), '-')
+
+
 def normalize(string, lowercase=True):
     """u'Aあä' -> 'aa' or -> 'Aa' (depending on the flag lowercase)"""
     string = to_unicode(string)
+    string = remove_em_dashes(string)
     normalized = unicodedata.normalize('NFKD', string).encode('ascii', 'ignore')
     if lowercase:
         return normalized.lower()
