@@ -156,3 +156,6 @@ CRF testing tools
    a specific file.
 
 #. Our testing results may be found in the `docs/result_*.txt` files.
+
+#. The file `docs/sample_comp.txt` contains a report from manual
+   training data evaluation.
