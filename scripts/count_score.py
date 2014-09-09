@@ -263,7 +263,7 @@ tokens predicted to be X were exactly the actual X-type tokens.
                     self.label_total[l] += int(f.readline())
 
 
-def read_file(filename, hint_file, error_file, label_file, full_output):
+def read_file(filename, hint_file, error_file, label_file, full_output, use_hint):
     with open(filename, 'rb') as f:
         t_lbng, lbng = [], []
 
@@ -295,9 +295,10 @@ def read_file(filename, hint_file, error_file, label_file, full_output):
             print '==================== LAST SCORE =========================='
             last_score.write()
             last_score.full_write()
-           
-            show_labels(last_score.labeling, hint_file, error_file, only_errors=True)
-            show_labels(last_score.labeling, hint_file, label_file)
+            
+            if use_hint:
+                show_labels(last_score.labeling, hint_file, error_file, only_errors=True)
+                show_labels(last_score.labeling, hint_file, label_file)
         else:
             last_score.write(sys.stderr)
             last_score.serialize()
@@ -311,6 +312,7 @@ def get_args():
     parser.add_argument('--error_file', default='crfdata/default-err.xml')
     parser.add_argument('--label_file', default='crfdata/default-label.xml')
     parser.add_argument('--full_output', type=int, default=0)
+    parser.add_argument('--use_hint', type=int, default=1)
     
     return parser.parse_args()
 
@@ -320,4 +322,4 @@ if __name__ == '__main__':
     args = get_args()
 
     read_file(args.input_file, args.hint_file, args.error_file,
-            args.label_file, args.full_output == 1)
+            args.label_file, args.full_output == 1, args.use_hint == 1)
