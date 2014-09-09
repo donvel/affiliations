@@ -163,7 +163,7 @@ class Score:
                 (self.f1_mean, self.success_mean, self.matched_mean)
 
 
-    def full_write(self):
+    def full_write(self, show_desc):
         
         HELP_TEXT = """
 1) global statistics
@@ -228,9 +228,10 @@ tokens predicted to be X were exactly the actual X-type tokens.
         for key, value in self.matched.items():
             print '%.5f %r' % (value, key)
 
-        print
-        print 10 * '-' + ' DESCRIPTION ' + 10 * '-'
-        print HELP_TEXT
+        if show_desc:
+            print
+            print 10 * '-' + ' DESCRIPTION ' + 10 * '-'
+            print HELP_TEXT
 
 
     def serialize(self):
@@ -263,7 +264,7 @@ tokens predicted to be X were exactly the actual X-type tokens.
                     self.label_total[l] += int(f.readline())
 
 
-def read_file(filename, hint_file, error_file, label_file, full_output, use_hint):
+def read_file(filename, hint_file, error_file, label_file, full_output, use_hint, show_desc):
     with open(filename, 'rb') as f:
         t_lbng, lbng = [], []
 
@@ -294,7 +295,7 @@ def read_file(filename, hint_file, error_file, label_file, full_output, use_hint
             best_score.write()
             print '==================== LAST SCORE =========================='
             last_score.write()
-            last_score.full_write()
+            last_score.full_write(show_desc)
             
             if use_hint:
                 show_labels(last_score.labeling, hint_file, error_file, only_errors=True)
@@ -313,6 +314,7 @@ def get_args():
     parser.add_argument('--label_file', default='crfdata/default-label.xml')
     parser.add_argument('--full_output', type=int, default=0)
     parser.add_argument('--use_hint', type=int, default=1)
+    parser.add_argument('--show_desc', type=int, default=0)
     
     return parser.parse_args()
 
@@ -322,4 +324,5 @@ if __name__ == '__main__':
     args = get_args()
 
     read_file(args.input_file, args.hint_file, args.error_file,
-            args.label_file, args.full_output == 1, args.use_hint == 1)
+            args.label_file, args.full_output == 1, args.use_hint == 1,
+            args.show_desc == 1)

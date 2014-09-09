@@ -58,4 +58,4 @@ python scripts/count_score.py --error_file $err --label_file $label \
 python scripts/make_readable.py --xml $err --html $err_html 
 python scripts/make_readable.py --xml $label --html $label_html
 
-firefox $err_html &
+#firefox $err_html &
