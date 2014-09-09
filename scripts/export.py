@@ -294,7 +294,7 @@ def get_args():
     parser.add_argument('--train', dest='train_file', default='crfdata/default-train.crf')
     parser.add_argument('--test', dest='test_file', default='crfdata/default-test.crf')
     parser.add_argument('--hint', dest='hint_file', default='crfdata/default-hint.txt')
-    parser.add_argument('--input', dest='input_file', default='data/affs-improved.xml')
+    parser.add_argument('--input', dest='input_file', default='data/affs-real-like.xml')
     parser.add_argument('--input_test', dest='input_test_file', default=None,
             help="Specify a separate file with test data")
     parser.add_argument('--rare', type=int, default=2)

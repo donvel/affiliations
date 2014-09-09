@@ -2,11 +2,13 @@ CERMINE=/home/bartek/Projects/CERMINE
 
 GRMM=grmm
 
-suffix=all_small
+suffix=all_java
 
-real=data/affs-real-like-small.xml
+real=data/affs-real-like.xml
 
-crftrain=crfdata/train$suffix.txt
+mock_test=data/affs-real-like-small.xml
+
+crftrain=crfdata/train_$suffix.txt
 
 acrf_prefix=crfdata/acrf_output_$suffix
 
@@ -48,6 +50,6 @@ java -Xmx2000M \
     -cp $GRMM/class:$GRMM/lib/mallet-deps.jar:$GRMM/lib/grmm-deps.jar \
     edu.umass.cs.mallet.grmm.learning.GenericAcrfTui \
     --training $crftrain \
-    --testing $crftrain \
+    --testing $mock_test \
     --eval "$evaluator" \
     --model-file $model > $log_stdout 2> $log_err

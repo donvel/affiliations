@@ -9,7 +9,7 @@ Data preparation
 #. We want to convert the tagged affiliations in `data/affs-parsed.txt` to valid XML.
    The script will print out invalid entries::
 
-    scripts/affs_txt_to_rst.py
+    scripts/affs_txt_to_xml.py
 
 #. Then, we want to get rid off unnecessary tags (like `<italic>`)::
 
@@ -31,6 +31,10 @@ Data preparation
 
     scripts/remove_some_tags.py
 
+   We remove them so that the fractions of affiliation types are more less
+   the same as in `data/sample-raw-affs.xml`, statistics for a 200 sample
+   from the file can be found in `docs/raw_stats.txt`.
+
 #. To browse the created dataset one may visualize it with::
 
     scripts/make_readable.py
@@ -50,7 +54,7 @@ CRF training and evaluation
    training and testing. The only positional argument of the exporting script
    is a string representing a Python list. So you may invoke it like::
 
-    scripts/export.py --train_number 1000 --test_number 5000 --neighbor 2 --rare 12 '["Word", "UpperCase", "AllUpperCase", "Number", "Punct", "Freq", "Rare", "Country"]'
+    scripts/export.py --train_number 1000 --test_number 5000 --neighbor 2 --rare 12 '["Word", "UpperCase", "AllUpperCase", "Number", "Separator", "Rare", "Country"]'
 
    It creates a hint file, which is later used for the score counting.
 
@@ -93,11 +97,36 @@ CRF training and evaluation
    The best feature set and parameters are hard-coded in the script.
    But you can make experiments by changing the default parameters::
 
-    ./train.sh training_data_size folds_number neighbor_feature_range rare_threshold 'features_list'
+    ./cross_validate.sh training_data_size folds_number neighbor_feature_range rare_threshold 'features_list'
 
    for example::
 
     ./cross_validate.sh 100 4 1 2 '["Word", "Rare"]'
+
+#. You may also want to use the scripts in order to train a model, which
+   will be later deserialized and used in CERMINE. 
+   We prepared two workflows. One of them exports the training data with
+   the use of a Java class, namely 
+   `pl.edu.icm.cermine.metadata.affiliations.tools.AffiliationTrainingDataExporter`.
+   To do it, just call::
+   
+    ./train_all_java.sh
+
+   This will use 8000 affiliations from `data/affs-real-like.xml` to train
+   the ACRF.
+
+   You may also do the same thing in Python, calling::
+   
+    ./train_all_python.sh
+
+   However, in this second approach it is crucial that the Python and Java code
+   tokenize affiliations and export features in the same way.
+   You can check it by preparing `javatests` directory with some data to export
+   and calling::
+
+    ./test_java_txt.sh
+    diff javatests/features-*
+
 
 CRF testing tools
 -----------------
@@ -121,5 +150,9 @@ CRF testing tools
    This script assumes that there are at most three affiliation parts and
    that they are in the order: `INST, ADDR, COUN`. Affiliation strings
    which do not follow this pattern have to be handled separately.
+
+#. The script `test_hand.sh` is a slight modification of `train.sh`,
+   which is more suitable for evaluating the ACRF on the preapared test data in
+   a specific file.
 
 #. Our testing results may be found in the `docs/result_*.txt` files.

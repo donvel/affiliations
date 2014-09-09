@@ -13,7 +13,7 @@ COMMA_WORDS = [',', ';', '.', ':', '`', '\'', '-', '\',',
 
 
 INSTITUTION_DICT = 'dicts/institution_keywords.txt'
-
+ADDRESS_DICT = 'dicts/my_address_keywords.txt'
 
 def is_accent(char):
     return unicodedata.category(to_unicode(char)) in ['Sk', 'Lm']
@@ -56,14 +56,14 @@ def enhance_untagged(root):
                     elem.text += elem.tail
                     elem.tail = ''
                 elif len(elem.tail.strip()) <= 2:
-                    print "GLUEING %s + %s" % \
+                    """print "GLUEING %s + %s" % \
                             (to_unicode(elem.text).encode('utf8'),
-                                    to_unicode(elem.tail).encode('utf8'))
+                                    to_unicode(elem.tail).encode('utf8'))"""
                     elem.text += elem.tail
                     elem.tail = ''
                 else:
-                    print "REMOVING"
-                    print_out(aff)
+                    #print "REMOVING"
+                    #print_out(aff)
                     root.remove(aff)
                     break
 
@@ -133,13 +133,15 @@ def change_institution_by_dict(root):
 
     split_by_commas(root)
     institution_keywords = set_from_file(INSTITUTION_DICT, normal=True)
+    address_keywords = set_from_file(ADDRESS_DICT, normal=True)
 
     for aff in root:
         for elem in aff:
             if elem.tag == 'addr-line':
                 tokens = [normalize(t) for t in tokenize(elem.text, split_alphanum=True)]
                 if any(t in institution_keywords for t in tokens) \
-                        and not any(t.isdigit() for t in tokens):
+                        and not any(t.isdigit() for t in tokens) \
+                        and not any(t in address_keywords for t in tokens):
                     elem.tag = 'institution'
                     print_out(elem, sys.stderr)
 

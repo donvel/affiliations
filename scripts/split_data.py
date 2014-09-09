@@ -20,9 +20,9 @@ def write_tree(affs, filename):
 def get_args():
     parser = argparse.ArgumentParser(description="Export tokens to crf format")
     
-    parser.add_argument('--train', default='data/improved-train.xml')
-    parser.add_argument('--test', default='data/improved-test.xml')
-    parser.add_argument('--input', default='data/affs-improved.xml')
+    parser.add_argument('--train', default='data/real-like-train.xml')
+    parser.add_argument('--test', default='data/real-like-test.xml')
+    parser.add_argument('--input', default='data/affs-real-like.xml')
     parser.add_argument('--split_point', type=int, default=4000)
     parser.add_argument('--number', type=int, default=1600)
     parser.add_argument('--cross', type=int, default=0)

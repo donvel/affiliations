@@ -6,7 +6,7 @@ affs_test=data/real-like-test.xml
 
 model=crfdata/tmpls_chain.txt
 
-test_number=4267
+test_number=267
 
 
 train=crfdata/default-train_$6.txt
@@ -58,4 +58,4 @@ python scripts/count_score.py --error_file $err --label_file $label \
 python scripts/make_readable.py --xml $err --html $err_html 
 python scripts/make_readable.py --xml $label --html $label_html
 
-#firefox $err_html &
+firefox $err_html &
