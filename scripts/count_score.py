@@ -163,7 +163,7 @@ class Score:
                 (self.f1_mean, self.success_mean, self.matched_mean)
 
 
-    def full_write(self, show_desc):
+    def full_write(self, show_desc=False):
         
         HELP_TEXT = """
 1) global statistics
