@@ -117,7 +117,7 @@
 <institution>Department of Veterinary Medicine,</institution><addr-line> </addr-line><institution>University of Cambridge,</institution><institution> </institution><addr-line>Cambridge CB3 0ES</addr-line></aff>
 
 <aff>
-<institution>Department of Orthopaedics,</institution><institution> </institution><institution>Institute of Clinical Sciences at Sahlgrenska Academy,</institution><addr-line> </addr-line><country>Gothenburg University</country></aff>
+<institution>Department of Orthopaedics,</institution><institution> </institution><institution>Institute of Clinical Sciences at Sahlgrenska Academy,</institution><addr-line> </addr-line><addr-line>Gothenburg University</addr-line></aff>
 
 <aff>
 <institution>Castle Hill Hospital,</institution><institution> </institution><addr-line>Kingston-upon-Hull,</addr-line><addr-line> </addr-line><country>UK</country></aff>
@@ -231,7 +231,7 @@
 <institution>Center for Gene Research,</institution><institution> Nagoya University,</institution><institution> </institution><addr-line>Nagoya 464-8602,</addr-line><addr-line> </addr-line><country>Japan</country></aff>
 
 <aff>
-<institution>The Norwegian Arthroplasty Register,</institution><institution> </institution><institution>Department of Orthopaedic Surgery,</institution><institution> </institution><institution>Haukeland University Hospital,</institution><addr-line> </addr-line><country>Bergen</country></aff>
+<institution>The Norwegian Arthroplasty Register,</institution><institution> </institution><institution>Department of Orthopaedic Surgery,</institution><institution> </institution><institution>Haukeland University Hospital,</institution><addr-line> </addr-line><addr-line>Bergen</addr-line></aff>
 
 <aff>
 <institution>Institute of Pharmacology,</institution><institution> University of Wu¨rzburg,</institution><institution> </institution><addr-line>Wu¨rzburg,</addr-line><addr-line> </addr-line><country>Germany</country></aff>
@@ -282,7 +282,7 @@
 <institution>Department of Molecular Genetics,</institution><addr-line> </addr-line><institution>Osaka University,</institution><institution> </institution><addr-line>Osaka 565-0871,</addr-line><addr-line> </addr-line><country>Japan</country></aff>
 
 <aff>
-<institution>Levanger Hospital,</institution><addr-line> </addr-line><institution>Nord-Trøndelag Health Trust,</institution><institution> </institution><country>Levanger,</country><country> Norway</country></aff>
+<institution>Levanger Hospital,</institution><addr-line> </addr-line><institution>Nord-Trøndelag Health Trust,</institution><institution> </institution><addr-line>Levanger,</addr-line><country> Norway</country></aff>
 
 <aff>
 <institution>Animal and Agricultural Science,</institution><institution> </institution><institution>University of Adelaide,</institution><institution> </institution><addr-line>Roseworthy,</addr-line><addr-line> SA 5005,</addr-line><addr-line> </addr-line><country>Australia</country></aff>
@@ -300,7 +300,7 @@
 <institution>IST,</institution><institution> Technical University of Lisbon,</institution><institution> </institution><addr-line>1169-047 Lisbon,</addr-line><addr-line> </addr-line><country>Portugal</country></aff>
 
 <aff>
-<institution>Department of Orthopaedics,</institution><institution> </institution><institution>Örebro University Hospital,</institution><country>Örebro</country></aff>
+<institution>Department of Orthopaedics,</institution><institution> </institution><institution>Örebro University Hospital</institution></aff>
 
 <aff>
 <institution>Department of Ophthalmology,</institution><institution> James Paget University Hospital NHS Foundation Trust,</institution><institution> </institution><addr-line>Lowestoft Road,</addr-line><addr-line> Gorleston Norfolk,</addr-line><addr-line> NR31 6LA,</addr-line><addr-line> </addr-line><country>UK</country></aff>
@@ -378,7 +378,7 @@
 <institution>Institute of Molecular Biosciences,</institution><institution> Mahidol University,</institution><institution> </institution><addr-line>Salaya,</addr-line><addr-line> Nakhon Pathom 73170,</addr-line><addr-line> </addr-line><country>Thailand</country></aff>
 
 <aff>
-<institution>Department of Biomechanical Engineering,</institution><institution> </institution><addr-line>Faculty 3mE,</addr-line><addr-line> </addr-line><country>TU Delft</country></aff>
+<institution>Department of Biomechanical Engineering,</institution><institution> </institution><addr-line>Faculty 3mE,</addr-line><addr-line> </addr-line><addr-line>TU Delft</addr-line></aff>
 
 <aff>
 <institution>AstraZeneca UK Ltd,</institution><institution> </institution><addr-line>Horizon Place,</addr-line><addr-line> 600 Capability Green,</addr-line><addr-line> Luton LU1 3LU,</addr-line><addr-line> </addr-line><country>UK</country></aff>
@@ -426,7 +426,7 @@
 <institution>Dipartimento di Biologia e Patologia Cellulare e Molecolare 'L.</institution><institution> Califano' (DBPCM),</institution><institution> University of Naples Federico II,</institution><institution> </institution><addr-line>Via S.</addr-line><addr-line> Pansini,</addr-line><addr-line> 5,</addr-line><addr-line> 80131 Naples,</addr-line><addr-line> </addr-line><country>Italy</country></aff>
 
 <aff>
-<institution>Boroma Hospital,</institution><institution> </institution><addr-line>Boroma,</addr-line><addr-line> </addr-line><country>Somaliland</country></aff>
+<institution>Boroma Hospital,</institution><institution> </institution><addr-line>Boroma,</addr-line><addr-line> </addr-line><addr-line>Somaliland</addr-line></aff>
 
 <aff>
 <institution>Institute for Molecular Bioscience and Division of Molecular Cell Biology,</institution><institution> The University of Queensland,</institution><institution> </institution><addr-line>St Lucia,</addr-line><addr-line> Brisbane,</addr-line><addr-line> Queensland 4072,</addr-line><addr-line> </addr-line><country>Australia</country></aff>
@@ -549,7 +549,7 @@
 <institution>Division of Psychiatry,</institution><addr-line> </addr-line><institution>Haukeland University Hospital,</institution><institution> </institution><addr-line>5021 Bergen</addr-line></aff>
 
 <aff>
-<institution>Department of Molecular Cardiology,</institution><addr-line> </addr-line><institution>Lerner Research Institute,</institution><institution> Cleveland Clinic,</institution><institution> </institution><country>Cleveland,</country><country> </country><addr-line>OH 44195,</addr-line><addr-line> </addr-line><country>USA</country></aff>
+<institution>Department of Molecular Cardiology,</institution><addr-line> </addr-line><institution>Lerner Research Institute,</institution><institution> Cleveland Clinic,</institution><institution> </institution><addr-line>Cleveland,</addr-line><country> </country><addr-line>OH 44195,</addr-line><addr-line> </addr-line><country>USA</country></aff>
 
 <aff>
 <institution>Department of Cardiology,</institution><addr-line> </addr-line><institution>Catholic University of the Sacred Heart,</institution><institution> </institution><addr-line>Campobasso,</addr-line><addr-line> </addr-line><country>Italy</country></aff>
@@ -726,7 +726,7 @@
 <institution>Centre for Tropical Medicine,</institution><institution> Nuffield Department of Clinical Medicine,</institution><addr-line> </addr-line><institution>University of Oxford,</institution><institution> </institution><addr-line>Oxford,</addr-line><addr-line> </addr-line><country>UK</country></aff>
 
 <aff>
-<institution>National Centre for Spinal Disorders and Department of Neurosurgery,</institution><institution> </institution><institution>University Hospital of St.</institution><addr-line> Olav,</addr-line><addr-line> </addr-line><country>Trondheim</country></aff>
+<institution>National Centre for Spinal Disorders and Department of Neurosurgery,</institution><institution> </institution><institution>University Hospital of St.</institution><addr-line> Olav,</addr-line><addr-line> </addr-line><addr-line>Trondheim</addr-line></aff>
 
 <aff>
 <institution>Department of Embryology and Genetics (EMGE),</institution><institution>Vrije Universiteit Brussel (VUB)</institution></aff>
@@ -741,7 +741,7 @@
 <institution>AgResearch,</institution><institution> </institution><country>New Zealand</country></aff>
 
 <aff>
-<institution>Department of Anatomical Sciences,</institution><institution> St.</institution><institution> Matthew's University School of Medicine,</institution><institution> </institution><addr-line>P.</addr-line><addr-line>O.</addr-line><addr-line> Box 30992 SMB KY1-1204,</addr-line><addr-line> Grand Cayman,</addr-line><addr-line> Cayman Islands,</addr-line><addr-line> </addr-line><country>BWI</country></aff>
+<institution>Department of Anatomical Sciences,</institution><institution> St.</institution><institution> Matthew's University School of Medicine,</institution><institution> </institution><addr-line>P.</addr-line><addr-line>O.</addr-line><addr-line> Box 30992 SMB KY1-1204,</addr-line><addr-line> Grand Cayman,</addr-line><addr-line> Cayman Islands,</addr-line><addr-line> </addr-line><addr-line>BWI</addr-line></aff>
 
 <aff>
 <institution>Centro de Neurociˆencias e Biologia Celular,</institution><institution> Universidade de Coimbra,</institution><institution> </institution><addr-line>3004-517 Coimbra,</addr-line><addr-line> </addr-line><country>Portugal</country></aff>
@@ -798,7 +798,7 @@
 <institution>Centre for Cardiovascular Sciences,</institution><addr-line> </addr-line><institution>University of Birmingham,</institution><institution> Queen Elizabeth Hospital,</institution><institution> </institution><addr-line>Edgbaston,</addr-line><addr-line> Birmingham</addr-line></aff>
 
 <aff>
-<institution>Department of Pediatric Oncology,</institution><institution> </institution><institution>Lund University Hospital,</institution><addr-line> </addr-line><country>Lund</country></aff>
+<institution>Department of Pediatric Oncology,</institution><institution> </institution><institution>Lund University Hospital,</institution><addr-line> </addr-line><addr-line>Lund</addr-line></aff>
 
 <aff>
 <institution>Division of Pediatric Urology,</institution><institution> Morgan Stanley Children's Hospital of New York - Presbyterian,</institution><institution> Department of Urology,</institution><institution> Columbia University College of Physicians and Surgeons,</institution><institution> </institution><addr-line>3959 Broadway,</addr-line><addr-line> New York,</addr-line><addr-line> NY 10032,</addr-line><addr-line> </addr-line><country>USA</country></aff>
@@ -822,7 +822,7 @@
 <institution>National Institute of Agricultural Botany,</institution><institution> </institution><addr-line>Cambridge,</addr-line><addr-line> </addr-line><country>UK</country></aff>
 
 <aff>
-<institution>Department of Orthopaedic Surgery,</institution><institution> </institution><addr-line>St.</addr-line><institution> Mary's Hospital,</institution><addr-line> </addr-line><country>London</country></aff>
+<institution>Department of Orthopaedic Surgery,</institution><institution> </institution><addr-line>St.</addr-line><institution> Mary's Hospital,</institution><addr-line> </addr-line><addr-line>London</addr-line></aff>
 
 <aff>
 <institution>Department of Paediatric Nephrology,</institution><addr-line> </addr-line><institution>Bristol Royal Hospital for Children,</institution><institution> </institution><addr-line>Bristol,</addr-line><addr-line> </addr-line><country>UK</country></aff>
@@ -831,7 +831,7 @@
 <institution>Department of Agriculture,</institution><addr-line> Ministry of Agriculture and Cooperatives,</addr-line><addr-line> </addr-line><institution>Rubber Research Institute of Thailand,</institution><institution> </institution><addr-line>Chachoengsao,</addr-line><addr-line> </addr-line><country>Thailand</country></aff>
 
 <aff>
-<institution>Department of Nuclear Medicine,</institution><institution> </institution><institution>Aarhus University,</institution><institution> Aalborg Hospital,</institution><country>Aalborg</country></aff>
+<institution>Department of Nuclear Medicine,</institution><institution> </institution><institution>Aarhus University,</institution><institution> Aalborg Hospital</institution></aff>
 
 <aff>
 <institution>Spirogen Ltd,</institution><institution> </institution><addr-line>London WC1N 1AX,</addr-line><addr-line> </addr-line><country>UK</country></aff>
@@ -891,7 +891,7 @@
 <institution>Department of Plant Science,</institution><addr-line> </addr-line><institution>Seoul National University,</institution><institution> </institution><addr-line>San 56-1,</addr-line><addr-line> Sillim-dong,</addr-line><addr-line> Gwanak-gu,</addr-line><addr-line> Seoul 151-921,</addr-line><addr-line> </addr-line><country>South Korea</country></aff>
 
 <aff>
-<institution>Department of Orthopaedic Surgery,</institution><institution> </institution><institution>Shanghai Sixth People's Hospital,</institution><institution> Shanghai Jiao Tong University School of Medicine,</institution><addr-line> </addr-line><country>Shanghai</country></aff>
+<institution>Department of Orthopaedic Surgery,</institution><institution> </institution><institution>Shanghai Sixth People's Hospital,</institution><institution> Shanghai Jiao Tong University School of Medicine,</institution><addr-line> </addr-line><addr-line>Shanghai</addr-line></aff>
 
 <aff>
 <institution>Centre of Cardiology,</institution><addr-line> </addr-line><institution>North Estonia Medical Centre,</institution><institution> </institution><addr-line>Su¨ tiste tee 19,</addr-line><addr-line> 13419 Tallinn,</addr-line><addr-line> </addr-line><country>Estonia</country></aff>
@@ -1131,7 +1131,7 @@
 <institution>Deep Sequencing Group - SFB655,</institution><institution> Biotechnology Center TU Dresden,</institution><institution> </institution><addr-line>Tatzberg 47-49,</addr-line><addr-line> 01307 Dresden,</addr-line><addr-line> </addr-line><country>Germany</country></aff>
 
 <aff>
-<institution>Department of Cardiology,</institution><addr-line> </addr-line><institution>St Olavs Hospital/Trondheim University Hospital,</institution><institution> </institution><country>Trondheim,</country><country> Norway</country></aff>
+<institution>Department of Cardiology,</institution><addr-line> </addr-line><institution>St Olavs Hospital/Trondheim University Hospital,</institution><institution> </institution><addr-line>Trondheim,</addr-line><country> Norway</country></aff>
 
 <aff>
 <institution>Department of Surgery,</institution><institution> 424 Military General Hospital,</institution><institution> </institution><addr-line>Thessaloniki,</addr-line><addr-line> </addr-line><country>Greece</country></aff>
@@ -1155,7 +1155,7 @@
 <institution>Dept of Pulmonary Medicine,</institution><institution> Gentofte University Hospital,</institution><institution> </institution><addr-line>Copenhagen</addr-line></aff>
 
 <aff>
-<institution>Department of Orthopaedics,</institution><institution> </institution><institution>Aabenraa Hospital,</institution><addr-line> </addr-line><country>Aabenraa</country></aff>
+<institution>Department of Orthopaedics,</institution><institution> </institution><institution>Aabenraa Hospital,</institution><addr-line> </addr-line><addr-line>Aabenraa</addr-line></aff>
 
 <aff>
 <institution>Department of Cardiology,</institution><addr-line> </addr-line><institution>Ospedale Garibaldi-Nesima,</institution><institution> </institution><addr-line>Catania</addr-line></aff>
@@ -1866,7 +1866,7 @@
 <institution>Pisces Conservation Ltd,</institution><institution> </institution><addr-line>IRC House,</addr-line><addr-line> The Square,</addr-line><addr-line> Pennington,</addr-line><addr-line> Lymington SO41 8GN,</addr-line><addr-line> </addr-line><country>UK</country></aff>
 
 <aff>
-<institution>Institute of Internal Medicine,</institution><institution> </institution><addr-line>Novosibirsk,</addr-line><addr-line> </addr-line><country>Russian Federation</country></aff>
+<institution>Institute of Internal Medicine,</institution><institution> </institution><addr-line>Novosibirsk,</addr-line><addr-line> </addr-line><addr-line>Russian Federation</addr-line></aff>
 
 <aff>
 <institution>Department of Dermatology,</institution><institution> Wake Forest University Health Sciences,</institution><institution> Medical Center Boulevard,</institution><institution> </institution><addr-line>Winston-Salem,</addr-line><addr-line> NC 27157,</addr-line><addr-line> </addr-line><country>USA</country></aff>
@@ -2127,7 +2127,7 @@
 <institution>Maternal and Fetal Medicine,</institution><institution> Swedish Medical Center,</institution><institution> </institution><country>USA</country></aff>
 
 <aff>
-<institution>Department of Radiology,</institution><institution> </institution><institution>Haukeland University Hospital,</institution><addr-line> </addr-line><country>Bergen</country></aff>
+<institution>Department of Radiology,</institution><institution> </institution><institution>Haukeland University Hospital,</institution><addr-line> </addr-line><addr-line>Bergen</addr-line></aff>
 
 <aff>
 <institution>Department of Orthopaedics,</institution><institution> </institution><institution>Kobe University Hospital,</institution><addr-line> Kobe,</addr-line><addr-line> </addr-line><country>Japan</country></aff>
@@ -2448,7 +2448,7 @@
 <institution>Department of Medicine,</institution><institution> UPMC Mercy Hospital,</institution><institution> </institution><country>USA</country></aff>
 
 <aff>
-<institution>Department of Clinical Sciences,</institution><institution> Karolinska Institutet,</institution><institution> </institution><institution>Danderyd Hospital,</institution><addr-line> </addr-line><country>Stockholm</country></aff>
+<institution>Department of Clinical Sciences,</institution><institution> Karolinska Institutet,</institution><institution> </institution><institution>Danderyd Hospital,</institution><addr-line> </addr-line><addr-line>Stockholm</addr-line></aff>
 
 <aff>
 <institution>Department of Obstetrics and Gynecology,</institution><addr-line> </addr-line><institution>University of Rochester,</institution><institution> </institution><addr-line>Rochester,</addr-line><addr-line> New York 14642,</addr-line><addr-line> </addr-line><country>USA</country></aff>
@@ -2979,7 +2979,7 @@
 <institution>Department of Urology,</institution><institution> Jichi Medical University Hospital,</institution><institution> </institution><addr-line>3311-1 Yakushiji,</addr-line><addr-line> Shimotsuke,</addr-line><addr-line> Tochigi,</addr-line><addr-line> 3290498,</addr-line><addr-line> </addr-line><country>Japan</country></aff>
 
 <aff>
-<institution>Department of Orthopedics,</institution><institution> </institution><institution>Viborg Regional Hospital,</institution><addr-line> </addr-line><country>Viborg</country></aff>
+<institution>Department of Orthopedics,</institution><institution> </institution><institution>Viborg Regional Hospital,</institution><addr-line> </addr-line><addr-line>Viborg</addr-line></aff>
 
 <aff>
 <institution>Department of Orthopaedics and Traumatology,</institution><institution> Gulhane Military Medical Academy,</institution><institution> </institution><addr-line>06018 Etlik,</addr-line><addr-line> Ankara,</addr-line><addr-line> </addr-line><country>Turkey</country></aff>
@@ -3294,7 +3294,7 @@
 <institution>Department of Crop Systems,</institution><institution> Forestry and Environmental Sciences,</institution><addr-line> </addr-line><institution>University of Basilicata,</institution><institution> </institution><addr-line>85100 Potenza,</addr-line><addr-line> </addr-line><country>Italy</country></aff>
 
 <aff>
-<institution>Odense Patient Data Explorative Network (OPEN),</institution><institution> </institution><institution>Odense University Hospital and Institute of Regional Health Services Research,</institution><institution> </institution><institution>University of Southern Denmark,</institution><addr-line> </addr-line><country>Odense</country></aff>
+<institution>Odense Patient Data Explorative Network (OPEN),</institution><institution> </institution><institution>Odense University Hospital and Institute of Regional Health Services Research,</institution><institution> </institution><institution>University of Southern Denmark,</institution><addr-line> </addr-line><addr-line>Odense</addr-line></aff>
 
 <aff>
 <institution>Department of Medicine,</institution><institution> The Aga Khan University,</institution><institution> </institution><addr-line>Stadium Road,</addr-line><addr-line> Karachi,</addr-line><addr-line> 74800,</addr-line><addr-line> </addr-line><country>Pakistan</country></aff>
@@ -3417,7 +3417,7 @@
 <institution>Institute of Cognitive Neuroscience,</institution><addr-line> </addr-line><institution>University College London,</institution><institution> </institution><addr-line>London WC1N 3AR,</addr-line><addr-line> </addr-line><country>UK</country></aff>
 
 <aff>
-<institution>Mammalian Genetics Unit,</institution><addr-line> </addr-line><institution>Medical Research Council,</institution><institution> </institution><addr-line>Harwell,</addr-line><addr-line> </addr-line><country>Oxfordshire OX11 0RD,</country><country> UK</country></aff>
+<institution>Mammalian Genetics Unit,</institution><addr-line> </addr-line><institution>Medical Research Council,</institution><institution> </institution><addr-line>Harwell,</addr-line><addr-line> </addr-line><addr-line>Oxfordshire OX</addr-line><addr-line>11</addr-line><country> </country><addr-line>0</addr-line><addr-line>RD,</addr-line><country> UK</country></aff>
 
 <aff>
 <institution>Department of Paleobiology,</institution><addr-line> National Museum of Natural History,</addr-line><addr-line> </addr-line><institution>Smithsonian Institution,</institution><institution> </institution><addr-line>MRC 121,</addr-line><addr-line> PO Box 37012,</addr-line><addr-line> Washington,</addr-line><addr-line> DC 20013-7012</addr-line></aff>
@@ -3465,7 +3465,7 @@
 <institution>Klinik fu¨r Innere Medizin III,</institution><institution> Abteilung fu¨r Kardiologie,</institution><addr-line> Angiologie und internistische Intensivmedizin,</addr-line><addr-line> </addr-line><institution>Universita¨tsklinikum des Saarlandes,</institution><institution> </institution><addr-line>Kirrberger Strasse,</addr-line><addr-line> Geba¨ude 40,</addr-line><addr-line> 66421 Homburg/Saar,</addr-line><addr-line> </addr-line><country>Germany</country></aff>
 
 <aff>
-<institution>Department of Biosciences,</institution><addr-line> </addr-line><institution>Aarhus University,</institution><institution> </institution><country>Aarhus,</country><country> Denmark</country></aff>
+<institution>Department of Biosciences,</institution><addr-line> </addr-line><institution>Aarhus University,</institution><institution> </institution><addr-line>Aarhus,</addr-line><country> Denmark</country></aff>
 
 <aff>
 <institution>Department of Cell Biology,</institution><addr-line> </addr-line><institution>UCL Institute of Ophthalmology,</institution><institution> </institution><addr-line>Bath Street,</addr-line><addr-line> London,</addr-line><addr-line> </addr-line><country>UK</country></aff>
@@ -3558,7 +3558,7 @@
 <institution>The Warren Alpert Medical School at Brown University,</institution><institution> </institution><addr-line>Providence,</addr-line><addr-line> RI 02906</addr-line></aff>
 
 <aff>
-<institution>Center for Stroke Research,</institution><addr-line> </addr-line><institution>Charite´-Universita¨tsmedizin,</institution><institution> </institution><addr-line>Campus Virchow-Klinkum,</addr-line><addr-line> </addr-line><country>Berlin,</country><country> </country><country>Germany</country></aff>
+<institution>Center for Stroke Research,</institution><addr-line> </addr-line><institution>Charite´-Universita¨tsmedizin,</institution><institution> </institution><addr-line>Campus Virchow-Klinkum,</addr-line><addr-line> </addr-line><addr-line>Berlin,</addr-line><country> </country><country>Germany</country></aff>
 
 <aff>
 <institution>Doseepnazratm,</institution><institution>Ietanltyof Botany,</institution><institution> University of Jammu,</institution><institution> </institution><addr-line>Jammu 180003,</addr-line><addr-line> </addr-line><country>India</country></aff>
@@ -3654,7 +3654,7 @@
 <institution>Center for Complex Disease Genomics,</institution><institution> McKusick- Nathans Institute of Genetic Medicine,</institution><addr-line> </addr-line><institution>Johns Hopkins University School of Medicine,</institution><institution> </institution><addr-line>Baltimore,</addr-line><addr-line> MD,</addr-line><addr-line> </addr-line><country>USA</country></aff>
 
 <aff>
-<institution>Small G-Protein Signalling and Kinases (sGSK) Group at Institute of Molecular and Cell Biology (IMCB),</institution><institution> Neuroscience Research Partnership,</institution><institution> </institution><addr-line>Proteos Building</addr-line></aff>
+<institution>Small G-Protein Signalling and Kinases (sGSK) Group at Institute of Molecular and Cell Biology (IMCB),</institution><institution> Neuroscience Research Partnership,</institution><institution> </institution><addr-line>Proteos Building,</addr-line><addr-line> </addr-line><addr-line>138673</addr-line></aff>
 
 <aff>
 <institution>Graduate School of Horticulture,</institution><institution> Chiba University,</institution><institution> </institution><addr-line>Matsudo,</addr-line><addr-line> Chiba 271-8510,</addr-line><addr-line> </addr-line><country>Japan</country></aff>
@@ -3951,7 +3951,7 @@
 <institution>Department of Neuroscience,</institution><addr-line> </addr-line><institution>Baylor College of Medicine,</institution><institution> </institution><addr-line>One Baylor Plaza,</addr-line><addr-line> Houston,</addr-line><addr-line> TX 77030,</addr-line><addr-line> </addr-line><country>USA</country></aff>
 
 <aff>
-<institution>Clinical Orthopaedic Research,</institution><institution> Department of Orthopaedics,</institution><institution> </institution><institution>Hvidovre University Hospital,</institution><addr-line> </addr-line><country>Copenhagen</country></aff>
+<institution>Clinical Orthopaedic Research,</institution><institution> Department of Orthopaedics,</institution><institution> </institution><institution>Hvidovre University Hospital,</institution><addr-line> </addr-line><addr-line>Copenhagen</addr-line></aff>
 
 <aff>
 <institution>Duke University Medical Center,</institution><institution> </institution><addr-line>Durham,</addr-line><addr-line> NC,</addr-line><addr-line> </addr-line><country>USA</country></aff>
@@ -4050,7 +4050,7 @@
 <institution>Athens Medical International,</institution><institution> </institution><addr-line>Lykavittou 6,</addr-line><addr-line> Kolonaki,</addr-line><addr-line> Athens,</addr-line><addr-line> </addr-line><country>Greece</country></aff>
 
 <aff>
-<institution>Department of Molecular Medicine and Surgery,</institution><institution> </institution><institution>Section of Orthopaedics and Sports Medicine,</institution><addr-line> Karolinska Institutet,</addr-line><institution> Karolinska University Hospital,</institution><addr-line> </addr-line><country>Stockholm</country></aff>
+<institution>Department of Molecular Medicine and Surgery,</institution><institution> </institution><institution>Section of Orthopaedics and Sports Medicine,</institution><addr-line> Karolinska Institutet,</addr-line><institution> Karolinska University Hospital,</institution><addr-line> </addr-line><addr-line>Stockholm</addr-line></aff>
 
 <aff>
 <institution>Renal Medicine,</institution><institution> Department of Medical Sciences,</institution><addr-line> </addr-line><institution>Uppsala University Hospital,</institution><institution> </institution><addr-line>Akademiska sjukhuset,</addr-line><addr-line> 75185 Uppsala,</addr-line><addr-line> </addr-line><country>Sweden</country></aff>
@@ -4269,7 +4269,7 @@
 <institution>Department of Obstetrics and Gynecology,</institution><addr-line> </addr-line><institution>University of Medicine and Dentistry of New Jersey,</institution><institution> </institution><addr-line>Newark,</addr-line><addr-line> NJ</addr-line></aff>
 
 <aff>
-<institution>Department of Orthopaedic Surgery,</institution><institution> </institution><institution>Haukeland University Hospital,</institution><country>Bergen</country></aff>
+<institution>Department of Orthopaedic Surgery,</institution><institution> </institution><institution>Haukeland University Hospital</institution></aff>
 
 <aff>
 <institution>2nd Department of Surgery,</institution><institution> 417 NIMTS (Military Veterans' Fund Hospital),</institution><institution> </institution><country>Greece</country></aff>
@@ -4278,7 +4278,7 @@
 <institution>UCL Centre for PG&amp;D,</institution><institution> Institute for Women's Health,</institution><institution> University College London,</institution><institution> </institution><addr-line>London,</addr-line><addr-line> </addr-line><country>UK</country></aff>
 
 <aff>
-<institution>Department of Orthopaedics,</institution><institution> Institute of Surgical Sciences,</institution><institution> </institution><institution>Uppsala University Hospital,</institution><country>Uppsala</country></aff>
+<institution>Department of Orthopaedics,</institution><institution> Institute of Surgical Sciences,</institution><institution> </institution><institution>Uppsala University Hospital</institution></aff>
 
 <aff>
 <institution>Department of Endocrinology &amp; Diabetes,</institution><institution> Centre for Clinical Research &amp; Effective Practice,</institution><institution> Room 33,</institution><institution> Support Building,</institution><institution> Middlemore Hospital,</institution><institution> </institution><addr-line>Otahuhu,</addr-line><addr-line> South Auckland,</addr-line><addr-line> Private Bag 93311</addr-line></aff>
@@ -4734,7 +4734,7 @@
 <institution>Department of Orthopaedic Surgery,</institution><institution> Sint Maartenskliniek,</institution><institution> </institution><country>The Netherlands</country></aff>
 
 <aff>
-<institution>Department of Epidemiology,</institution><addr-line> </addr-line><institution>Harvard School of Public Health,</institution><institution> </institution><addr-line>Boston,</addr-line><addr-line> </addr-line><country>Massachusetts</country></aff>
+<institution>Department of Epidemiology,</institution><addr-line> </addr-line><institution>Harvard School of Public Health,</institution><institution> </institution><addr-line>Boston,</addr-line><addr-line> </addr-line><addr-line>Massachusetts</addr-line></aff>
 
 <aff>
 <institution>Department of Orthopaedics,</institution><institution> Hospital Rijnstate,</institution><institution> </institution><addr-line>Arnhem,</addr-line><addr-line> </addr-line><country>the Netherlands</country></aff>
@@ -4962,7 +4962,7 @@
 <institution>German Institute of Human Nutrition,</institution><institution> </institution><addr-line>Potsdam-Rehbu¨cke,</addr-line><addr-line> </addr-line><country>Germany</country></aff>
 
 <aff>
-<institution>Department of Orthopedic Surgery,</institution><institution> </institution><institution>Falu Central Hospital,</institution><addr-line> </addr-line><country>Falun</country></aff>
+<institution>Department of Orthopedic Surgery,</institution><institution> </institution><institution>Falu Central Hospital,</institution><addr-line> </addr-line><addr-line>Falun</addr-line></aff>
 
 <aff>
 <institution>Department of Molecular Genetics and Microbiology,</institution><institution> University of Massachusetts Medical School,</institution><institution> </institution><addr-line>55 Lake Ave North,</addr-line><addr-line> Worcester,</addr-line><addr-line> MA 01655,</addr-line><addr-line> </addr-line><country>USA</country></aff>
@@ -5220,7 +5220,7 @@
 <institution>School of Biosciences,</institution><addr-line> </addr-line><institution>University of Exeter,</institution><institution> </institution><addr-line>Cornwall Campus,</addr-line><addr-line> Penryn TR10 9EZ</addr-line></aff>
 
 <aff>
-<institution>Department of Cellular Pathology,</institution><institution> Lincoln County Hospital,</institution><institution> </institution><addr-line>Greetwell Road,</addr-line><addr-line> Lincoln,</addr-line><addr-line> </addr-line><country>United Kingdom,</country><country> LN2 5QY</country></aff>
+<institution>Department of Cellular Pathology,</institution><institution> Lincoln County Hospital,</institution><institution> </institution><addr-line>Greetwell Road,</addr-line><addr-line> Lincoln,</addr-line><addr-line> </addr-line><country>United Kingdom,</country><addr-line> LN</addr-line><addr-line>2</addr-line><country> </country><addr-line>5</addr-line><addr-line>QY</addr-line></aff>
 
 <aff>
 <institution>Department of Neurology,</institution><institution>Vrije Universiteit Medical Center,</institution><institution> </institution><country>The Netherlands</country></aff>
@@ -5856,7 +5856,7 @@
 <institution>Department of Gastroenterology,</institution><institution> University of Parma,</institution><institution> </institution><addr-line>Parma,</addr-line><addr-line> </addr-line><country>Italy</country></aff>
 
 <aff>
-<institution>The Norwegian Cruciate Ligament Register,</institution><institution> </institution><institution>Department of Orthopaedic Surgery,</institution><institution> </institution><institution>Haukeland University Hospital,</institution><addr-line> </addr-line><country>Bergen</country></aff>
+<institution>The Norwegian Cruciate Ligament Register,</institution><institution> </institution><institution>Department of Orthopaedic Surgery,</institution><institution> </institution><institution>Haukeland University Hospital,</institution><addr-line> </addr-line><addr-line>Bergen</addr-line></aff>
 
 <aff>
 <institution>IVI Madrid,</institution><institution> </institution><addr-line>Madrid 28023,</addr-line><addr-line> </addr-line><country>Spain</country></aff>
@@ -6249,7 +6249,7 @@
 <institution>School of Plant Biology and International Centre for Plant Breeding Education and Research,</institution><institution> The University of Western Australia,</institution><institution> </institution><addr-line>35 Stirling Highway,</addr-line><addr-line> Crawley,</addr-line><addr-line> WA 6009</addr-line></aff>
 
 <aff>
-<institution>Department of Orthopaedic Surgery,</institution><institution> 12 Octubre Hospital,</institution><institution> </institution><addr-line>Av.</addr-line><addr-line> Córdoba,</addr-line><addr-line> s/n Madrid</addr-line></aff>
+<institution>Department of Orthopaedic Surgery,</institution><institution> 12 Octubre Hospital,</institution><institution> </institution><addr-line>Av.</addr-line><addr-line> Córdoba,</addr-line><addr-line> s/n Madrid,</addr-line><addr-line> </addr-line><addr-line>28041</addr-line></aff>
 
 <aff>
 <institution>Imperial College Business School,</institution><institution> Imperial College London,</institution><institution> </institution><addr-line>London SW7 2AZ,</addr-line><addr-line> </addr-line><country>UK</country></aff>
@@ -6303,7 +6303,7 @@
 <institution>IBILAB,</institution><institution> </institution><addr-line>Palma de Mallorca 07011,</addr-line><addr-line> </addr-line><country>Spain</country></aff>
 
 <aff>
-<institution>Department of Cognitive Biology,</institution><addr-line> </addr-line><institution>University of Vienna,</institution><institution> </institution><addr-line>Althanstrasse 14,</addr-line><addr-line> 1090 </addr-line><country>Vienna,</country><country> </country><country>Austria</country></aff>
+<institution>Department of Cognitive Biology,</institution><addr-line> </addr-line><institution>University of Vienna,</institution><institution> </institution><addr-line>Althanstrasse 14,</addr-line><addr-line> 1090 </addr-line><addr-line>Vienna,</addr-line><country> </country><country>Austria</country></aff>
 
 <aff>
 <institution>Division of Neurology,</institution><institution> Department of Medicine,</institution><institution>Duke University Medical Center</institution></aff>
@@ -6627,7 +6627,7 @@
 <institution>Centre d'Investigacions en Bioquimica i Biologia Molecular (CIBBIM),</institution><institution> Hospital Universitari Vall d'Hebron,</institution><institution> </institution><addr-line>Barcelona 08035,</addr-line><addr-line> </addr-line><country>Spain</country></aff>
 
 <aff>
-<institution>Department of Orthopaedic Surgery,</institution><institution> </institution><institution>Lillebaelt Hospital,</institution><addr-line> </addr-line><country>Kolding</country></aff>
+<institution>Department of Orthopaedic Surgery,</institution><institution> </institution><institution>Lillebaelt Hospital,</institution><addr-line> </addr-line><addr-line>Kolding</addr-line></aff>
 
 <aff>
 <institution>School of Marine Biosciences,</institution><addr-line> </addr-line><institution>Kitasato University,</institution><institution> </institution><addr-line>Ofunato,</addr-line><addr-line> Iwate 022-0101,</addr-line><addr-line> </addr-line><country>Japan</country></aff>
@@ -6996,7 +6996,7 @@
 <institution>The University Hospital of Geneva,</institution><institution> </institution><addr-line>Geneva,</addr-line><addr-line> </addr-line><country>Switzerland</country></aff>
 
 <aff>
-<institution>Department of Research,</institution><institution> Development and Education,</institution><institution> </institution><addr-line>Sint Maartenskliniek,</addr-line><addr-line> </addr-line><country>Nijmegen</country></aff>
+<institution>Department of Research,</institution><institution> Development and Education,</institution><institution> </institution><addr-line>Sint Maartenskliniek,</addr-line><addr-line> </addr-line><addr-line>Nijmegen</addr-line></aff>
 
 <aff>
 <institution>Faculty of Biotechnology,</institution><addr-line> </addr-line><institution>University of Wrocław,</institution><institution> </institution><addr-line>ul.</addr-line><addr-line> Tamka 2,</addr-line><addr-line> 50137 Wrocław,</addr-line><addr-line> </addr-line><country>Poland</country></aff>
@@ -7206,7 +7206,7 @@
 <institution>Department of Medicine,</institution><addr-line> </addr-line><institution>Komfo Anokye Teaching Hospital,</institution><institution> </institution><addr-line>P.</addr-line><addr-line>O.</addr-line><addr-line> Box 1934,</addr-line><addr-line> Kumasi,</addr-line><addr-line> </addr-line><country>Ghana</country></aff>
 
 <aff>
-<institution>Mount Sinai School of Medicine,</institution><institution> </institution><addr-line>One Gustave L.</addr-line><addr-line> Levy Place - Box 1079 New York,</addr-line><addr-line> </addr-line><country>NY 10029,</country><country> USA</country></aff>
+<institution>Mount Sinai School of Medicine,</institution><institution> </institution><addr-line>One Gustave L.</addr-line><addr-line> Levy Place - Box 1079 New York,</addr-line><addr-line> </addr-line><addr-line>NY </addr-line><addr-line>10029</addr-line><country>,</country><country> USA</country></aff>
 
 <aff>
 <institution>Department of Sociology and Gerontology,</institution><addr-line> </addr-line><institution>Miami University,</institution><institution> </institution><addr-line>Upham 358,</addr-line><addr-line> Oxford,</addr-line><addr-line> OH 45056,</addr-line><addr-line> </addr-line><country>USA</country></aff>
@@ -7320,7 +7320,7 @@
 <institution>Department of Surgery,</institution><institution> Comprehensive Cancer Center,</institution><addr-line> </addr-line><institution>Medical University of Vienna,</institution><institution> </institution><addr-line>Vienna,</addr-line><addr-line> </addr-line><country>Austria</country></aff>
 
 <aff>
-<institution>Department of Orthopedics,</institution><institution> </institution><institution>Horsens Regional Hospital,</institution><addr-line> </addr-line><country>Horsens</country></aff>
+<institution>Department of Orthopedics,</institution><institution> </institution><institution>Horsens Regional Hospital,</institution><addr-line> </addr-line><addr-line>Horsens</addr-line></aff>
 
 <aff>
 <institution>Centre Hospitalier de Compie`gne,</institution><institution> </institution><addr-line>Compie`gne</addr-line></aff>
@@ -7371,7 +7371,7 @@
 <institution>Department of Obstetrics and Gynecology,</institution><addr-line> </addr-line><institution>Oregon Health &amp; Science University,</institution><institution> </institution><addr-line>Portland,</addr-line><addr-line> OR 97239,</addr-line><addr-line> </addr-line><country>USA</country></aff>
 
 <aff>
-<institution>Department of Orthopaedic Surgery,</institution><institution> </institution><addr-line>Norwegian Arthroplasty Register,</addr-line><institution> Haukeland University Hospital,</institution><addr-line> </addr-line><country>Bergen</country></aff>
+<institution>Department of Orthopaedic Surgery,</institution><institution> </institution><addr-line>Norwegian Arthroplasty Register,</addr-line><institution> Haukeland University Hospital,</institution><addr-line> </addr-line><addr-line>Bergen</addr-line></aff>
 
 <aff>
 <institution>Renal Unit,</institution><institution> Sir Charles Gairdner Hospital,</institution><institution> </institution><addr-line>Nedlands 6009,</addr-line><addr-line> Western Australia,</addr-line><addr-line> </addr-line><country>Australia</country></aff>
@@ -7626,7 +7626,7 @@
 <institution>Dipartimento di Scienze della Vita,</institution><institution> Università degli Studi di Trieste,</institution><institution> </institution><addr-line>34127 Trieste,</addr-line><addr-line> </addr-line><country>Italy</country></aff>
 
 <aff>
-<institution>Cancer Research UK Glyco-Oncology Group,</institution><institution> School of Cancer Studies and Imaging,</institution><addr-line> </addr-line><institution>University of Manchester,</institution><institution> </institution><institution>Paterson Institute for Cancer Research,</institution><addr-line> Wilmslow Road,</addr-line><addr-line> Manchester M20 4BX,</addr-line><addr-line> </addr-line><country>England</country></aff>
+<institution>Cancer Research UK Glyco-Oncology Group,</institution><institution> School of Cancer Studies and Imaging,</institution><addr-line> </addr-line><institution>University of Manchester,</institution><institution> </institution><institution>Paterson Institute for Cancer Research,</institution><addr-line> Wilmslow Road,</addr-line><addr-line> Manchester M20 4BX,</addr-line><addr-line> </addr-line><addr-line>England</addr-line></aff>
 
 <aff>
 <institution>Brigham and Women's Hospital,</institution><addr-line> </addr-line><institution>Harvard Medical School,</institution><institution> </institution><addr-line>77 Avenue Louis Pasteur,</addr-line><addr-line> NRB7,</addr-line><addr-line> </addr-line><addr-line>Boston,</addr-line><addr-line> MA 02115</addr-line></aff>
@@ -7761,7 +7761,7 @@
 <institution>Department of Biological Sciences,</institution><addr-line> </addr-line><institution>Louisiana State University in Shreveport,</institution><institution> </institution><addr-line>One University Place,</addr-line><addr-line> LA 71115,</addr-line><addr-line> </addr-line><country>USA</country></aff>
 
 <aff>
-<institution>Mount Sinai School of Medicine,</institution><institution> Department of Anesthesiology,</institution><institution> </institution><addr-line>1 Gustave L.</addr-line><addr-line> Levy Place,</addr-line><addr-line> New York,</addr-line><addr-line> </addr-line><country>10029 USA</country></aff>
+<institution>Mount Sinai School of Medicine,</institution><institution> Department of Anesthesiology,</institution><institution> </institution><addr-line>1 Gustave L.</addr-line><addr-line> Levy Place,</addr-line><addr-line> New York,</addr-line><addr-line> </addr-line><country /><addr-line>10029</addr-line><country> USA</country></aff>
 
 <aff>
 <institution>Center for NanoSciences,</institution><institution> Ludwig-Maximilians-Universita¨ t Mu¨ nchen,</institution><institution> </institution><addr-line>Schellingstraße 4,</addr-line><addr-line> 80799 Munich,</addr-line><addr-line> </addr-line><country>Germany</country></aff>
@@ -7893,7 +7893,7 @@
 <institution>OIE/FAO Reference Laboratory for avian influenza and Newcastle disease,</institution><addr-line> </addr-line><institution>Istituto Zooprofilattico Sper.</institution><institution>le delle Venezie,</institution><institution> </institution><addr-line>Legnaro,</addr-line><addr-line> </addr-line><country>Italy</country></aff>
 
 <aff>
-<institution>Department of Orthopaedics,</institution><institution> </institution><institution>Oslo University Hospital,</institution><addr-line> </addr-line><country>Ullevål</country></aff>
+<institution>Department of Orthopaedics,</institution><institution> </institution><institution>Oslo University Hospital,</institution><addr-line> </addr-line><addr-line>Ullevål</addr-line></aff>
 
 <aff>
 <institution>Department of Animal and Plant Sciences,</institution><institution>University of Sheffield,</institution><institution> </institution><country>UK</country></aff>
@@ -7950,7 +7950,7 @@
 <institution>Department of Wildlife Ecology and Biodiversity,</institution><institution> National Environmental Research Institute,</institution><addr-line> </addr-line><institution>Aarhus University,</institution><institution> </institution><addr-line>8410 Rønde,</addr-line><addr-line> </addr-line><country>Denmark</country></aff>
 
 <aff>
-<institution>Department of Pediatric Hematology and Oncology,</institution><institution> </institution><institution>the Queen Silvia Children's Hospital,</institution><institution> Sahlgrenska University Hospital,</institution><addr-line> </addr-line><country>Gothenburg</country></aff>
+<institution>Department of Pediatric Hematology and Oncology,</institution><institution> </institution><institution>the Queen Silvia Children's Hospital,</institution><institution> Sahlgrenska University Hospital,</institution><addr-line> </addr-line><addr-line>Gothenburg</addr-line></aff>
 
 <aff>
 <institution>Cardiovascular Biology Group,</institution><institution> Department of Biochemistry,</institution><addr-line> </addr-line><institution>University of Cambridge,</institution><institution> </institution><addr-line>Tennis Court Road,</addr-line><addr-line> Cambridge CB2 1QW,</addr-line><addr-line> </addr-line><country>UK</country></aff>
@@ -8328,7 +8328,7 @@
 <institution>Frontier Science Research Center,</institution><institution>University of Miyazaki,</institution><institution> </institution><country>Japan</country></aff>
 
 <aff>
-<institution>Department of Otolaryngology,</institution><institution> Hyogo College of Medicine,</institution><institution> </institution><addr-line>Nishinomiya City,</addr-line><addr-line> </addr-line><country>Hyogo</country></aff>
+<institution>Department of Otolaryngology,</institution><institution> Hyogo College of Medicine,</institution><institution> </institution><addr-line>Nishinomiya City,</addr-line><addr-line> </addr-line><addr-line>Hyogo</addr-line></aff>
 
 <aff>
 <institution>Department of Undergraduate Medicine,</institution><institution> Imperial College London,</institution><institution> </institution><addr-line>SW7 2AZ</addr-line></aff>
@@ -8568,7 +8568,7 @@
 <institution>Department of Pathology,</institution><institution> 18101 Lorain Avenue,</institution><institution> Fairview Hospital,</institution><institution> </institution><country>USA</country></aff>
 
 <aff>
-<institution>Department of Orthopedic Oncology,</institution><institution> </institution><institution>Sarcoma Center Berlin-Brandenburg,</institution><addr-line> Helios Klinikum Berlin-Buch,</addr-line><addr-line> </addr-line><country>Berlin</country></aff>
+<institution>Department of Orthopedic Oncology,</institution><institution> </institution><institution>Sarcoma Center Berlin-Brandenburg,</institution><addr-line> Helios Klinikum Berlin-Buch,</addr-line><addr-line> </addr-line><addr-line>Berlin</addr-line></aff>
 
 <aff>
 <institution>Department of Cancer Research and Molecular Medicine,</institution><institution> Faculty of Medicine,</institution><addr-line> </addr-line><institution>Norwegian University of Science and Technology (NTNU),</institution><institution> </institution><addr-line>Trondheim 7006,</addr-line><addr-line> </addr-line><country>Norway</country></aff>
@@ -8763,7 +8763,7 @@
 <institution>Max Planck Institute for Gravitational Physics (Albert Einstein Institute),</institution><institution> </institution><addr-line>Am Mühlenberg 1,</addr-line><addr-line> 14476 Golm</addr-line></aff>
 
 <aff>
-<institution>Department of Colorectal Surgery,</institution><institution> Scunthorpe General Hospital,</institution><institution> </institution><addr-line>Cliff Gardens,</addr-line><addr-line> Scunthorpe,</addr-line><addr-line> North Lincolnshire,</addr-line><addr-line> </addr-line><country>United Kingdom,</country><country> DN15 7BH</country></aff>
+<institution>Department of Colorectal Surgery,</institution><institution> Scunthorpe General Hospital,</institution><institution> </institution><addr-line>Cliff Gardens,</addr-line><addr-line> Scunthorpe,</addr-line><addr-line> North Lincolnshire,</addr-line><addr-line> </addr-line><country>United Kingdom,</country><addr-line> DN</addr-line><addr-line>15</addr-line><country> </country><addr-line>7</addr-line><addr-line>BH</addr-line></aff>
 
 <aff>
 <institution>Department of Infectious Diseases,</institution><addr-line> </addr-line><institution>Oslo University Hospital,</institution><institution> Ulleval,</institution><institution> </institution><addr-line>Oslo,</addr-line><addr-line> </addr-line><country>Norway</country></aff>
@@ -9048,7 +9048,7 @@
 <institution>Department of Oncology/ Hematology,</institution><addr-line> </addr-line><institution>National Cancer Center Hospital East,</institution><institution> </institution><addr-line>Kashiwa,</addr-line><addr-line> </addr-line><country>Japan</country></aff>
 
 <aff>
-<institution>Department of Orthopaedics,</institution><institution> Kingston Hospital,</institution><institution> </institution><addr-line>Galsworthy Road,</addr-line><addr-line> Kingston-upon-Thames,</addr-line><addr-line> </addr-line><country>Surrey,</country><country> KT2 7QB,</country><country> UK</country></aff>
+<institution>Department of Orthopaedics,</institution><institution> Kingston Hospital,</institution><institution> </institution><addr-line>Galsworthy Road,</addr-line><addr-line> Kingston-upon-Thames,</addr-line><addr-line> </addr-line><addr-line>Surrey,</addr-line><addr-line> KT</addr-line><addr-line>2</addr-line><country> </country><addr-line>7</addr-line><addr-line>QB,</addr-line><country> UK</country></aff>
 
 <aff>
 <institution>Howard Hughes Medical Institute,</institution><institution> UC Berkeley,</institution><institution> </institution><addr-line>Berkeley,</addr-line><addr-line> </addr-line><country>United States</country></aff>
@@ -9213,7 +9213,7 @@
 <institution>Department of General Surgery,</institution><institution> Scunthorpe General Hospital,</institution><institution> </institution><addr-line>Scunthorpe DN15 7BH,</addr-line><addr-line> </addr-line><country>UK</country></aff>
 
 <aff>
-<institution>Department of Orthopedics,</institution><institution> </institution><institution>Falun Central Hospital and Center for Clinical Research Dalarna,</institution><addr-line> </addr-line><country>Falun</country></aff>
+<institution>Department of Orthopedics,</institution><institution> </institution><institution>Falun Central Hospital and Center for Clinical Research Dalarna,</institution><addr-line> </addr-line><addr-line>Falun</addr-line></aff>
 
 <aff>
 <institution>University of Oxford,</institution><institution> </institution><addr-line>Oxford,</addr-line><addr-line> </addr-line><country>UK</country></aff>
@@ -9333,7 +9333,7 @@
 <institution>University of California,</institution><institution> Los Angeles,</institution><institution> </institution><addr-line>Los Angeles,</addr-line><addr-line> CA,</addr-line><addr-line> </addr-line><country>USA</country></aff>
 
 <aff>
-<institution>Department of Clinical Epidemiology,</institution><institution> </institution><institution>Aarhus University Hospital,</institution><addr-line> </addr-line><country>Århus</country></aff>
+<institution>Department of Clinical Epidemiology,</institution><institution> </institution><institution>Aarhus University Hospital,</institution><addr-line> </addr-line><addr-line>Århus</addr-line></aff>
 
 <aff>
 <institution>Centre for Paediatrics,</institution><institution> Blizard Institute of Cell and Molecular Science,</institution><institution> Barts and The London School of Medicine and Dentistry,</institution><addr-line> </addr-line><institution>Queen Mary University of London,</institution><institution> Barts and The London Children's Hospital,</institution><institution> </institution><addr-line>London,</addr-line><addr-line> </addr-line><country>UK</country></aff>
@@ -9444,7 +9444,7 @@
 <institution>Present address: </institution><institution>Department of Cell &amp; Molecular Biology,</institution><institution> Graduate Program in Microbiology,</institution><institution> Virology,</institution><institution> and Parasitology,</institution><institution> University of Pennsylvania,</institution><institution> </institution><addr-line>Philadelphia,</addr-line><addr-line> PA 19104,</addr-line><addr-line> </addr-line><country>USA</country></aff>
 
 <aff>
-<institution>SANOFI-AVENTIS,</institution><institution> </institution><institution>R&amp;D,</institution><institution> </institution><institution>Disposition,</institution><institution> </institution><institution>Safety and Animal Research (DSAR),</institution><institution> </institution><country>F-94140 Alfortville,</country><country> France</country></aff>
+<institution>SANOFI-AVENTIS,</institution><institution> </institution><institution>R&amp;D,</institution><institution> </institution><institution>Disposition,</institution><institution> </institution><institution>Safety and Animal Research (DSAR),</institution><institution> </institution><addr-line>F-</addr-line><addr-line>94140</addr-line><addr-line> Alfortville,</addr-line><country> France</country></aff>
 
 <aff>
 <institution>Department of Haematology,</institution><addr-line> </addr-line><institution>UCL Cancer Institute (Evans and Porter),</institution><institution> </institution><addr-line>London,</addr-line><addr-line> </addr-line><country>UK</country></aff>
@@ -9648,7 +9648,7 @@
 <institution>Aoslbeenrzt-aL,</institution><institution>uItdawlyigs-University,</institution><institution> Institute for Biology II,</institution><institution> Faculty of Biology,</institution><institution> University of Freiburg,</institution><institution> </institution><addr-line>Schänzlestr.</addr-line><addr-line> 1,</addr-line><addr-line> D-79104,</addr-line><addr-line> Freiburg,</addr-line><addr-line> </addr-line><country>Germany</country></aff>
 
 <aff>
-<institution>Institute of Pharmacology and Toxicology,</institution><addr-line> </addr-line><institution>University of Frankfurt </institution><country>Frankfurt</country></aff>
+<institution>Institute of Pharmacology and Toxicology,</institution><addr-line> </addr-line><institution>University of Frankfurt </institution><addr-line>Frankfurt</addr-line></aff>
 
 <aff>
 <institution>IFM Biology,</institution><institution> Division of Ecology,</institution><addr-line> </addr-line><institution>Linko¨ ping University,</institution><institution> </institution><addr-line>SE-581 83 Linko¨ ping,</addr-line><addr-line> </addr-line><country>Sweden</country></aff>
@@ -9957,13 +9957,13 @@
 <institution>Plant Breeding Laboratory,</institution><institution> Division of Agronomy and Horticulture Science,</institution><institution> Graduate School of Agriculture,</institution><addr-line> </addr-line><institution>Kyoto University,</institution><institution> </institution><addr-line>Kyoto 606-8502</addr-line></aff>
 
 <aff>
-<institution>Department of Orthopaedics,</institution><institution> </institution><institution>Oslo University Hospital,</institution><addr-line> </addr-line><country>Oslo</country></aff>
+<institution>Department of Orthopaedics,</institution><institution> </institution><institution>Oslo University Hospital,</institution><addr-line> </addr-line><addr-line>Oslo</addr-line></aff>
 
 <aff>
 <institution>Genetics and Aging Research Unit,</institution><institution> MassGeneral Institute for Neurodegenerative Disease,</institution><institution> Department of Neurology,</institution><institution> Massachusetts General Hospital,</institution><institution> </institution><addr-line>114 16th Street,</addr-line><addr-line> Charlestown,</addr-line><addr-line> MA 02129,</addr-line><addr-line> </addr-line><country>USA</country></aff>
 
 <aff>
-<institution>Orthopaedics Department,</institution><institution> </institution><institution>Lovisenberg Diaconal Hospital,</institution><addr-line> </addr-line><country>Oslo</country></aff>
+<institution>Orthopaedics Department,</institution><institution> </institution><institution>Lovisenberg Diaconal Hospital,</institution><addr-line> </addr-line><addr-line>Oslo</addr-line></aff>
 
 <aff>
 <institution>Institute of Human Nutrition and Food Science,</institution><institution> Christian-Albrechts University,</institution><institution> </institution><addr-line>Düsterbrooker Weg 15-17,</addr-line><addr-line> 24221 Kiel,</addr-line><addr-line> </addr-line><country>Germany</country></aff>
@@ -10254,7 +10254,7 @@
 <institution>Department of Gerontology and Geriatrics,</institution><institution>Leiden University Medical Center</institution></aff>
 
 <aff>
-<institution>Department of Molecular Medicine and Surgery,</institution><institution> </institution><institution>Section of Radiology,</institution><institution> Karolinska University Hospital,</institution><addr-line> Karolinska Institutet,</addr-line><addr-line> </addr-line><country>Stockholm</country></aff>
+<institution>Department of Molecular Medicine and Surgery,</institution><institution> </institution><institution>Section of Radiology,</institution><institution> Karolinska University Hospital,</institution><addr-line> Karolinska Institutet,</addr-line><addr-line> </addr-line><addr-line>Stockholm</addr-line></aff>
 
 <aff>
 <institution>Entomology,</institution><institution> </institution><institution>Royal British Columbia Museum,</institution><institution> </institution><addr-line>Victoria,</addr-line><addr-line> British Columbia,</addr-line><addr-line> </addr-line><country>Canada </country><addr-line>V8W 9W2</addr-line></aff>
@@ -10833,7 +10833,7 @@
 <institution>Department of Biotechnology,</institution><addr-line> </addr-line><institution>Graduate School of Engineering,</institution><institution> Osaka University,</institution><institution> </institution><addr-line>Suita,</addr-line><addr-line> Osaka 565-0871,</addr-line><addr-line> </addr-line><country>Japan</country></aff>
 
 <aff>
-<institution>Life Science Trace Gas Facility,</institution><institution> </institution><institution>Institute of Molecules and Materials,</institution><institution> </institution><institution>Radboud University Nijmegen,</institution><institution> </institution><addr-line>Nijmegen</addr-line></aff>
+<institution>Life Science Trace Gas Facility,</institution><institution> </institution><institution>Institute of Molecules and Materials,</institution><institution> </institution><institution>Radboud University Nijmegen,</institution><institution> </institution><addr-line>Nijmegen,</addr-line><addr-line> </addr-line><addr-line>6525</addr-line><addr-line> AJ</addr-line></aff>
 
 <aff>
 <institution>MRC Centre for Outbreak Analysis and modelling,</institution><institution> Department of Infectious Disease Epidemiology,</institution><addr-line> </addr-line><institution>Imperial College,</institution><institution> </institution><addr-line>London W2 1PG,</addr-line><addr-line> </addr-line><country>UK</country></aff>
@@ -10986,7 +10986,7 @@
 <institution>Covance Clinical Research Unit Ltd,</institution><institution> </institution><addr-line>Leeds,</addr-line><addr-line> </addr-line><country>UK</country></aff>
 
 <aff>
-<institution>First Department of Internal Medicine,</institution><addr-line> </addr-line><institution>Elisabethinen Hospital </institution><addr-line>Linz,</addr-line><addr-line> Fadingerstrasse 1,</addr-line><addr-line> </addr-line><country>Linz,</country><country> Austria</country></aff>
+<institution>First Department of Internal Medicine,</institution><addr-line> </addr-line><institution>Elisabethinen Hospital </institution><addr-line>Linz,</addr-line><addr-line> Fadingerstrasse 1,</addr-line><addr-line> </addr-line><addr-line>Linz,</addr-line><country> Austria</country></aff>
 
 <aff>
 <institution>Institute of Anatomy,</institution><institution> First Faculty of Medicine,</institution><institution> Charles University,</institution><institution> </institution><addr-line>Prague,</addr-line><addr-line> </addr-line><country>Czech Republic</country></aff>
@@ -11121,7 +11121,7 @@
 <institution>School of Psychology,</institution><addr-line> </addr-line><institution>University of Aberdeen,</institution><institution> </institution><addr-line>Scotland,</addr-line><addr-line> </addr-line><country>UK</country></aff>
 
 <aff>
-<institution>Department of Anesthesiology,</institution><institution> </institution><institution>Hvidovre University Hospital,</institution><addr-line> </addr-line><country>Copenhagen</country></aff>
+<institution>Department of Anesthesiology,</institution><institution> </institution><institution>Hvidovre University Hospital,</institution><addr-line> </addr-line><addr-line>Copenhagen</addr-line></aff>
 
 <aff>
 <institution>Department of Forestry Science,</institution><addr-line> </addr-line><institution>University of British Columbia,</institution><institution> </institution><addr-line>Vancouver,</addr-line><addr-line> British Columbia,</addr-line><addr-line> </addr-line><country>Canada </country><addr-line>V6T 1Z4</addr-line></aff>
@@ -11244,7 +11244,7 @@
 <institution>Department of Genetics Evolution and Environment,</institution><addr-line> </addr-line><institution>University College London,</institution><institution> </institution><addr-line>London WC1E 6BT,</addr-line><addr-line> </addr-line><country>UK</country></aff>
 
 <aff>
-<institution>National Research Centre for the Working Environment,</institution><institution> </institution><addr-line>Lersø Parkallé 105,</addr-line><addr-line> </addr-line><country>DK-2100 Copenhagen ,</country><country> Denmark</country></aff>
+<institution>National Research Centre for the Working Environment,</institution><institution> </institution><addr-line>Lersø Parkallé 105,</addr-line><addr-line> </addr-line><addr-line>DK-</addr-line><addr-line>2100</addr-line><addr-line> Copenhagen ,</addr-line><country> Denmark</country></aff>
 
 <aff>
 <institution>Swedish Institute for Communicable Disease Control,</institution><institution> </institution><addr-line>Solna,</addr-line><addr-line> </addr-line><country>Sweden</country></aff>
@@ -11298,7 +11298,7 @@
 <institution>Centre for Health and Social Economics,</institution><institution> Institute of Health and Welfare,</institution><institution> </institution><addr-line>Helsinki,</addr-line><addr-line> </addr-line><country>Finland</country></aff>
 
 <aff>
-<institution>Department of Orthopaedics,</institution><institution> </institution><institution>Sahlgrenska University Hospital,</institution><addr-line> </addr-line><country>Mölndal</country></aff>
+<institution>Department of Orthopaedics,</institution><institution> </institution><institution>Sahlgrenska University Hospital,</institution><addr-line> </addr-line><addr-line>Mölndal</addr-line></aff>
 
 <aff>
 <institution>Cambridge Comprehensive Biomedical Research Centre,</institution><addr-line> </addr-line><institution>Cambridge,</institution><institution> </institution><country>UK</country></aff>
@@ -11421,7 +11421,7 @@
 <institution>Department of Animal and Plant Sciences,</institution><addr-line> </addr-line><institution>University of Sheffield,</institution><institution> </institution><addr-line>Sheffield S10 2TN,</addr-line><addr-line> </addr-line><country>UK</country></aff>
 
 <aff>
-<institution>Department of Molecular Medicine and Surgery,</institution><institution> Section of Orthopaedics and Sports Medicine,</institution><institution> Karolinska Institutet,</institution><institution> </institution><institution>Karolinska University Hospital,</institution><addr-line> </addr-line><country>Stockholm</country></aff>
+<institution>Department of Molecular Medicine and Surgery,</institution><institution> Section of Orthopaedics and Sports Medicine,</institution><institution> Karolinska Institutet,</institution><institution> </institution><institution>Karolinska University Hospital,</institution><addr-line> </addr-line><addr-line>Stockholm</addr-line></aff>
 
 <aff>
 <institution>Plant Biotechnology Laboratory,</institution><institution> Department of Botany,</institution><addr-line> </addr-line><institution>North-Eastern Hill University,</institution><institution> </institution><addr-line>Shillong,</addr-line><addr-line> Meghalaya 793022,</addr-line><addr-line> </addr-line><country>India</country></aff>
@@ -11433,7 +11433,7 @@
 <institution>Canadian Heart Research Centre and Terrence Donnelly Heart Centre,</institution><institution> Division of Cardiology,</institution><addr-line> </addr-line><institution>St Michael's Hospital,</institution><institution> University of Toronto,</institution><institution> </institution><addr-line>Toronto,</addr-line><addr-line> ON,</addr-line><addr-line> </addr-line><country>Canada</country></aff>
 
 <aff>
-<institution>Department of Orthopedics,</institution><institution> </institution><institution>Aarhus University Hospital,</institution><addr-line> </addr-line><country>Aarhus</country></aff>
+<institution>Department of Orthopedics,</institution><institution> </institution><institution>Aarhus University Hospital,</institution><addr-line> </addr-line><addr-line>Aarhus</addr-line></aff>
 
 <aff>
 <institution>Division of Infectious Diseases and </institution><institution>Hospital Epidemiology,</institution><institution> University Hospital Basel,</institution><institution> </institution><addr-line>Basel,</addr-line><addr-line> </addr-line><country>Switzerland</country></aff>
@@ -11781,7 +11781,7 @@
 <institution>WHO/FAO/ OIE Collaborating Centre for Reference and Research on Leptospirosis,</institution><institution> Centre for Public Health Sciences,</institution><institution>Queensland Health Scientific Services,</institution><institution> </institution><country>Australia</country></aff>
 
 <aff>
-<institution>Department of Orthopedics,</institution><institution> Clincal Sciences Lund,</institution><institution> </institution><institution>Lund University,</institution><institution> Skåne University Hospital,</institution><addr-line> </addr-line><country>Lund</country></aff>
+<institution>Department of Orthopedics,</institution><institution> Clincal Sciences Lund,</institution><institution> </institution><institution>Lund University,</institution><institution> Skåne University Hospital,</institution><addr-line> </addr-line><addr-line>Lund</addr-line></aff>
 
 <aff>
 <institution>National Instrumentation Center for Environmental Management,</institution><addr-line> </addr-line><institution>Seoul National University,</institution><institution> </institution><addr-line>Seoul 151-921,</addr-line><addr-line> </addr-line><country>South Korea</country></aff>
@@ -11793,7 +11793,7 @@
 <institution>Department of Oral Medicine,</institution><institution> Faculty of Dentistry and Dental research center,</institution><institution> Mashhad University of Medical Sciences,</institution><institution> </institution><addr-line>postal code:91735,</addr-line><addr-line> </addr-line><country>Iran</country></aff>
 
 <aff>
-<institution>Stereology and Electron Microscopy Laboratory,</institution><institution> </institution><institution>Aarhus University,</institution><addr-line> </addr-line><country>Aarhus</country></aff>
+<institution>Stereology and Electron Microscopy Laboratory,</institution><institution> </institution><institution>Aarhus University,</institution><addr-line> </addr-line><addr-line>Aarhus</addr-line></aff>
 
 <aff>
 <institution>Division of Magnetic Resonance Research,</institution><institution> Department of Radiology,</institution><addr-line> </addr-line><institution>Johns Hopkins University School of Medicine,</institution><institution> </institution><addr-line>Baltimore,</addr-line><addr-line> MD 21287,</addr-line><addr-line> </addr-line><country>USA</country></aff>

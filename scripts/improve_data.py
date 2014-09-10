@@ -98,7 +98,11 @@ def change_institution_by_order(root):
 
 
 def split_by_commas(root):
-    """ <tag> A, B </tag>.. -> <tag> A,</tag><tag> B </tag>... """
+    """ <tag> A, B </tag>.. -> <tag> A,</tag><tag> B </tag>...
+        Additionally:
+        <country>Japan 324324</conutry> -->
+        <country>Japan</country> <country>324324</country>
+    """
     
     def make_elem(tag, text):
         el = ET.Element(tag)
@@ -154,6 +158,9 @@ def countrify(elem, keywords):
     tokens = elem
 
 def change_country_by_dict(root):
+    """ <country>123234</country> --> <addr-line>123234</addr-line>
+        <country>Berlin</country> --> <addr-line>Berlin</Berlin>
+    """
     country_keywords = set_from_file(COUNTRY_DICT, normal=True, split=True)
     for k in list(country_keywords):
         if len(k) == 1:
