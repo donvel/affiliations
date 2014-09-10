@@ -11,7 +11,7 @@ import operator
 
 from collections import defaultdict
 from utils import normalize, tokenize, text_in_element, to_unicode, glue_lists, \
-        is_punct, create_xml_tree
+        is_punct, create_xml_tree, print_out
 
 
 DICTS_DIR = 'dicts/'
@@ -231,10 +231,10 @@ def create_instance(aff, f, word_freq=None, hint_file=None):
 
 
     labeled_list = []
-    labeled_list += get_labels(aff.text, 'INST') #FIXME !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    labeled_list += get_labels(aff.text, 'TEXT') #TODO is it OK?
     for item in aff:
         labeled_list += get_labels(item.text, item.tag.upper()[:4])
-        labeled_list += get_labels(item.tail, 'INST') #FIXME !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        labeled_list += get_labels(item.tail, 'TEXT') #TODO is it OK?
 
     token_list2, label_list = zip(*labeled_list)
 

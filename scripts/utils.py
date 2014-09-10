@@ -17,12 +17,19 @@ def is_punct(char):
     return char in [',', ';', '.']
 
 
-def set_from_file(filename, normal=False):
+def set_from_file(filename, normal=False, split=False):
     with codecs.open(filename, 'rb', encoding='utf8') as f:
-        if normal:
-            return set([normalize(l.rstrip()) for l in f])
-        else:
-            return set([l.rstrip() for l in f])
+        li = []
+        for l in f:
+            l = l.rstrip()
+            if normal:
+                l = normalize(l)
+            if split:
+                words = tokenize(l, split_alphanum=True)
+            else:
+                words = [l]
+            li += words
+        return set(li)
 
 def glue_lists(lol):
     """ [[a, b], [c, d], [e]] -> [a, b, c, d, e] """

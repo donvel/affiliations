@@ -22,3 +22,8 @@ Yugoslavia
 5) Cleared "," "or" (by expanding names)
 
 6) Cleared some "and" and "of"
+
+7) Added Republic of
+
+8) Added dependent territories from http://www.nationsonline.org/oneworld/territories.htm
+ with all (*) cleared

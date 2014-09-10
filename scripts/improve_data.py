@@ -14,6 +14,7 @@ COMMA_WORDS = [',', ';', '.', ':', '`', '\'', '-', '\',',
 
 INSTITUTION_DICT = 'dicts/institution_keywords.txt'
 ADDRESS_DICT = 'dicts/my_address_keywords.txt'
+COUNTRY_DICT = 'dicts/countries2.txt'
 
 def is_accent(char):
     return unicodedata.category(to_unicode(char)) in ['Sk', 'Lm']
@@ -109,13 +110,18 @@ def split_by_commas(root):
 
         for elem in aff:
             current_text = ''
-            tokens = tokenize(elem.text, keep_all=True)
+            tokens = tokenize(elem.text, keep_all=True, split_alphanum=True)
             for t in tokens:
-                current_text += t
-                #if len(to_unicode(t)) == 1 and unicodedata.category(to_unicode(t)) == 'Po':
-                if is_punct(t):
-                    new_elems += [make_elem(elem.tag, current_text)]
+                if elem.tag == 'country' and t.isdigit():
+                    new_elems += [make_elem(elem.tag, current_text), make_elem(elem.tag, t)]
                     current_text = ''
+                else:
+                    current_text += t
+                    #if len(to_unicode(t)) == 1 and unicodedata.category(to_unicode(t)) == 'Po':
+                    if is_punct(t):
+                        new_elems += [make_elem(elem.tag, current_text)]
+                        current_text = ''
+
             if current_text:
                 new_elems += [make_elem(elem.tag, current_text)]
             new_elems[len(new_elems) - 1].tail = elem.tail
@@ -131,7 +137,6 @@ def change_institution_by_dict(root):
         <institution> InstitutionLikeWord </institution>
     """
 
-    split_by_commas(root)
     institution_keywords = set_from_file(INSTITUTION_DICT, normal=True)
     address_keywords = set_from_file(ADDRESS_DICT, normal=True)
 
@@ -143,8 +148,27 @@ def change_institution_by_dict(root):
                         and not any(t.isdigit() for t in tokens) \
                         and not any(t in address_keywords for t in tokens):
                     elem.tag = 'institution'
-                    print_out(elem, sys.stderr)
+                    #print_out(elem, sys.stderr)
 
+def countrify(elem, keywords):
+    tokens = elem
+
+def change_country_by_dict(root):
+    country_keywords = set_from_file(COUNTRY_DICT, normal=True, split=True)
+    for k in list(country_keywords):
+        if len(k) == 1:
+            country_keywords.discard(k)
+    #print country_keywords
+
+    for aff in root:
+        for elem in aff:
+            if elem.tag == 'country':
+                tokens = [normalize(t) for t in tokenize(elem.text, split_alphanum=True)]
+                if not any(t in country_keywords for t in tokens) and \
+                    elem.text.strip() and \
+                    (elem.text.strip() not in ['P.', 'R.', 'O.', 'C.', ')', ',']):
+                        elem.tag = 'addr-line'
+                        print_out(elem)
 
 def get_args():
     parser = argparse.ArgumentParser(description="Rule-based training data enhancment")
@@ -163,7 +187,9 @@ if __name__ == '__main__':
     root = tree.getroot()
     
     enhance_untagged(root)
+    split_by_commas(root)
     change_institution_by_dict(root)
     change_institution_by_order(root)
+    change_country_by_dict(root)
     
     tree.write(args.output)
