@@ -19,7 +19,9 @@ DICTS_DIR = 'dicts/'
 
 AVAILABLE_FEATURES = [
         'Word',
+        'IsWord',
         'Number',
+        'LowerCase',
         'UpperCase',
         'AllUpperCase',
         'AlphaNum', # does not apply to one tokenizing method
@@ -74,6 +76,8 @@ def load_dicts(dd):
         if what in features_on:
             dd[what] = dict_from_file(where, match_case)
 
+def all_lower_case(word):
+    return all(c.islower() for c in word)
 
 def all_upper_case(word):
     return all(c.isupper() for c in word)
@@ -93,6 +97,10 @@ def get_local_features(token, word_freq=None):
 
     if token.isalpha():
 
+        if 'LowerCase' in features_on:
+            if all_lower_case(normalize(token, lowercase=False)):
+                features += ['IsLowerCase']
+
         if 'UpperCase' in features_on:
             if first_upper_case(normalize(token, lowercase=False)):
                 features += ['IsUpperCase']
@@ -107,6 +115,9 @@ def get_local_features(token, word_freq=None):
         if 'Rare' in features_on:
             if word_freq[ntoken] <= rare_thr:
                 features += ['Rare']
+
+        if 'IsWord' in features_on:
+            features += ['IsWord']
 
     elif token.isdigit():
 
@@ -128,7 +139,7 @@ def get_local_features(token, word_freq=None):
                 features += ['IsNonAlphanum']
     
     if 'Word' in features_on:
-        if not any(x in features for x in ['Rare', 'IsNumber', 'IsAlphaNum']):
+        if not any(x in features for x in ['IsNumber', 'IsAlphaNum']):
             features += ['W=%s' % normalize(token, lowercase=False)]
 
     if 'Length' in features_on:
