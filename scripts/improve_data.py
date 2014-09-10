@@ -15,6 +15,7 @@ COMMA_WORDS = [',', ';', '.', ':', '`', '\'', '-', '\',',
 INSTITUTION_DICT = 'dicts/institution_keywords.txt'
 ADDRESS_DICT = 'dicts/my_address_keywords.txt'
 COUNTRY_DICT = 'dicts/countries2.txt'
+DEPENDENT_DICT = 'dicts/dependent_territories.txt'
 
 def is_accent(char):
     return unicodedata.category(to_unicode(char)) in ['Sk', 'Lm']
@@ -115,16 +116,22 @@ def split_by_commas(root):
         for elem in aff:
             current_text = ''
             tokens = tokenize(elem.text, keep_all=True, split_alphanum=True)
+            closing = False
             for t in tokens:
                 if elem.tag == 'country' and t.isdigit():
-                    new_elems += [make_elem(elem.tag, current_text), make_elem(elem.tag, t)]
-                    current_text = ''
+                    new_elems += [make_elem(elem.tag, current_text)]
+                    current_text = t
+                    closing = True
                 else:
+                    if closing and not is_punct(t):
+                        new_elems += [make_elem(elem.tag, current_text)]
+                        current_text = ''
                     current_text += t
                     #if len(to_unicode(t)) == 1 and unicodedata.category(to_unicode(t)) == 'Po':
                     if is_punct(t):
                         new_elems += [make_elem(elem.tag, current_text)]
                         current_text = ''
+                    closing = False
 
             if current_text:
                 new_elems += [make_elem(elem.tag, current_text)]
@@ -161,7 +168,8 @@ def change_country_by_dict(root):
     """ <country>123234</country> --> <addr-line>123234</addr-line>
         <country>Berlin</country> --> <addr-line>Berlin</Berlin>
     """
-    country_keywords = set_from_file(COUNTRY_DICT, normal=True, split=True)
+    country_keywords = set_from_file(COUNTRY_DICT, normal=True, split=True) \
+            .union(set_from_file(DEPENDENT_DICT, normal=True, split=True))
     for k in list(country_keywords):
         if len(k) == 1:
             country_keywords.discard(k)

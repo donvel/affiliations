@@ -399,6 +399,26 @@ Viet Nam
 Al Yaman
 Zambia
 Zimbabwe
+US
+U. S.
+USA
+U. S. A.
+United States of America
+UK
+U. K.
+People's Republic of China
+P. R. China
+PR China
+P R China
+Arab Emirates
+Bulgariya
+Yugoslavia
+The Netherlands
+the Netherlands
+Kosova
+Republic of
+R. O. C.
+Great Britain
 Ashmore and Cartier Islands 
 Christmas Island
 Cocos Islands
@@ -471,23 +491,3 @@ Paracel Islands
 Spratly Islands
 West Bank
 Western Sahara
-US
-U. S.
-USA
-U. S. A.
-United States of America
-UK
-U. K.
-People's Republic of China
-P. R. China
-PR China
-P R China
-Arab Emirates
-Bulgariya
-Yugoslavia
-The Netherlands
-the Netherlands
-Kosova
-Republic of
-R. O. C.
-Great Britain
