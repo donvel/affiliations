@@ -275,7 +275,7 @@ def export_to_crf_input(tree, test_input, num1, num2, file1, file2, hint_file,
         if shuffle:
             random.shuffle(test_affs)
         
-        assert num1 <= len(affs) and num2 <= len(test_affs)
+        assert num1 <= len(affs) and num2 <= len(test_affs), "train num = %d, test num = %d" % (len(affs), len(test_affs))
         test_affs = test_affs[:num2]
     else:
         assert num1 + num2 <= len(affs)

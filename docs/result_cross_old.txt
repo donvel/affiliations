@@ -3,32 +3,31 @@ CROSS VALIDATION
 Cross validated on a 8000-entry subset of data/affs-real-like.xml (which consists of 8267 affiliations).
 
 Parameters:
-Neighbor: 1, SplitAlphanum: True, Neighbor threshold: 25
+Neighbor: 1, SplitAlphanum: True 
 
 Features:
-["Word", "Number", "AllUpperCase", "UpperCase", "LowerCase", "Country", "Institution", "Address", "Rare"]
+['Word', 'Number', 'UpperCase', 'AllUpperCase', 'Address', 'Country', 'City', 'State', 'StateCode', 'StopWordMulti', 'Punct', 'WeirdLetter']
 
-f1: 0.982765, success: 0.919859, matched: 0.946737
-total success: 0.920500
+f1: 0.978710, success: 0.898834, matched: 0.940919
+total success: 0.910000
 
-         ========== CONFUSION ==========
+========== CONFUSION ==========
          ADDR    COUN    INST    PREC    REC     F1      
-         ADDR    43005      20    1252   0.96699 0.97127 0.96913 
-         COUN       41    7845      12   0.99493 0.99329 0.99411 
-         INST     1427      20   89379   0.98606 0.98407 0.98506 
+ADDR    42565      57    1281   0.96548 0.96952 0.96750 
+COUN      190    7895      10   0.99109 0.97529 0.98313 
+INST     1332      14   89650   0.98580 0.98521 0.98551 
 
-         ========== SUCCESS ==========
-         RATIO     CORRECT  TOTAL  TYPE
-         0.89904     561     624 ('COUN', 'INST')
-         0.91204     674     739 ('ADDR', 'INST')
-         0.92290    5973    6472 ('ADDR', 'COUN', 'INST')
-         0.94545     156     165 ('INST',)
+========== SUCCESS ==========
+RATIO     CORRECT  TOTAL  TYPE
+0.86423     592     685 ('COUN', 'INST')
+0.88138     587     666 ('ADDR', 'INST')
+0.91721    5949    6486 ('ADDR', 'COUN', 'INST')
+0.93252     152     163 ('INST',)
 
-         ========== MATCHED ==========
-         0.92350 'INST'
-         0.92192 'ADDR'
-         0.99479 'COUN'
-
+========== MATCHED ==========
+0.92325 'INST'
+0.91401 'ADDR'
+0.98550 'COUN'
 
 ---------- DESCRIPTION ----------
 

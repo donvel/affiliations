@@ -1,0 +1,54 @@
+- Museum is not address
++ USA is country, not New York
++ SAIC - Frederick, NCI - Frederick are not address
+- Epicentre is not address
++ 2 is not institution
+- Wexham, Slough is not institution
+- Macedonia is not institution
++ Hinxton is not institution
+- H4B1R6 is not country !!!!!! TODO check how they are tagged
++ Interatnational Technology Park is not Institution !!! check if we are consistent with such things
+- Kennemer Gasthuis is not address
++ Pojet INPA / Max-Planck is not address
++ San Francisco is not address as a part of UCSF
++ Dragana is not institution
++ and GEE is not address
+- Genetics and Pathology is not address !!! whys such a stupid mistake?
+- 08908 L ' Hospitalet de Llobregat is not institution
++ BMC is not address
++ bad comma classification ??? !!!!
++ Midwifery and Social Work is not address
++ Catalonia is not country (?? no political offence)
+- Port-of-Spain is not institution
++ Nydalen is not institution
+- Alberta Health Services is not address
+- Esplugues del Llobregat is not institution
+- Iran is not address
+- 1 Alle e d ' Athe ` nes is not institution (maybe it would be better if not the accents)
+- Spedali Civili Brescia is not address
+- Universitit Teknologi is not address
++ and Cologne Excellence Cluster on Cellular ... is not address
++ B6c is not institution !! ?? Altohough it seems to be a localization in the University
++ Bristol Royal Infirmary is not address
+- DK-80000 Aarhus C is not institution
+- Avenida das Américas is not institution (misleadin Grupos)
+- Piazzale Ospedale is not institution
+- Wilhelminenhospital is not address, Vienna is not country !!! check for Vienna - country training data TODO script which cheks countries with a dict :)
++ Goethenburg is not country
+- of America is not institution but these were two joint affs !!
+- Molecular, CMBC, IVIC is not address
+- 1 King's College Circle is not Institution
+- Viale dell ' Universita ` 32 is not institution
+- San Francisco is not institution !!!! ??? but this is incredibly hard, as it could be also University of California , San Francisco 
+- Safety Assessment , GlaxoSmithKline is not address
++ FRG is not institution (F. R. of Germany)
++ Justus is not address
+- Isle of Man is not institution
++ Aarhus is not addres in Aarhus University Hospital
+- Infection and Evolution is not address, TODO introduce more Institution keywords??
++ Chiba is not country
++ Trondheim is not country
+
+23 / 50 classified as errors were actually correct
+
+first 50 errors

@@ -9,48 +9,50 @@ The subset was generated in such a way that its intersection with the training s
 Trained on a 2000-entry sample from data/real-like-train.html.
 
 Parameters:
-Neighbor: 1, SplitAlphanum: True 
+Neighbor: 1, SplitAlphanum: True, Rare threshold: 25
 
-$ ./train_test.sh data/hand-bio.xml test-bio 2000
-['Word', 'Number', 'UpperCase', 'AllUpperCase', 'Address', 'Country', 'City', 'State', 'StateCode', 'StopWordMulti', 'Punct', 'WeirdLetter']
-f1: 0.970632, success: 0.777529, matched: 0.924187
-f1: 0.977971, success: 0.928609, matched: 0.946685
-f1: 0.979073, success: 0.928609, matched: 0.950308
-f1: 0.978592, success: 0.928609, matched: 0.950308
-f1: 0.972451, success: 0.937566, matched: 0.930865
-f1: 0.972451, success: 0.937566, matched: 0.930865
-f1: 0.971000, success: 0.859260, matched: 0.931686
-f1: 0.976298, success: 0.944415, matched: 0.945863
-f1: 0.973554, success: 0.940991, matched: 0.938364
-f1: 0.973554, success: 0.940991, matched: 0.938364
-f1: 0.977932, success: 0.944415, matched: 0.946685
-f1: 0.973554, success: 0.940991, matched: 0.938364
-f1: 0.973554, success: 0.940991, matched: 0.938364
+/test_hand.sh data/raw-bio.xml test-bio-new 92 2000
+['Word', 'Number', 'AllUpperCase', 'UpperCase', 'LowerCase', 'Country', 'Institution', 'Address', 'Rare']
+f1: 0.983282, success: 0.944415, matched: 0.950308
+f1: 0.981714, success: 0.947840, matched: 0.957807
+f1: 0.982165, success: 0.928609, matched: 0.949487
+f1: 0.975110, success: 0.902529, matched: 0.926989
+f1: 0.975719, success: 0.859260, matched: 0.930865
+f1: 0.977840, success: 0.859260, matched: 0.930865
+f1: 0.976780, success: 0.921760, matched: 0.934488
+f1: 0.976780, success: 0.921760, matched: 0.934488
+f1: 0.981056, success: 0.925184, matched: 0.941987
+f1: 0.981056, success: 0.925184, matched: 0.941987
+f1: 0.975719, success: 0.859260, matched: 0.930865
+f1: 0.981056, success: 0.925184, matched: 0.941987
+f1: 0.984242, success: 0.881915, matched: 0.942240
+f1: 0.985316, success: 0.944415, matched: 0.945863
 ==================== BEST SCORE ==========================
-f1: 0.979073, success: 0.928609, matched: 0.950308
+f1: 0.981714, success: 0.947840, matched: 0.957807
 ==================== LAST SCORE ==========================
-f1: 0.973554, success: 0.940991, matched: 0.938364
+f1: 0.985316, success: 0.944415, matched: 0.945863
 
-f1: 0.973554, success: 0.940991, matched: 0.938364
-total success: 0.913043
+f1: 0.985316, success: 0.944415, matched: 0.945863
+total success: 0.923913
 
 ========== CONFUSION ==========
          ADDR    COUN    INST    PREC    REC     F1      
-ADDR      407       0      11   0.94651 0.97368 0.95991 
-COUN        5      91       0   1.00000 0.94792 0.97326 
-INST       18       0    1145   0.99048 0.98452 0.98749 
+ADDR      405       0      12   0.98540 0.97122 0.97826 
+COUN        3      93       0   1.00000 0.96875 0.98413 
+INST        3       0    1157   0.98973 0.99741 0.99356 
 
 ========== SUCCESS ==========
 RATIO     CORRECT  TOTAL  TYPE
 1.00000       2       2 ('COUN', 'INST')
 0.84615      11      13 ('ADDR', 'INST')
-0.91781      67      73 ('ADDR', 'COUN', 'INST')
+0.93151      68      73 ('ADDR', 'COUN', 'INST')
 1.00000       4       4 ('INST',)
 
 ========== MATCHED ==========
-0.93478 'INST'
-0.90698 'ADDR'
+0.94565 'INST'
+0.91860 'ADDR'
 0.97333 'COUN'
+
 
 ---------- DESCRIPTION ----------
 

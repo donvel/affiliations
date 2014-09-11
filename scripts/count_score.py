@@ -16,7 +16,7 @@ from collections import defaultdict
 
 
 def ignore_none(t_lbng, lbng):
-    filtered = [(t, p) for (t, p) in zip(t_lbng, lbng) if t != 'NONE']
+    filtered = [(t, p) for (t, p) in zip(t_lbng, lbng) if t != 'TEXT']
     return zip(*filtered)
 
 
@@ -36,21 +36,21 @@ def get_tokens(hint_file):
 
 def print_aff(aff, lb, f):
     extend = {'INST': 'institution', 'ADDR': 'addr-line', 'COUN': 'country'}
-    last_label = 'NONE'
+    last_label = 'TEXT'
 
     print >>f, '<aff>'
 
     for (word, l) in zip(aff, lb):
         if l != last_label:
-            if last_label != 'NONE':
+            if last_label != 'TEXT':
                 f.write('</%s>' % extend[last_label])
-            if l != 'NONE':
+            if l != 'TEXT':
                 f.write('<%s>' % extend[l])
 
             last_label = l
         f.write(word + ' ')
 
-    if last_label != 'NONE':
+    if last_label != 'TEXT':
         f.write('</%s>' % extend[last_label])
 
     print >>f, '</aff>'
@@ -81,7 +81,7 @@ def show_labels(labeling, hint_file, output_file, only_errors=False):
 
 
 def aff_type(labeling):
-    return tuple(sorted(list(set(l for l in labeling if l != 'NONE'))))
+    return tuple(sorted(list(set(l for l in labeling if l != 'TEXT'))))
 
 
 class Score:
@@ -113,7 +113,7 @@ class Score:
 
         self.labeling += [(t_lbng, lbng)]
 
-        # Ignore NONE
+        # Ignore TEXT
         t_lbng, lbng = ignore_none(t_lbng, lbng)
 
         for (target, given) in zip(t_lbng, lbng):

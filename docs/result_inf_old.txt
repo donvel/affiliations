@@ -8,48 +8,50 @@ which in turn is a 100 affiliation subset of data/raw-affs-inf.txt)
 Trained on a 2000-entry sample from data/real-like-train.html.
 
 Parameters:
-Neighbor: 1, SplitAlphanum: True, Niehgbor threshold: 25
+Neighbor: 1, SplitAlphanum: True 
 
-./test_hand.sh data/hand-inf.xml test-inf-new 82 2000
-['Word', 'Number', 'AllUpperCase', 'UpperCase', 'LowerCase', 'Country', 'Institution', 'Address', 'Rare']
-f1: 0.908139, success: 0.695833, matched: 0.696977
-f1: 0.889630, success: 0.562500, matched: 0.670616
-f1: 0.911740, success: 0.575000, matched: 0.702724
-f1: 0.912087, success: 0.587500, matched: 0.732042
-f1: 0.906404, success: 0.595833, matched: 0.698370
-f1: 0.918006, success: 0.720833, matched: 0.716313
-f1: 0.910076, success: 0.570833, matched: 0.695291
-f1: 0.909259, success: 0.570833, matched: 0.690529
-f1: 0.908990, success: 0.575000, matched: 0.699645
-f1: 0.907700, success: 0.575000, matched: 0.699645
-f1: 0.911315, success: 0.575000, matched: 0.699645
-f1: 0.910035, success: 0.575000, matched: 0.699645
-f1: 0.910035, success: 0.575000, matched: 0.699645
+./train_test.sh data/hand-inf.xml test-inf 2000
+['Word', 'Number', 'UpperCase', 'AllUpperCase', 'Address', 'Country', 'City', 'State', 'StateCode', 'StopWordMulti', 'Punct', 'WeirdLetter']
+f1: 0.915527, success: 0.704167, matched: 0.724732
+f1: 0.914846, success: 0.745833, matched: 0.730479
+f1: 0.925545, success: 0.750000, matched: 0.734833
+f1: 0.926565, success: 0.745833, matched: 0.729782
+f1: 0.916624, success: 0.754167, matched: 0.746620
+f1: 0.901417, success: 0.745833, matched: 0.724612
+f1: 0.897745, success: 0.700000, matched: 0.702316
+f1: 0.895189, success: 0.700000, matched: 0.702316
+f1: 0.890954, success: 0.704167, matched: 0.706381
+f1: 0.890954, success: 0.704167, matched: 0.706381
+f1: 0.893703, success: 0.704167, matched: 0.711143
+f1: 0.893703, success: 0.704167, matched: 0.711143
+f1: 0.893703, success: 0.704167, matched: 0.711143
+f1: 0.893703, success: 0.704167, matched: 0.711143
+f1: 0.893703, success: 0.704167, matched: 0.711143
 ==================== BEST SCORE ==========================
-f1: 0.912087, success: 0.587500, matched: 0.732042
+f1: 0.916624, success: 0.754167, matched: 0.746620
 ==================== LAST SCORE ==========================
-f1: 0.910035, success: 0.575000, matched: 0.699645
+f1: 0.893703, success: 0.704167, matched: 0.711143
 
-f1: 0.910035, success: 0.575000, matched: 0.699645
-total success: 0.585366
+f1: 0.893703, success: 0.704167, matched: 0.711143
+total success: 0.634146
 
 ========== CONFUSION ==========
          ADDR    COUN    INST    PREC    REC     F1      
-ADDR      275       2      75   0.96154 0.78125 0.86207 
-COUN        3      75       5   0.93750 0.90361 0.92025 
-INST        8       3     826   0.91170 0.98686 0.94779 
+ADDR      259       2      94   0.94526 0.72958 0.82353 
+COUN        7      72       4   0.97297 0.86747 0.91720 
+INST        8       0     836   0.89507 0.99052 0.94038 
 
 ========== SUCCESS ==========
 RATIO     CORRECT  TOTAL  TYPE
 0.90000       9      10 ('COUN', 'INST')
 0.33333       2       6 ('ADDR', 'INST')
-0.56667      34      60 ('ADDR', 'COUN', 'INST')
-0.50000       3       6 ('INST',)
+0.58333      35      60 ('ADDR', 'COUN', 'INST')
+1.00000       6       6 ('INST',)
 
 ========== MATCHED ==========
-0.60976 'INST'
+0.65854 'INST'
 0.56061 'ADDR'
-0.92857 'COUN'
+0.91429 'COUN'
 
 ---------- DESCRIPTION ----------
 

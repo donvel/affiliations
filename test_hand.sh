@@ -6,7 +6,7 @@ affs_test=$1
 
 model=crfdata/tmpls_chain.txt
 
-test_number=92
+test_number=$3
 
 
 train=crfdata/default-train_$2.txt
@@ -37,14 +37,24 @@ acrf_out=$acrf_prefix$acrf_suffix
 
 evaluator="new ACRFTrainer.LogEvaluator(\"$acrf_prefix\")"
 
-def_features='["Word", "Number", "UpperCase", "AllUpperCase", "Address", "Country", "City", "State", "StateCode", "StopWord", "Separator", "NonAlphanum"]'
-features=${4:-$def_features}
+def_train_number=1000
+train_number=${4:-$def_train_number}
+
+def_nei_thr=1
+nei_thr=${5:-$def_nei_thr}
+
+def_rare_thr=25
+rare_thr=${6:-$def_rare_thr}
+
+def_features='["Word", "Number", "AllUpperCase", "UpperCase", "LowerCase", "Country", "Institution", "Address", "Rare"]'
+features=${7:-$def_features}
+
 
 python scripts/export.py --train $train --test $tst \
     --hint $hint \
     --input $affs --input_test $affs_test \
-    --train_number $3 --test_number $test_number \
-    --neighbor 1 --rare 0 --split_alphanum 1 \
+    --train_number $train_number --test_number $test_number \
+    --neighbor 1 --rare 16 --split_alphanum 1 \
     "$features"
 
 java -Xmx2000M \

@@ -89,7 +89,7 @@ CRF training and evaluation
    script. For example to perform a 5-fold cross validation using 8000
    affiliations, type::
 
-    ./cross_validate.sh 8000 5
+    ./cross_validate.sh 8000 5 my_cute_cross_validation
 
    (by the way, 8000 is about the size of the full dataset).
    The fold number should be a divisor of the number of the affiliations used.
@@ -97,7 +97,7 @@ CRF training and evaluation
    The best feature set and parameters are hard-coded in the script.
    But you can make experiments by changing the default parameters::
 
-    ./cross_validate.sh training_data_size folds_number neighbor_feature_range rare_threshold 'features_list'
+    ./cross_validate.sh training_data_size folds_number unique_name neighbor_feature_range rare_threshold 'features_list'
 
    for example::
 
