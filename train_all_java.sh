@@ -30,6 +30,8 @@ model=crfdata/tmpls_chain.txt
 
 nei_thr=1
 
+rare_thr=25
+
 java_jar=$CERMINE/cermine-impl/target/cermine-impl-1.3-SNAPSHOT-jar-with-dependencies.jar
 
 java_class=pl.edu.icm.cermine.metadata.affiliations.tools.AffiliationTrainingDataExporter
@@ -38,6 +40,7 @@ java -cp $java_jar $java_class \
     --input $train \
     --output $crftrain \
     --neighbor $nei_thr \
+    --rare $rare_thr \
     --add_mock_text
 
 java -cp $java_jar $java_class \

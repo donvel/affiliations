@@ -21,9 +21,9 @@ AVAILABLE_FEATURES = [
         'Word',
         'IsWord',
         'Number',
-        'LowerCase',
         'UpperCase',
         'AllUpperCase',
+        'AllLowerCase',
         'AlphaNum', # does not apply to one tokenizing method
         'Separator',
         'NonAlphanum',
@@ -97,10 +97,6 @@ def get_local_features(token, word_freq=None):
 
     if token.isalpha():
 
-        if 'LowerCase' in features_on:
-            if all_lower_case(normalize(token, lowercase=False)):
-                features += ['IsLowerCase']
-
         if 'UpperCase' in features_on:
             if first_upper_case(normalize(token, lowercase=False)):
                 features += ['IsUpperCase']
@@ -109,12 +105,16 @@ def get_local_features(token, word_freq=None):
             if all_upper_case(normalize(token, lowercase=False)):
                 features += ['IsAllUpperCase']
 
+        if 'AllLowerCase' in features_on:
+            if all_lower_case(normalize(token, lowercase=False)):
+                features += ['IsAllLowerCase']
+
         if 'Freq' in features_on:
             features += ['Freq:%s' % str(word_freq[ntoken])]
         
         if 'Rare' in features_on:
             if word_freq[ntoken] <= rare_thr:
-                features += ['Rare']
+                features += ['IsRare']
 
         if 'IsWord' in features_on:
             features += ['IsWord']
@@ -241,7 +241,7 @@ def create_instance(aff, f, word_freq=None, hint_file=None):
     if not token_list == list(token_list2):
         print '%r %r' % (token_list, token_list2)
 
-    time_steps = get_timesteps(token_list, word_freq=word_freq)
+    time_steps = get_timesteps(token_list2, word_freq=word_freq)
     for (label, features) in zip(label_list, time_steps):
         print >> f, '%s ---- %s' % (label, ' '.join(features))
     
