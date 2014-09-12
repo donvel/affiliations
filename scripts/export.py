@@ -93,20 +93,20 @@ def get_local_features(token, word_freq=None):
 
     features = []
     
-    ntoken = normalize(token)
+    ntoken = normalize(token, lowercase=False)
 
     if token.isalpha():
 
         if 'UpperCase' in features_on:
-            if first_upper_case(normalize(token, lowercase=False)):
+            if first_upper_case(ntoken):
                 features += ['IsUpperCase']
 
         if 'AllUpperCase' in features_on:
-            if all_upper_case(normalize(token, lowercase=False)):
+            if all_upper_case(ntoken):
                 features += ['IsAllUpperCase']
 
         if 'AllLowerCase' in features_on:
-            if all_lower_case(normalize(token, lowercase=False)):
+            if all_lower_case(ntoken):
                 features += ['IsAllLowerCase']
 
         if 'Freq' in features_on:
@@ -140,10 +140,10 @@ def get_local_features(token, word_freq=None):
     
     if 'Word' in features_on:
         if not any(x in features for x in ['IsNumber', 'IsAlphaNum']):
-            features += ['W=%s' % normalize(token, lowercase=False)]
+            features += ['W=%s' % ntoken]
 
     if 'Length' in features_on:
-        features += ['Length:%s' % str(len(token))]
+        features += ['Length:%s' % str(len(ntoken))]
 
     return features
 
@@ -176,7 +176,7 @@ def get_dict_features(token_list):
 
 
 def find_word_freq(li):
-    all_tokens = [normalize(t)
+    all_tokens = [normalize(t, lowercase=False)
              for aff in li
              for t in tokenize(text_in_element(aff),
                  split_alphanum=split_alphanum)]
@@ -295,6 +295,8 @@ def export_to_crf_input(tree, test_input, num1, num2, file1, file2, hint_file,
     if mock_label:
         add_mock_label(file1)
 
+    return word_freq
+
 
 def get_args():
     parser = argparse.ArgumentParser(description="Export tokens to crf format")
@@ -306,8 +308,10 @@ def get_args():
     parser.add_argument('--test', dest='test_file', default='crfdata/default-test.crf')
     parser.add_argument('--hint', dest='hint_file', default='crfdata/default-hint.txt')
     parser.add_argument('--input', dest='input_file', default='data/affs-real-like.xml')
+    parser.add_argument('--common_words', default='crfdata/default-common-words.txt')
     parser.add_argument('--input_test', dest='input_test_file', default=None,
             help="Specify a separate file with test data")
+    
     parser.add_argument('--rare', type=int, default=2)
     parser.add_argument('--neighbor', type=int, default=0)
     parser.add_argument('--split_alphanum', type=int, default=1)
@@ -316,6 +320,16 @@ def get_args():
     parser.add_argument('--mock_text_label', type=int, default=0)
     
     return parser.parse_args()
+
+
+def write_word_freq(word_freq, threshold, f):
+    common_words = []
+    for (word, occ) in word_freq.items():
+        if occ > threshold and word.isalpha():
+            common_words += [word]
+
+    for word in sorted(common_words):
+        print >> f, word
 
 
 if __name__ == '__main__':
@@ -332,6 +346,7 @@ if __name__ == '__main__':
     train_file = open(args.train_file, 'wb')
     test_file = open(args.test_file, 'wb')
     hint_file = open(args.hint_file, 'wb')
+    word_file = open(args.common_words, 'wb')
 
     split_alphanum = args.split_alphanum == 1
     xml_input = args.xml_input == 1
@@ -342,8 +357,10 @@ if __name__ == '__main__':
         tree = create_xml_tree(args.input_file)
 
     load_dicts(dicts)
-    export_to_crf_input(tree, args.input_test_file, \
+    word_freq = export_to_crf_input(tree, args.input_test_file, \
             args.train_number, args.test_number, \
             train_file, test_file, hint_file,
             shuffle=(args.shuffle == 1),
             mock_label=(args.mock_text_label == 1))
+
+    write_word_freq(word_freq, rare_thr, word_file)

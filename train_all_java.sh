@@ -8,6 +8,8 @@ train=data/affs-all-train.xml
 
 tst=data/affs-all-test.xml
 
+words=words/affs-all-words-$suffix.txt
+
 crftrain=crfdata/train_$suffix.txt
 
 crftst=crfdata/test_$suffix.txt
@@ -18,7 +20,7 @@ acrf_suffix=Testing.txt
 
 output=$acrf_prefix$acrf_suffix
 
-score_gile=/logs/score_$suffix.txt
+score_file=logs/score_$suffix.txt
 
 log_stdout=logs/stdout_$suffix.txt
 
@@ -39,14 +41,18 @@ java_class=pl.edu.icm.cermine.metadata.affiliations.tools.AffiliationTrainingDat
 java -cp $java_jar $java_class \
     --input $train \
     --output $crftrain \
+    --common_words $words \
     --neighbor $nei_thr \
-    --rare $rare_thr \
-    --add_mock_text
+    --rare $rare_thr
 
 java -cp $java_jar $java_class \
     --input $tst \
     --output $crftst \
-    --neighbor $nei_thr
+    --common_words $words \
+    --neighbor $nei_thr \
+    --rare $rare_thr \
+    --add_mock_text \
+    --load_words
 
 java -Xmx2000M \
     -cp $GRMM/class:$GRMM/lib/mallet-deps.jar:$GRMM/lib/grmm-deps.jar \

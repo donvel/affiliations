@@ -17,7 +17,7 @@ from collections import defaultdict
 
 def ignore_none(t_lbng, lbng):
     filtered = [(t, p) for (t, p) in zip(t_lbng, lbng) if t != 'TEXT']
-    return zip(*filtered)
+    return zip(*filtered) if filtered else ([], [])
 
 
 def get_tokens(hint_file):
@@ -115,6 +115,9 @@ class Score:
 
         # Ignore TEXT
         t_lbng, lbng = ignore_none(t_lbng, lbng)
+
+        if not lbng:
+            return
 
         for (target, given) in zip(t_lbng, lbng):
             self.confusion[(target, given)] += 1
