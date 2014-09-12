@@ -105,27 +105,24 @@ CRF training and evaluation
 
 #. You may also want to use the scripts in order to train a model, which
    will be later deserialized and used in CERMINE. 
-   We prepared two workflows. One of them exports the training data with
+   We export the training data with
    the use of a Java class, namely 
    `pl.edu.icm.cermine.metadata.affiliations.tools.AffiliationTrainingDataExporter`.
-   To do it, just call::
+   To export the data, call::
    
     ./train_all_java.sh
 
    This will use 8000 affiliations from `data/affs-real-like.xml` to train
    the ACRF.
 
-   You may also do the same thing in Python, calling::
-   
-    ./train_all_python.sh
-
-   However, in this second approach it is crucial that the Python and Java code
+   We wanted to make sure that the Python and Java code
    tokenize affiliations and export features in the same way.
-   You can check it by preparing `javatests` directory with some data to export
+   You can check it by preparing a `javatests` directory with some data to export
    and calling::
 
     ./test_java_txt.sh
     diff javatests/features-*
+    diff javatests/words-*
 
 
 CRF testing tools

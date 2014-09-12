@@ -1,0 +1,43 @@
+For 1000, Word, best nei_thr = 3
+For Word, there is significant improvemnt from 1000 to 4000
+If we train using 4000 words and many features, it is slightly better to use nei_thr = 1 than nei_thr = 2.
+It is true also when we start adding features.
+
+Rare
+If rare blocks the word, the bigger the rare threshold, the worse outcomes! 
+This is true also, when we add more features.
+If Rare doesn't block the word, the optimal value seems to sit between 16 and 32
+(16 is better), interestingly, 128 also behaves well.
+For n = 4000 Rare = 19, 25 are the best
+
+Dicts:
+Together with sole Word: 
+The country feature is the best. 
+Institution makes significant (?) improvement.
+Address gives some improvement.
+StopWord gives a tiny improvement, it is better when it is case-sensitive
+StopWordEng is neutral (spolis some things and imporves other things)
+City is neutral (slightly bad) (good for address, bad for institution)
+State is slightly bad,
+state code is slightly worse.
+
+Something weird with this country, do we get different results every time !! ?
+
+Adding number is a big win :)
+Adding UpperCase is a lose
+But then adding AllUpperCase makes it better than no two of them
+Adding sep then improves slightly
+Adding nonal is a lose.
+
+When we add AllUpper, it is good to add Upper too.
+We can add AllLower for consistency, it doesn't change much
+
+Using both country and inst leads to good results.
+
+Having word, number, upper, allupper, country, inst, addr is a good option, everything seems to 
+give some improvement. 
+Similar results with: word, number, country, inst, addr
+Adding stop seems to spoil it a little
+Adding sep is debatable, some parameters go up, the others go down. Maybe sep should look for other characters?
+Maybe Rare is faulty??
+
