@@ -2,9 +2,9 @@ i=$1
 
 real=data/affs-real-like.xml
 
-train=data/cross-train$i.txt
+train=data/cross-train$i.xml
 
-tst=data/cross-tst$i.txt
+tst=data/cross-tst$i.xml
 
 crftrain=crfdata/cross-train$i.txt
 

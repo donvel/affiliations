@@ -4,16 +4,18 @@ number=$1
 
 folds=$2
 
+name=$3
+
 def_nei_thr=1
-nei_thr=${3:-$def_nei_thr}
+nei_thr=${4:-$def_nei_thr}
 
 def_rare_thr=25
-rare_thr=${4:-$def_rare_thr}
+rare_thr=${5:-$def_rare_thr}
 
-def_features='["Word", "Number", "AllUpperCase", "UpperCase", "LowerCase", "Country", "Institution", "Address", "Rare"]'
-features=${5:-$def_features}
+def_features='["Word", "Number", "AllUpperCase", "UpperCase", "AllLowerCase", "Country", "Institution", "Address", "Rare"]'
+features=${6:-$def_features}
 
-rm $score*.txt
+rm -f $score*.txt
 
 for i in $(seq 1 $folds)
 do
@@ -22,5 +24,5 @@ done
 
 wait
 
-python scripts/aggregate_score.py $score*.txt | tee logs/aggr-score.txt
+python scripts/aggregate_score.py $score*.txt | tee logs/aggr-score-$name.txt
 
