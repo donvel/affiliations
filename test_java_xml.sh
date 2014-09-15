@@ -25,5 +25,5 @@ python scripts/export.py --train $output \
     --rare $rare_thr \
     --xml_input 1 \
     --shuffle 0 \
-    --mock_text_label 1 \
+    --mock_text_label 0 \
     "$features"
