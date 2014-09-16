@@ -123,7 +123,14 @@ CRF training and evaluation
    This will use 8000 affiliations from `data/affs-real-like.xml` to train
    the ACRF.
 
-   We wanted to make sure that the Python and Java code
+#. (Optionally) you may want to train the ACRF so that it can tag authors.
+   In order to do so, use::
+  
+    ./train_all_java_author.sh
+
+   This will use 2000 affiliations from `data/affs-auth.xml`.
+
+#.  We wanted to make sure that the Python and Java code
    tokenize affiliations and export features in the same way.
    You can check it by preparing a `javatests` directory with some data to export
    and calling::
