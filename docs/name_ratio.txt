@@ -1,0 +1,49 @@
+Fraction of author names in data/hand-inf.xml
+2 n
+5 n
+6 n
+11 n
+12 n
+14 n
+15 n,n
+17 n
+18 n,n and n
+20 n,n
+22 n
+24 n and n
+26 n
+27 n
+30 n
+33 n
+34 n,n,n
+37 n
+40 n
+41 n,n,n
+45 n and n
+47 n
+51 n
+52 n and n
+58 n
+60 n
+64 n,n
+65 n,n and n
+67 n,n
+68 n,n,n
+69 n
+74 n,n and n
+75 n
+76 n,n,n
+78 n
+79 n
+36 / 82 = 44 %
+
+1: 36 - 13 = 23
+2: 7 = 4 x n,n + 3 x n and n
+3: 6 = 3 x n,n,n + 3 x n,n and n
+
+" " -> 55 %
+n -> 28%
+n,n -> 5%
+n and n -> 4%
+n, n, n -> 4%
+n, n and n -> 4%
