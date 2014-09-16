@@ -120,7 +120,8 @@ class Score:
             return
 
         for (target, given) in zip(t_lbng, lbng):
-            self.confusion[(target, given)] += 1
+            if (target, given) in self.confusion:
+                self.confusion[(target, given)] += 1
 
         all_tags = aff_type(t_lbng)
         

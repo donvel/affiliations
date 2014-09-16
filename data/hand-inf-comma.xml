@@ -1,0 +1,577 @@
+<affs>
+<aff>
+
+<institution>Department of Computer Science, University of South Florida,</institution>
+<addr-line> Tampa, FL,</addr-line>
+<country> USA</country>
+
+</aff>
+<aff>
+Marcus Liwicki,
+<institution> DFKI,</institution>
+<addr-line> Kaiserslautern,</addr-line>
+<country> Germany</country>
+
+</aff>
+<aff>
+
+<institution>Research Group on Intelligent Machines, REGIM,University of Sfax,</institution>
+<addr-line></addr-line>
+<country> Tunisia</country>
+
+</aff>
+<aff>
+
+<institution>Beijing Laboratory of Intelligent Information Technology, School of Computer Science and Technology, Beijing Institute of Technology</institution>
+<addr-line></addr-line>
+<country></country>
+
+</aff>
+<aff>
+Krishna Subramanian,
+<institution> Raytheon BBN Technologies,</institution>
+<addr-line> 10 Moulton Street Cambridge, MA 02138</addr-line>
+<country></country>
+
+</aff>
+<aff>
+Yoann Champeil,
+<institution> Dept. Eng. of Image Interaction Immersion, EISTI Engineering School,</institution>
+<addr-line> Cergy,</addr-line>
+<country> France</country>
+
+</aff>
+<aff>
+
+<institution>Center of Informatics, Federal University of Pernambuco.</institution>
+<addr-line> Recife, PE, </addr-line>
+<country>Brazil </country>
+- www.cin.ufpe.br/~viisar
+</aff>
+<aff>
+
+<institution>Department of Computer Science, Institute of Mathematics and Statistics / University of Sa˜o Paulo,</institution>
+<addr-line> Sa˜o Paulo,</addr-line>
+<country> Brazil</country>
+
+</aff>
+<aff>
+
+<institution>Kyushu University,</institution>
+<addr-line> Fukuoka,</addr-line>
+<country> Japan</country>
+
+</aff>
+<aff>
+
+<institution>Department of Informatics, Technological Educational Institute of Athens,</institution>
+<addr-line> Agiou Spiridonos Aigaleo 12210 Athens,</addr-line>
+<country> Greece</country>
+
+</aff>
+<aff>
+Joost van Beusekom,
+<institution> University of Kaiserslautern, German Research Center for Artificial Intelligence (DFKI),</institution>
+<addr-line> Trippstadterstraße 122 67663, Kaiserslautern,</addr-line>
+<country> Germany</country>
+
+</aff>
+<aff>
+Toru Wakahara,
+<institution> Faculty of Computer and Information Sciences, Hosei University,</institution>
+<addr-line> 3-7-2 Kajino-cho, Koganei-shi, Tokyo 184-8584,</addr-line>
+<country> Japan</country>
+
+</aff>
+<aff>
+
+<institution>Image Understanding and Pattern Recognition Group, Technical University of Kaiserslautern,</institution>
+<addr-line> Kaiserslautern,</addr-line>
+<country> Germany</country>
+
+</aff>
+<aff>
+Elisa H. Barney Smith,
+<institution> Boise State University,</institution>
+<addr-line> Boise, Idaho,</addr-line>
+<country> USA</country>
+
+</aff>
+<aff>
+Haikal El Abed, Volker Ma¨rgner,
+<institution> Technische Universitaet Braunschweig, Institute for Communications Technology (IfN),</institution>
+<addr-line> Schleinitzstrasse 22, 38106 Braunschweig,</addr-line>
+<country> Germany</country>
+
+</aff>
+<aff>
+
+<institution>State Key Laboratory of Digital Publishing Technology,</institution>
+<addr-line> Beijing,</addr-line>
+<country> China</country>
+
+</aff>
+<aff>
+Ernest Valveny,
+<institution> Computer Vision Center, Universitat Auto`noma de Barcelona,</institution>
+<addr-line></addr-line>
+<country> Spain</country>
+
+</aff>
+<aff>
+Markus Diem, Florian Kleber and Robert Sablatnig,
+<institution> Computer Vision Lab, Vienna University of Technology,</institution>
+<addr-line> Vienna,</addr-line>
+<country> Austria</country>
+
+</aff>
+<aff>
+
+<institution>Department of Computer Science, City University of Hong Kong,</institution>
+<addr-line> Hong Kong SAR,</addr-line>
+<country> PR China</country>
+
+</aff>
+<aff>
+Radhika Nangia, Umapada Pal,
+<institution> Institute of Engineering and Management, Indian Statistical Institute,</institution>
+<addr-line> Kolkata</addr-line>
+<country></country>
+
+</aff>
+<aff>
+
+<institution>Department of Computer Science, University of Kaiserslautern,</institution>
+<addr-line> P.O. Box 3049, 67653 Kaiserslautern,</addr-line>
+<country>Germany</country>
+
+</aff>
+<aff>
+Emanuel Indermühle,
+<institution> Institute of Computer Science and Applied Mathematics, University of Bern,</institution>
+<addr-line> CH-3012 Bern,</addr-line>
+<country> Switzerland</country>
+
+</aff>
+<aff>
+
+<institution>Fujitsu Laboratories Ltd,</institution>
+<addr-line> Kawasaki,</addr-line>
+<country> Japan</country>
+
+</aff>
+<aff>
+Vadim Mazalov and Stephen M. Watt,
+<institution> Ontario Research Centre for Computer Algebra, Department of Computer Science, University of Western Ontario,</institution>
+<addr-line> London,</addr-line>
+<country> Canada</country>
+
+</aff>
+<aff>
+
+<institution>Department of Studies in Computer Science, University of Mysore,</institution>
+<addr-line> Mysore, Karnataka,</addr-line>
+<country> India</country>
+
+</aff>
+<aff>
+Itshak Dinstein,
+<institution> Computer and Electrical Engineering department, Ben-Gurion university,</institution>
+<addr-line> Beer-Sheva,</addr-line>
+<country> Israel</country>
+
+</aff>
+<aff>
+Vu Nguyen,
+<institution> School of ICT, Griffith University,</institution>
+<addr-line></addr-line>
+<country> Australia</country>
+
+</aff>
+<aff>
+
+<institution>Business Information System Institute, HES-SO // Wallis,</institution>
+<addr-line> Sierre,</addr-line>
+<country> Switzerland</country>
+
+</aff>
+<aff>
+
+<institution>Donders Institute for Brain, Cognition and Behavior, Radboud University,</institution>
+<addr-line> Nijmegen,</addr-line>
+<country> The Netherlands</country>
+
+</aff>
+<aff>
+Masakazu Iwamura,
+<institution> Graduate School of Engineering, Osaka Prefecture University</institution>
+<addr-line></addr-line>
+<country></country>
+
+</aff>
+<aff>
+
+<institution>School of Mathematics and Computer Applications, Thapar University,</institution>
+<addr-line> Chandigarh </addr-line>
+<country>(INDIA)</country>
+
+</aff>
+<aff>
+
+<institution>Language and Media Processing Laboratory, Institute of Advanced Computer Studies, University of Maryland,</institution>
+<addr-line> College Park, MD,</addr-line>
+<country> USA</country>
+
+</aff>
+<aff>
+Jung Gap Kuk,
+<institution> Seoul National University School of Electrical Engineering,</institution>
+<addr-line> Seoul 151-744,</addr-line>
+<country> Korea</country>
+
+</aff>
+<aff>
+Sofiene Haboubi, Samia Maddouri, Noureddine Ellouze,
+<institution> Image Processing and Pattern Recognition Unit, National Engineering School of Tunis (ENIT),</institution>
+<addr-line> BP 37, Belvedere 1002, Tunis,</addr-line>
+<country> Tunisia</country>
+
+</aff>
+<aff>
+
+<institution>Institute of Informatics and Telecommunications, Computational Intelligence Laboratory, National Center for Scientific Research “Demokritos”,</institution>
+<addr-line> GR-153 10 Agia Paraskevi, Athens,</addr-line>
+<country> Greece</country>
+
+</aff>
+<aff>
+
+<institution>ECSE Department, Rensselaer Polytechnic, Institute Troy,</institution>
+<addr-line> NY 12180,</addr-line>
+<country> USA</country>
+
+</aff>
+<aff>
+Josep Lladós, 
+<institution>Computer Vision Center Dept. of Computer Science, Campus UAB, Ed. O,</institution>
+<addr-line> 08193 Bellatera (Barcelona),</addr-line>
+<country> Spain</country>
+
+</aff>
+<aff>
+
+<institution>Department of Computer Science, The University of Hong Kong,</institution>
+<addr-line> Hong Kong,</addr-line>
+<country> China</country>
+
+</aff>
+<aff>
+
+<institution>Institute of Computer Science and Technology, Peking University,</institution>
+<addr-line> Beijing,</addr-line>
+<country> China</country>
+
+</aff>
+<aff>
+F. Morain-Nicolier,
+<institution> Univ. of Reims-Champagne-Ardenne - CReSTIC IUT,</institution>
+<addr-line> 9 rue de Que´bec, BP 396 10 026 Troyes, cedex,</addr-line>
+<country> France</country>
+
+</aff>
+<aff>
+Ricard Coll, Alicia Forne´s, Josep Llad o´s,
+<institution> Computer Vision Center - Computer Science Department, Universitat Aut o`noma de Barcelona,</institution>
+<addr-line></addr-line>
+<country> Spain</country>
+
+</aff>
+<aff>
+
+<institution>Computer Science &amp; Engineering Dept., Lehigh University,</institution>
+<addr-line> 19 Memorial Dr West, Bethlehem, PA 18017,</addr-line>
+<country> USA</country>
+
+</aff>
+<aff>
+
+<institution>Electrical Engineering Department, Amirkabir University of Technology,</institution>
+<addr-line> Tehran,</addr-line>
+<country> Iran</country>
+
+</aff>
+<aff>
+
+<institution>Department of Computer Engineering &amp; IT, Amirkabir University of Technology (Tehran Polytechnic),</institution>
+<addr-line> Tehran,</addr-line>
+<country> Iran</country>
+
+</aff>
+<aff>
+Sabine Barrat and Salvatore Tabbone,
+<institution> LORIA-UMR7503 - University of Nancy,</institution>
+<addr-line> 2 BP 239 - 54506 Vandœuvre-les-Nancy, Cedex,</addr-line>
+<country> France</country>
+
+</aff>
+<aff>
+
+<institution>Department of Electrical and Electronic Engineering, The University of Hong Kong,</institution>
+<addr-line> Pokfulam Road, Hong Kong</addr-line>
+<country></country>
+
+</aff>
+<aff>
+Ermelinda Oro,
+<institution> Department of Computer and Systems, Science University of Calabria</institution>
+<addr-line> Via P. Bucci Cubo 41/C, Rende (CS),</addr-line>
+<country> Italy</country>
+
+</aff>
+<aff>
+
+<institution>Computational Intelligence Laboratory , Institute of Informatics and Telecommunications, National Centre for Scientific Research “Demokritos”,</institution>
+<addr-line> GR - 153 Agia Paraskevi, Athens,</addr-line>
+<country> Greece, </country>
+http://www.iit.demokritos.gr/cil
+</aff>
+<aff>
+
+<institution>Institute for Advanced Computer Studies, University of Maryland,</institution>
+<addr-line> College Park, MD,</addr-line>
+<country> USA</country>
+
+</aff>
+<aff>
+
+<institution>Loria - Nancy University,</institution>
+<addr-line> Nancy,</addr-line>
+<country> France</country>
+
+</aff>
+<aff>
+Marcus Liwicki,
+<institution> Knowledge Management Department, German Research Center for AI (DFKI),</institution>
+<addr-line>Kaiserslautern,</addr-line>
+<country> Germany</country>
+
+</aff>
+<aff>
+Linlin Li and Chew Lim Tan,
+<institution> Department of Computer Science, National University of Singapore</institution>
+<addr-line></addr-line>
+<country></country>
+
+</aff>
+<aff>
+
+<institution>Department of Surveying Engineering, Technological Educational Institution of Athens,</institution>
+<addr-line> GR-12210 Athens,</addr-line>
+<country> Greece</country>
+
+</aff>
+<aff>
+
+<institution>German Research Center for Artificial Intelligence (DFKI),</institution>
+<addr-line> Kaiserslautern,</addr-line>
+<country> Germany</country>
+
+</aff>
+<aff>
+
+<institution>Technical University of Kaiserslautern,</institution>
+<addr-line></addr-line>
+<country> Germany</country>
+
+</aff>
+<aff>
+
+<institution>Department of Computer Science and Engineering University at Buffalo,</institution>
+<addr-line> Buffalo, NY</addr-line>
+<country> </country>
+,chetanra, utkarshp
+</aff>
+<aff>
+
+<institution>Computer Vision and Pattern Recognition Unit, Indian Statistical Institute,</institution>
+<addr-line> Kolkata - 108,</addr-line>
+<country> India</country>
+
+</aff>
+<aff>
+Enrico Pontelli,
+<institution> Department of Computer Science, New Mexico State University, Las Cruces,</institution>
+<addr-line> NM 88003,</addr-line>
+<country> USA</country>
+
+</aff>
+<aff>
+
+<institution>Osaka Prefecture University,</institution>
+<addr-line> 1-1 Gakuencho, Sakai, Osaka, 599-8531,</addr-line>
+<country> Japan</country>
+
+</aff>
+<aff>
+Florian Kleber,
+<institution> Institute of Computer Aided Automation,</institution>
+<addr-line> Favoritenstr. 9/1832 1040, Vienna</addr-line>
+<country></country>
+
+</aff>
+<aff>
+
+<institution>REsearch Group on Intelligent Machines (REGIM), ENIS, University of Sfax,</institution>
+<addr-line> Sfax,</addr-line>
+<country> Tunisia</country>
+
+</aff>
+<aff>
+
+<institution>Vienna University of Technology,</institution>
+<addr-line></addr-line>
+<country> Austria</country>
+
+</aff>
+<aff>
+
+<institution>Computational Intelligence Laboratory, Institute of Informatics and Telecommunications, National Center for Scientific Research “Demokritos”,</institution>
+<addr-line> GR-153 10 Athens,</addr-line>
+<country> Greece</country>
+
+</aff>
+<aff>
+Ying Li Ching, Y. Suen,
+<institution> CENPARMI (Center for Pattern Recognition and Machine Intelligence),Computer Science and Software Engineering Department, Concordia University,</institution>
+<addr-line>1455 de Maisonneuve Blvd. West, Montreal, Quebec,</addr-line>
+<country> Canada,</country>
+<addr-line>H3G 1M8</addr-line>
+, Tel (514)-848-2424-Ext: 7950, Fax: (514)-848-2830
+</aff>
+<aff>
+Jie Wang, Michael S. Brown and Chew Lim Tan, 
+<institution>School of Computing, National University of Singapore</institution>
+<addr-line></addr-line>
+<country></country>
+
+</aff>
+<aff>
+
+<institution>Damascus University, Faculty of Information Technology Eng</institution>
+<addr-line></addr-line>
+<country></country>
+
+</aff>
+<aff>
+Ujjwal Bhattacharya, Bidyut B. Chaudhuri, 
+<institution>CVPR Unit, Indian Statistical Institute,</institution>
+<addr-line> Kolkata,</addr-line>
+<country> India</country>
+
+</aff>
+<aff>
+Qiu-Feng Wang, Fei Yin, Cheng-Lin Liu,
+<institution> National Laboratory of Pattern Recognition (NLPR), Institute of Automation, Chinese Academy of Sciences,</institution>
+<addr-line> 95 Zhongguancun East Road, Beijing 100190,</addr-line>
+<country> P.R. China</country>
+
+</aff>
+<aff>
+Raid Saabni,
+<institution> Computer Science Department, Ben-Gurion University Of the Negev, Israel Traingle R&amp;D Center,</institution>
+<addr-line> Kafr Qarea,</addr-line>
+<country> Israel</country>
+
+</aff>
+<aff>
+
+<institution>Knowledge-Based Systems Group, Department of Computer Science, University of Kaiserslautern,</institution>
+<addr-line> Kaiserslautern,</addr-line>
+<country> Germany</country>
+
+</aff>
+<aff>
+
+<institution>Pattern Recognition and Image Analysis (PRImA), Research Lab School of Computing, Science and Engineering, University of Salford,</institution>
+<addr-line> Greater Manchester,</addr-line>
+<country> United Kingdom</country>
+, http://www.primaresearch.org
+</aff>
+<aff>
+
+<institution>DIVA Group, Department of Computer Sciences, University of Fribourg,</institution>
+<addr-line></addr-line>
+<country> Switzerland</country>
+
+</aff>
+<aff>
+
+<institution>Institute of Computer Science and Applied Mathematics, University of Bern, </institution>
+<addr-line>Neubru¨ckstrasse 10, CH-3012 Bern</addr-line>
+<country></country>
+
+</aff>
+<aff>
+Palaiahnakote Shivakumara, Trung Quy Phan and Chew Lim Tan,
+<institution> School of Computing, National University of Singapore</institution>
+<addr-line></addr-line>
+<country></country>
+
+</aff>
+<aff>
+Massimo Ruffolo,
+<institution> High Performance Computing and Networking Institute, Italian National Research Council,</institution>
+<addr-line> Via P. Bucci Cubo 41/C, Rende (CS),</addr-line>
+<country> Italy</country>
+
+</aff>
+<aff>
+Itaru Tatsumi, Hitoshi Habe, Masatsugu Kidode, 
+<institution>Graduate School of Information Science, Nara Institute of Science and Technology,</institution>
+<addr-line> Takayama 8916-5, Ikoma-shi, Nara 630-0192,</addr-line>
+<country> Japan</country>
+
+</aff>
+<aff>
+
+<institution>Institute of Artificial Intelligence and Robotics, Xi'an Jiaotong University,</institution>
+<addr-line> Xi'an,</addr-line>
+<country> P.R.China</country>
+
+</aff>
+<aff>
+Saher Mohamed El-Neklawy,
+<institution> German University in Cairo,</institution>
+<addr-line></addr-line>
+<country> Egypt</country>
+
+</aff>
+<aff>
+Jan Richarz,
+<institution> Department of Computer Science, TU Dortmund,</institution>
+<addr-line></addr-line>
+<country> Germany</country>
+
+</aff>
+<aff>
+
+<institution>Department of Electronics, University of Kent,</institution>
+<addr-line></addr-line>
+<country> UK</country>
+
+</aff>
+<aff>
+
+<institution>Universidade Estadual de Ponta Grossa (UEPG),</institution>
+<addr-line> Ponta Grossa (PR),</addr-line>
+<country> Brasil</country>
+
+</aff>
+<aff>
+
+<institution>Graduate School of Engg., Mie University;</institution>
+<addr-line> 1577 Kurimamachiya-cho, TSU, 514-8507,</addr-line>
+<country> Japan</country>
+
+</aff>
+</affs>

@@ -2,7 +2,7 @@ CERMINE=/home/bartek/Projects/CERMINE
 
 GRMM=grmm
 
-suffix=all_java
+suffix=all_java_1025
 
 train=data/affs-all-train.xml
 
