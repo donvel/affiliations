@@ -9,6 +9,7 @@ head_template = \
     institution {color: sienna;}
     addr-line {color: green;}
     country {color: salmon;}
+    author {color: red;}
     </style>
     <meta charset="utf-8">
     </head>"""

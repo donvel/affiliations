@@ -35,7 +35,7 @@ def get_tokens(hint_file):
 
 
 def print_aff(aff, lb, f):
-    extend = {'INST': 'institution', 'ADDR': 'addr-line', 'COUN': 'country'}
+    extend = {'INST': 'institution', 'ADDR': 'addr-line', 'COUN': 'country', 'AUTH': 'author'}
     last_label = 'TEXT'
 
     print >>f, '<aff>'
@@ -87,8 +87,9 @@ def aff_type(labeling):
 class Score:
 
     def __init__(self):
-        self.labels = ['ADDR', 'COUN', 'INST']
+        self.labels = ['ADDR', 'COUN', 'INST', 'AUTH']
         self.types = [('INST',), ('ADDR', 'INST'), ('COUN', 'INST'), ('ADDR', 'COUN', 'INST')]
+        self.types += [tuple(list(t) + ['AUTH']) for t in self.types]
 
         self.confusion = dict(((l1, l2), 0) for l1 in self.labels for l2 in self.labels)
         self.precision = dict((l, 0) for l in self.labels)
