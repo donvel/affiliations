@@ -1,0 +1,7 @@
+We use following prameters:
+Features:  '["Word", "Number", "AllUpperCase", "UpperCase", "AllLowerCase", "Country", "Institution", "Address", "Rare"]'
+
+rare threshold: 25
+neighbor threshold: 1
+
+The own features of some token X are treated as features of a token Y if dist(X, Y) <= neighbor_threshold.
