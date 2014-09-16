@@ -1,55 +1,68 @@
 INFORMATICS
 
-Tested on data/hand-inf.xml (Manually tagged strings from data/raw-inf.txt,
+Tested on data/hand-inf-author-comm.xml
+(Manually tagged strings from data/raw-inf.txt,
+missing commas were added manually,
 which in turn is a 100 affiliation subset of data/raw-affs-inf.txt)
 
 82 / 100 entries valid and used for final testing (the others were rejected during the tagging process)
 
-Trained on a 2000-entry sample from data/real-like-train.html.
+Trained on a 2000-entry dataset data/affs-auth.html.
 
 Parameters:
 Neighbor: 1, SplitAlphanum: True, Niehgbor threshold: 25
 
-./test_hand.sh data/hand-inf.xml test-inf-new 82 2000
-['Word', 'Number', 'AllUpperCase', 'UpperCase', 'LowerCase', 'Country', 'Institution', 'Address', 'Rare']
-f1: 0.908139, success: 0.695833, matched: 0.696977
-f1: 0.889630, success: 0.562500, matched: 0.670616
-f1: 0.911740, success: 0.575000, matched: 0.702724
-f1: 0.912087, success: 0.587500, matched: 0.732042
-f1: 0.906404, success: 0.595833, matched: 0.698370
-f1: 0.918006, success: 0.720833, matched: 0.716313
-f1: 0.910076, success: 0.570833, matched: 0.695291
-f1: 0.909259, success: 0.570833, matched: 0.690529
-f1: 0.908990, success: 0.575000, matched: 0.699645
-f1: 0.907700, success: 0.575000, matched: 0.699645
-f1: 0.911315, success: 0.575000, matched: 0.699645
-f1: 0.910035, success: 0.575000, matched: 0.699645
-f1: 0.910035, success: 0.575000, matched: 0.699645
+./test_hand3.sh data/hand-inf-author-comm.xml data/affs-auth.xml 82 inf-train-bio-auth 2000
+['Word', 'Number', 'AllUpperCase', 'UpperCase', 'AllLowerCase', 'Country', 'Institution', 'Address', 'Rare']
+f1: 0.899976, success: 0.578125, matched: 0.777804
+f1: 0.957016, success: 0.868403, matched: 0.906724
+f1: 0.955289, success: 0.935069, matched: 0.917132
+f1: 0.965415, success: 0.910069, matched: 0.920704
+f1: 0.966507, success: 0.917014, matched: 0.931328
+f1: 0.963516, success: 0.910069, matched: 0.917132
+f1: 0.956789, success: 0.783333, matched: 0.918394
+f1: 0.964477, success: 0.877083, matched: 0.930589
+f1: 0.963418, success: 0.873611, matched: 0.924275
+f1: 0.965299, success: 0.877083, matched: 0.931634
+f1: 0.963418, success: 0.873611, matched: 0.924275
+f1: 0.966408, success: 0.877083, matched: 0.931112
+f1: 0.966408, success: 0.877083, matched: 0.931112
+f1: 0.966408, success: 0.877083, matched: 0.931112
+f1: 0.966408, success: 0.877083, matched: 0.931112
+f1: 0.963418, success: 0.870139, matched: 0.917438
+f1: 0.963418, success: 0.870139, matched: 0.917438
+f1: 0.963418, success: 0.870139, matched: 0.917438
 ==================== BEST SCORE ==========================
-f1: 0.912087, success: 0.587500, matched: 0.732042
+f1: 0.965299, success: 0.877083, matched: 0.931634
 ==================== LAST SCORE ==========================
-f1: 0.910035, success: 0.575000, matched: 0.699645
+f1: 0.963418, success: 0.870139, matched: 0.917438
 
-f1: 0.910035, success: 0.575000, matched: 0.699645
-total success: 0.585366
+f1: 0.963418, success: 0.870139, matched: 0.917438
+total success: 0.853659
 
 ========== CONFUSION ==========
-         ADDR    COUN    INST    PREC    REC     F1      
-ADDR      275       2      75   0.96154 0.78125 0.86207 
-COUN        3      75       5   0.93750 0.90361 0.92025 
-INST        8       3     826   0.91170 0.98686 0.94779 
+         ADDR    COUN    INST    AUTH    PREC    REC     F1      
+ADDR      341       2      15         0 0.94199 0.95251 0.94722 
+COUN        4      80       0         0 0.97561 0.95238 0.96386 
+INST       17       0     878         4 0.97339 0.97664 0.97501 
+AUTH        0       0       9       194 0.97980 0.95567 0.96758 
 
 ========== SUCCESS ==========
 RATIO     CORRECT  TOTAL  TYPE
-0.90000       9      10 ('COUN', 'INST')
-0.33333       2       6 ('ADDR', 'INST')
-0.56667      34      60 ('ADDR', 'COUN', 'INST')
-0.50000       3       6 ('INST',)
+0.86111      31      36 ('ADDR', 'COUN', 'INST')
+0.83333      20      24 ('ADDR', 'AUTH', 'COUN', 'INST')
+0.66667       2       3 ('ADDR', 'INST')
+1.00000       3       3 ('ADDR', 'AUTH', 'INST')
+1.00000       5       5 ('COUN', 'INST')
+1.00000       4       4 ('AUTH', 'INST')
+0.60000       3       5 ('AUTH', 'COUN', 'INST')
+1.00000       2       2 ('INST',)
 
 ========== MATCHED ==========
-0.60976 'INST'
-0.56061 'ADDR'
-0.92857 'COUN'
+0.89024 'INST'
+0.86364 'ADDR'
+0.94444 'AUTH'
+0.97143 'COUN'
 
 ---------- DESCRIPTION ----------
 

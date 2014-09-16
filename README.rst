@@ -46,6 +46,14 @@ Data preparation
 
     scripts/split_data.py
 
+#. (Optionally) You may want to add authors to some of the affiliations::
+
+    scripts/add_authors.py
+
+   We use the authros from `data/auths.txt`. We generated a 2000-entry
+   training file `data/affs-auth.xml`, the fractions of author patterns
+   (no author, "X", "X and X", "X, X, X" etc.) were adapted from
+   `data/hand-inf.xml`.
 
 CRF training and evaluation
 ---------------------------

@@ -78,3 +78,53 @@ contain "address" and "country" parts.
 4) MATCHED -- this factor is computed separately for different label types.
 For a given label type X, this is the ratio of affiliation strings in which
 tokens predicted to be X were exactly the actual X-type tokens.
+
+================== WITH AUTHOR =================================================
+./test_hand3.sh data/affs-auth-test.xml data/affs-auth-train.xml 1000 test_auth 1000
+f1: 0.951126, success: 0.548920, matched: 0.885670
+f1: 0.969291, success: 0.802865, matched: 0.918366
+f1: 0.974377, success: 0.849683, matched: 0.931352
+f1: 0.977537, success: 0.862284, matched: 0.937767
+f1: 0.969279, success: 0.843153, matched: 0.928459
+f1: 0.975365, success: 0.853256, matched: 0.936822
+f1: 0.974731, success: 0.854531, matched: 0.933516
+f1: 0.975520, success: 0.846940, matched: 0.933604
+f1: 0.975727, success: 0.848111, matched: 0.935421
+f1: 0.975567, success: 0.850419, matched: 0.934343
+f1: 0.975789, success: 0.838181, matched: 0.934857
+f1: 0.975856, success: 0.838455, matched: 0.935383
+f1: 0.975254, success: 0.834983, matched: 0.935133
+f1: 0.975856, success: 0.838455, matched: 0.935383
+f1: 0.975856, success: 0.838455, matched: 0.935383
+==================== BEST SCORE ==========================
+f1: 0.977537, success: 0.862284, matched: 0.937767
+==================== LAST SCORE ==========================
+f1: 0.975856, success: 0.838455, matched: 0.935383
+
+f1: 0.975856, success: 0.838455, matched: 0.935383
+total success: 0.876000
+
+========== CONFUSION ==========
+         ADDR    COUN    INST    AUTH    PREC    REC     F1      
+ADDR     5229       6     189        10 0.96387 0.96227 0.96307 
+COUN       10     971       0         7 0.99386 0.98279 0.98830 
+INST      186       0   10986       103 0.98098 0.97437 0.97766 
+AUTH        0       0      24      2740 0.95804 0.99132 0.97440 
+
+========== SUCCESS ==========
+RATIO     CORRECT  TOTAL  TYPE
+0.87719     400     456 ('ADDR', 'COUN', 'INST')
+0.88022     316     359 ('ADDR', 'AUTH', 'COUN', 'INST')
+0.86538      45      52 ('ADDR', 'INST')
+0.86842      33      38 ('ADDR', 'AUTH', 'INST')
+0.86111      31      36 ('COUN', 'INST')
+0.71429       5       7 ('AUTH', 'INST')
+0.94872      37      39 ('AUTH', 'COUN', 'INST')
+0.69231       9      13 ('INST',)
+
+========== MATCHED ==========
+0.88500 'INST'
+0.90276 'ADDR'
+0.96388 'AUTH'
+0.98989 'COUN'
+

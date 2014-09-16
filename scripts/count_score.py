@@ -89,7 +89,7 @@ class Score:
     def __init__(self):
         self.labels = ['ADDR', 'COUN', 'INST', 'AUTH']
         self.types = [('INST',), ('ADDR', 'INST'), ('COUN', 'INST'), ('ADDR', 'COUN', 'INST')]
-        self.types += [tuple(list(t) + ['AUTH']) for t in self.types]
+        self.types += [tuple(sorted(list(t) + ['AUTH'])) for t in self.types]
 
         self.confusion = dict(((l1, l2), 0) for l1 in self.labels for l2 in self.labels)
         self.precision = dict((l, 0) for l in self.labels)
@@ -141,8 +141,8 @@ class Score:
             retrieved = sum(self.confusion[(x, l)] for x in self.labels)
             relevant = sum(self.confusion[(l, x)] for x in self.labels)
             rel_ret = self.confusion[(l, l)]
-            self.precision[l] = rel_ret / float(retrieved)
-            self.recall[l] = rel_ret / float(relevant)
+            self.precision[l] = rel_ret / float(retrieved) if retrieved else 1.0
+            self.recall[l] = rel_ret / float(relevant) if relevant else 1.0
             prec, rec = self.precision[l], self.recall[l]
             self.f1[l] = 2 * prec * rec / (prec + rec)
 
@@ -150,7 +150,7 @@ class Score:
 
         for t in self.types:
             if self.type_total[t] != 0:
-                self.success[t] = self.type_correct[t] / float(self.type_total[t])
+                self.success[t] = self.type_correct[t] / float(self.type_total[t]) if self.type_total[t] else 1.0
             else:
                 self.success[t] = 1.0
 
@@ -159,7 +159,7 @@ class Score:
                 / float(sum(self.type_total[t] for t in self.types)))
 
         for l in self.labels:
-            self.matched[l] = self.label_correct[l] / float(self.label_total[l])
+            self.matched[l] = self.label_correct[l] / float(self.label_total[l]) if self.label_total[l] else 1.0
 
         self.matched_mean = sum(self.matched[l] for l in self.labels) / len(self.labels)
 
